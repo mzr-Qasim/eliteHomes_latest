@@ -1,0 +1,267 @@
+
+$universal-color-1: #000000;
+$universal-color-2: #ffffff;
+$theme-color-1 : #1563df;
+$border-color : #e2e2e2;
+$label-color : #a3abb0;
+
+$section-space-lg : 10rem;
+$section-space-md : 8rem;
+$section-space-sm : 5rem;
+
+
+body{
+    overflow: hidden;
+    overflow-y: auto;
+    font-family: "Poppins", sans-serif;
+}
+
+
+h1, h2, h3, h4, ul, li, a, button, p, figure{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style-type: none;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+button{
+    border: 0;
+    background-color: transparent;
+}
+
+p{
+    line-height: 2rem;
+    text-wrap: pretty;
+}
+
+.custom-container-md{
+    max-width: 1800px;
+}
+
+.d-none{
+    display: none;
+}
+
+
+.main_logo{
+    height: 3.5rem;
+}
+
+
+.theme-btn{
+    border-radius: 25px;
+    padding: .5rem 1rem;
+    transition: all ease-in-out .5s;
+}
+
+.theme-btn-ico{
+    display: flex;
+    align-items: center;
+    span{
+        margin-right: .5rem;
+    }
+}
+
+
+.theme-btn_lg{
+    border-radius: 25px;
+    padding: .5rem 1.5rem;
+    transition: all ease-in-out .5s;
+}
+
+
+.theme-btn-1{
+    border: 1px solid $theme-color-1;
+
+
+    &:hover{
+        background-color: $theme-color-1;
+        color: $universal-color-2!important;
+    }
+}
+
+.theme-btn-1_white{
+    border: 1px solid $universal-color-2;
+    color: $universal-color-2;
+
+
+    &:hover{
+        border-color: $theme-color-1;
+        background-color: $theme-color-1;
+        color: $universal-color-2!important;
+    }
+}
+
+
+.theme-btn-2{
+    background-color: $theme-color-1;
+    color: $universal-color-2!important;
+    display: flex;
+
+
+    &:hover{
+        background-color: rgb(10, 10, 145)!important;
+    }
+}
+
+.theme-btn-2-grey{
+    background-color: rgba(0, 0, 0, 0.3);;
+}
+
+
+
+
+
+.icon-close_icon{
+    color: $universal-color-1;
+}
+
+
+.main_hero_form_width{
+    width: 25%;
+}
+
+
+
+.nav_show{
+    transform: translateX(0)!important;
+}
+.body_overflow{
+    overflow: hidden!important;
+}
+
+
+
+
+.property-card{
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 3rem;
+
+    figure{
+        width: 100%;
+        aspect-ratio: 1/.8;
+        position: relative;
+        overflow: hidden;
+
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: all ease-in-out .3s;
+        }
+        .top-position-icons{
+            display: flex;
+            align-items: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            gap: 1rem;
+            padding: 1rem;
+            z-index: 2;
+        }
+        .property-location{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            padding: 1rem;
+            color: $universal-color-2;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            z-index: 2;
+            pointer-events: none;
+
+        }
+
+        &::after{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: $universal-color-1;
+            opacity: .3;
+            z-index: 1;
+            pointer-events: none;
+        }
+    }
+    figcaption{
+        position: relative;
+        border-radius: 0 0 20px 20px;
+        border: 1px solid $border-color;
+        padding: 1rem;
+        .property_title{
+            display: inline-block;
+            color: rgb(22, 30, 45);
+            h4{
+                font-size: clamp(1.1rem, 2vw, 1.4rem);
+            }
+        }
+        ul{
+            display: flex;
+            gap: 1rem;
+            li{
+                small{
+                    display: flex;
+                    align-items: center;
+                    gap: .5rem;
+                    i{
+                        font-size: 1.2rem;
+                        color: grey;
+                    }
+                }
+            }
+        }
+        
+        .price_details{
+            position: relative;
+            color: rgb(22, 30, 45);
+            display: flex; 
+            align-items: center; 
+            justify-content: space-between;
+            .property-seller{
+                display: flex; 
+                align-items: center;
+                gap: 1rem; 
+                img{
+                    width: 50px; 
+                    height: 50px; 
+                    border-radius: 50%; 
+                    object-fit: cover;
+                }
+            }
+            h4{
+                font-size: clamp(1.1rem, 2vw, 1.4rem);
+            }
+
+            &::after{
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 1px;
+                background-color: $border-color;
+            }
+        }
+       
+       
+    }
+    &:hover{
+        figure{
+            img{
+                scale: 1.1;
+            }
+        }
+    }
+}
