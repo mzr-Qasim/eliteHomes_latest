@@ -206,6 +206,9 @@ p{
             h4{
                 font-size: clamp(1.1rem, 2vw, 1.4rem);
             }
+            &:hover{
+                color: $theme-color-1;
+            }
         }
         ul{
             display: flex;

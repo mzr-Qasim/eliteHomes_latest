@@ -12206,6 +12206,9 @@ p {
 .property-card figcaption .property_title h4, .property-card figcaption .property_title .h4 {
   font-size: clamp(1.1rem, 2vw, 1.4rem);
 }
+.property-card figcaption .property_title:hover {
+  color: #1563df;
+}
 .property-card figcaption ul {
   display: flex;
   gap: 1rem;
