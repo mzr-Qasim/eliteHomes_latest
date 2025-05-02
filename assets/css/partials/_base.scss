@@ -49,6 +49,16 @@ p{
     display: none;
 }
 
+.align-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.just-center{
+    display: flex;
+    justify-content: center;
+}
 
 .main_logo{
     height: 3.5rem;
@@ -62,8 +72,10 @@ p{
 }
 
 .theme-btn-ico{
+
     display: flex;
     align-items: center;
+    transition: all ease-in-out .5s;
     span{
         margin-right: .5rem;
     }
@@ -71,8 +83,8 @@ p{
 
 
 .theme-btn_lg{
-    border-radius: 25px;
-    padding: .5rem 1.5rem;
+    border-radius: 35px;
+    padding: 1rem 3rem;
     transition: all ease-in-out .5s;
 }
 
@@ -129,6 +141,10 @@ p{
 }
 
 
+.show {
+    opacity: 1!important;
+    visibility: visible;
+  }
 
 .nav_show{
     transform: translateX(0)!important;
@@ -137,6 +153,21 @@ p{
     overflow: hidden!important;
 }
 
+.section-title{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    small{
+        color: $theme-color-1;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    h3{
+        color: $universal-color-1;
+        font-weight: 600;
+        font-size: clamp(1.5rem, 3vw, 2.2rem)
+    }
+}
 
 
 
@@ -147,7 +178,7 @@ p{
 
     figure{
         width: 100%;
-        aspect-ratio: 1/.8;
+        aspect-ratio: 1/.7;
         position: relative;
         overflow: hidden;
 
@@ -156,7 +187,7 @@ p{
             width: 100%;
             height: 100%;
             object-fit: cover;
-            transition: all ease-in-out .3s;
+            transition: all ease-in-out .5s;
         }
         .top-position-icons{
             display: flex;
@@ -182,18 +213,18 @@ p{
 
         }
 
-        &::after{
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: $universal-color-1;
-            opacity: .3;
-            z-index: 1;
-            pointer-events: none;
-        }
+        // &::after{
+        //     content: '';
+        //     position: absolute;
+        //     top: 0;
+        //     left: 0;
+        //     width: 100%;
+        //     height: 100%;
+        //     background-color: $universal-color-1;
+        //     opacity: .3;
+        //     z-index: 1;
+        //     pointer-events: none;
+        // }
     }
     figcaption{
         position: relative;
@@ -213,6 +244,7 @@ p{
         ul{
             display: flex;
             gap: 1rem;
+            flex-wrap: wrap;
             li{
                 small{
                     display: flex;
@@ -267,4 +299,10 @@ p{
             }
         }
     }
+}
+
+
+.propert-tab-color{
+    background-color: rgb(247, 247, 247);
+    border: none;
 }
