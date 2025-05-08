@@ -26,18 +26,18 @@
 
         }
     }
-    .dropdown{
-        .dropdown-toggle:focus + .dropdown-menu {
-            display: block !important;
-            position: static;
+    // .dropdown{
+    //     .dropdown-toggle:focus + .dropdown-menu {
+    //         display: block !important;
+    //         position: static;
 
-          }
-        &:hover{
-            .dropdown-menu{
-                display: none!important;
-            }
-        }
-    }
+    //       }
+    //     &:hover{
+    //         .dropdown-menu{
+    //             display: none!important;
+    //         }
+    //     }
+    // }
     .element-show{
         display: block!important;
     }

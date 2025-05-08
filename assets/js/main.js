@@ -63,3 +63,18 @@ var swiper = new Swiper(".mySwiper", {
   
   },
 });
+
+
+
+
+
+let main_hero = document.querySelector("#main_hero");
+let sect = document.querySelector("#wrapper");
+
+
+let wrapperHeight = sect.offsetHeight / 1;
+
+main_hero.style.marginBottom = wrapperHeight + "px";
+
+
+// sect.style.paddingTop = wrapperHeight + "px";
