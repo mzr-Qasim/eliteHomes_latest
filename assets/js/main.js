@@ -1,3 +1,13 @@
+  window.addEventListener("load", function () {
+    const preloader = document.getElementById("pre_loader");
+    preloader.style.opacity = "0";
+    preloader.style.visibility = "hidden";
+    setTimeout(() => preloader.remove(), 500);
+  });
+
+
+
+
 var back_to_top = $('#back_to_top');
 
 $(window).scroll(function() {

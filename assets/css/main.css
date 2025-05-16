@@ -12304,6 +12304,25 @@ p {
   border: none;
 }
 
+#pre_loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  fill: red;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.5s ease;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .main-navbar {
   background-color: #ffffff;
   position: fixed;
@@ -12637,7 +12656,7 @@ p {
   justify-content: space-between;
   flex-direction: column;
   gap: 2rem;
-  transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.5s;
 }
 .our_services .col-inner .card_body {
   display: flex;
@@ -12646,7 +12665,7 @@ p {
   gap: 2rem;
 }
 .our_services .col-inner figure img {
-  transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.5s;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -12670,7 +12689,7 @@ p {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .our_services .col-inner:hover figure img {
-  transform: scaleX(-1);
+  transform: rotateY(360deg);
 }
 .our_services .col-inner:hover a {
   padding: 1rem 4rem;
