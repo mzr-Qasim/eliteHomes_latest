@@ -310,3 +310,14 @@ p{
     background-color: rgb(247, 247, 247);
     border: none;
 }
+
+body.loaded .pre_loader {
+  opacity: 0;
+  visibility: hidden;
+}
+
+body.loaded .site-wrapper {
+  opacity: 1;
+overflow: auto;
+  height: auto;
+}

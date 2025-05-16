@@ -1,12 +1,17 @@
-  window.addEventListener("load", function () {
-    const preloader = document.getElementById("pre_loader");
-    preloader.style.opacity = "0";
-    preloader.style.visibility = "hidden";
-    setTimeout(() => preloader.remove(), 500);
-  });
+window.addEventListener("load", function () {
+  // Add delay before triggering "loaded"
+  setTimeout(() => {
+    document.body.classList.add("loaded");
 
-
-
+    // Then fade out and remove preloader
+    setTimeout(() => {
+      const preloader = document.getElementById("pre_loader");
+      if (preloader) {
+        preloader.remove();
+      }
+    }, 500); // Fade-out duration
+  }, 3000); // Delay after page is fully loaded (in ms)
+});
 
 var back_to_top = $('#back_to_top');
 
