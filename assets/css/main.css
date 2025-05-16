@@ -12634,15 +12634,31 @@ p {
   height: 100%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   flex-direction: column;
   gap: 2rem;
   transition: all ease-in-out 0.3s;
 }
-.our_services .col-inner img {
+.our_services .col-inner .card_body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.our_services .col-inner figure img {
   transition: all ease-in-out 0.3s;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .our_services .col-inner h4, .our_services .col-inner .h4 {
   text-transform: capitalize;
+}
+.our_services .col-inner p {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-transform: ellipsis;
 }
 .our_services .col-inner a {
   background-color: transparent;
