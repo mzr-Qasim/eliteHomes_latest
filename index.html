@@ -1,1377 +1,1498 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="assets/css/swiper.css">
-    <link rel="stylesheet" href="assets/css/main.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="assets/css/swiper.css">
+  <link rel="stylesheet" href="assets/css/main.css">
 </head>
+
 <body id="body">
   <div class="pre_loader" id="pre_loader">
     <img class="pre_loader_svg" src="assets/images/pre_loader.svg" alt="">
   </div><!-- /.pre_loader -->
-    <div class="site-wrapper">
-        <header class="header">
-            <nav class="main-navbar">
-                <div class="container custom-container-md">
-                    <div class="nav-inner">
-                      <a href="#"><img class="main_logo" src="assets/images/site_logo.svg" alt=""></a>
-                        <div class="nav-collapse" id="nav_collapse">
-                            <ul class="d-flex">
-                                <li class="nav_links d-none element-show"><a href=""><img class="main_logo" src="assets/images/site_logo.svg" alt=""></a></li>
-                                <li class="nav_links"><a href="#" class="btn">Home</a></li>
-                                <li class="nav_links">
-                                  <a href="" class="btn">Property Details</a>                                 
-                                </li>
-                                <li class="nav_links">
-                                    <div class="dropdown">
-                                        <button data-mdb-button-init
-                                          data-mdb-ripple-init data-mdb-dropdown-init class="btn dropdown-toggle"
-                                          type="button"
-                                          id="dropdownMenuButton"
-                                          data-mdb-toggle="dropdown"
-                                          aria-expanded="false"
-                                        >
-                                          Pages
-                                        </button>
-                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                          <li><a class="dropdown-item" href="#">About Us</a></li>
-                                          <li><a class="dropdown-item" href="#">Our Services</a></li>
-                                          <li><a class="dropdown-item" href="#">Pricing</a></li>
-                                          <li><a class="dropdown-item" href="#">Contact Us</a></li>
-                                          <li><a class="dropdown-item" href="#">FAQs</a></li>
-                                          <li><a class="dropdown-item" href="#">Privacy Policy</a></li>
-                                        </ul>
-                                      </div>
-                                </li>
-                                <li class="nav_links">
-                                  <a href="" class="btn">Blogs</a>                                 
-                                </li>
-                                <li class="nav_links">
-                                    <div class="dropdown">
-                                        <button data-mdb-button-init
-                                          data-mdb-ripple-init data-mdb-dropdown-init class="btn dropdown-toggle"
-                                          type="button"
-                                          id="dropdownMenuButton"
-                                          data-mdb-toggle="dropdown"
-                                          aria-expanded="false"
-                                        >
-                                          Dashboard
-                                        </button>
-                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                          <li><a class="dropdown-item" href="#">Dashboard</a></li>
-                                          <li><a class="dropdown-item" href="#">My Properties</a></li>
-                                          <li><a class="dropdown-item" href="#">Message</a></li>
-                                          <li><a class="dropdown-item" href="#">My Favourites</a></li>
-                                          <li><a class="dropdown-item" href="#">Reviews</a></li>
-                                          <li><a class="dropdown-item" href="#">My Profile</a></li>
-                                          <li><a class="dropdown-item" href="#">Add Property</a></li>
-                                        </ul>
-                                      </div>
-                                </li>
-                            </ul>
-                            <ul class="right-links-lg right-links d-none">
-                              <li><a href="" class="theme-btn theme-btn-1"><i class="icon-login"></i><span>Sign in</span></a></li>
-                              <li><a href="" class="theme-btn theme-btn-2"><i class="icon-submit_property"></i><span>Submit Property</span></a></li>
-                            </ul>
-                        </div><!-- /.nav-collapse -->
-                        <ul class="right-links md-hide">
-                          <li><a href="" class="theme-btn theme-btn-1"><i class="icon-login"></i><span>Sign in</span></a></li>
-                          <li><a href="" class="theme-btn theme-btn-2"><i class="icon-submit_property"></i><span>Submit Property</span></a></li>
-                        </ul>
-                        <button id="ham_btn" class="ham_btn d-none element-show"><i id="ham_btn_icon" class="icon-ham_btn"></i></button>
-                    </div><!-- /.nav-inner -->
-            </div><!-- /.container -->
-            </nav><!-- /.main-navbar -->
-        </header><!-- /.header -->
-        <main class="main-content">
-          <button class="back-to-top align-center" id="back_to_top"><i class="icon-back_to_top"></i></button>
-          <section class="main_hero_section">
-            <div class="main_hero_section_wrapper">
-              <img src="assets/images/main_hero_section_img.jpg" alt="">
-              <figcaption class="main_hero_caption">
-                <div class="container">
-                  <h1>Find Your Perfect Home<span >
-                    <p class="pt-5">We are a real estate agency that will help you find the best residence you dream of, let’s discuss for your dream house?</p>
-                  </span></h1>
-                  <div class="main_hero_tabs pb-5">
-                    <ul class="nav nav-pills " style="display: flex; justify-content: center; gap: 2rem;" id="pills-tab" role="tablist">
-                      <li class="nav-item" role="presentation">
-                        <button class="active theme-btn_lg theme-btn-1_white" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">For Rent</button>
+  <div class="site-wrapper">
+    <header class="header">
+      <nav class="main-navbar">
+        <div class="container custom-container-md">
+          <div class="nav-inner">
+            <a href="#"><img class="main_logo" src="assets/images/site_logo.svg" alt=""></a>
+            <div class="nav-collapse" id="nav_collapse">
+              <ul class="d-flex">
+                <li class="nav_links d-none element-show"><a href=""><img class="main_logo"
+                      src="assets/images/site_logo.svg" alt=""></a></li>
+                <li class="nav_links"><a href="#" class="btn">Home</a></li>
+                <li class="nav_links">
+                  <a href="" class="btn">Property Details</a>
+                </li>
+                <li class="nav_links">
+                  <div class="dropdown">
+                    <button data-mdb-button-init data-mdb-ripple-init data-mdb-dropdown-init class="btn dropdown-toggle"
+                      type="button" id="dropdownMenuButton" data-mdb-toggle="dropdown" aria-expanded="false">
+                      Pages
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <li><a class="dropdown-item" href="#">About Us</a></li>
+                      <li><a class="dropdown-item" href="#">Our Services</a></li>
+                      <li><a class="dropdown-item" href="#">Pricing</a></li>
+                      <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                      <li><a class="dropdown-item" href="#">FAQs</a></li>
+                      <li><a class="dropdown-item" href="#">Privacy Policy</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav_links">
+                  <a href="" class="btn">Blogs</a>
+                </li>
+                <li class="nav_links">
+                  <div class="dropdown">
+                    <button data-mdb-button-init data-mdb-ripple-init data-mdb-dropdown-init class="btn dropdown-toggle"
+                      type="button" id="dropdownMenuButton" data-mdb-toggle="dropdown" aria-expanded="false">
+                      Dashboard
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <li><a class="dropdown-item" href="#">Dashboard</a></li>
+                      <li><a class="dropdown-item" href="#">My Properties</a></li>
+                      <li><a class="dropdown-item" href="#">Message</a></li>
+                      <li><a class="dropdown-item" href="#">My Favourites</a></li>
+                      <li><a class="dropdown-item" href="#">Reviews</a></li>
+                      <li><a class="dropdown-item" href="#">My Profile</a></li>
+                      <li><a class="dropdown-item" href="#">Add Property</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+              <ul class="right-links-lg right-links d-none">
+                <li><a href="" class="theme-btn theme-btn-1"><i class="icon-login"></i><span>Sign in</span></a></li>
+                <li><a href="" class="theme-btn theme-btn-2"><i class="icon-submit_property"></i><span>Submit
+                      Property</span></a></li>
+              </ul>
+            </div><!-- /.nav-collapse -->
+            <ul class="right-links md-hide">
+              <li><a href="" class="theme-btn theme-btn-1"><i class="icon-login"></i><span>Sign in</span></a></li>
+              <li><a href="" class="theme-btn theme-btn-2"><i class="icon-submit_property"></i><span>Submit
+                    Property</span></a></li>
+            </ul>
+            <button id="ham_btn" class="ham_btn d-none element-show"><i id="ham_btn_icon"
+                class="icon-ham_btn"></i></button>
+          </div><!-- /.nav-inner -->
+        </div><!-- /.container -->
+      </nav><!-- /.main-navbar -->
+    </header><!-- /.header -->
+    <main class="main-content">
+      <button class="back-to-top align-center" id="back_to_top"><i class="icon-back_to_top"></i></button>
+      <section class="main_hero_section">
+        <div class="main_hero_section_wrapper">
+          <img src="assets/images/main_hero_section_img.jpg" alt="">
+          <figcaption class="main_hero_caption">
+            <div class="container">
+              <h1>Find Your Perfect Home<span>
+                  <p class="pt-5">We are a real estate agency that will help you find the best residence you dream of,
+                    let’s discuss for your dream house?</p>
+                </span></h1>
+              <div class="main_hero_tabs pb-5">
+                <ul class="nav nav-pills " style="display: flex; justify-content: center; gap: 2rem;" id="pills-tab"
+                  role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="active theme-btn_lg theme-btn-1_white" id="pills-home-tab" data-bs-toggle="pill"
+                      data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                      aria-selected="true">For Rent</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="theme-btn_lg theme-btn-1_white" id="pills-profile-tab" data-bs-toggle="pill"
+                      data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                      aria-selected="false">For Sale</button>
+                  </li>
+                </ul>
+              </div><!-- /.main_hero_tabs -->
+              <div class="main_hero_tabs_inner">
+                <div class="tab-content" id="pills-tabContent">
+                  <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                    aria-labelledby="pills-home-tab">
+                    <ul class="tab-content_inner">
+                      <li class="main_hero_form_width after_content">
+                        <label for="">Type</label>
+                        <select class="form-select form-element" aria-label="Default select example">
+                          <option selected>All</option>
+                          <option value="1">Villa</option>
+                          <option value="2">Studio</option>
+                          <option value="3">Office</option>
+                          <option value="4">House</option>
+                        </select>
                       </li>
-                      <li class="nav-item" role="presentation">
-                        <button class="theme-btn_lg theme-btn-1_white" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">For Sale</button>
+                      <li class="main_hero_form_width after_content search_location">
+                        <label for="">Location</label>
+                        <input class="w-100 form-element" placeholder="Search Location" type="text">
+                      </li>
+                      <li class="main_hero_form_width">
+                        <label for="">Keyword</label>
+                        <input class="w-100 form-element" placeholder="Search Keyword." type="text">
+                      </li>
+                      <li>
+                        <button class="theme-btn_lg theme-btn-2 theme-btn-ico"><span>Search</span><i
+                            class="icon-search"></i></button>
                       </li>
                     </ul>
-                  </div><!-- /.main_hero_tabs -->
-                  <div class="main_hero_tabs_inner">
-                    <div class="tab-content" id="pills-tabContent">
-                      <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                        <ul class="tab-content_inner">
-                          <li class="main_hero_form_width after_content">
-                            <label for="">Type</label>
-                            <select class="form-select form-element" aria-label="Default select example">
-                              <option selected>All</option>
-                              <option value="1">Villa</option>
-                              <option value="2">Studio</option>
-                              <option value="3">Office</option>
-                              <option value="4">House</option>
-                            </select>
-                          </li>
-                          <li class="main_hero_form_width after_content search_location">
-                            <label for="">Location</label>
-                            <input class="w-100 form-element" placeholder="Search Location" type="text" >          
-                          </li>
-                          <li class="main_hero_form_width">
-                            <label for="">Keyword</label>
-                            <input class="w-100 form-element" placeholder="Search Keyword." type="text">          
-                          </li>
-                          <li>
-                            <button class="theme-btn_lg theme-btn-2 theme-btn-ico"><span>Search</span><i class="icon-search"></i></button>
-                          </li>
-                        </ul>  
-                      </div>
-                      <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                        <ul class="tab-content_inner">
-                          <li class="main_hero_form_width after_content">
-                            <label for="">Type</label>
-                            <select class="form-select form-element" aria-label="Default select example">
-                              <option selected>All</option>
-                              <option value="1">Villa</option>
-                              <option value="2">Studio</option>
-                              <option value="3">Office</option>
-                              <option value="4">House</option>
-                            </select>
-                          </li>
-                          <li class="main_hero_form_width after_content search_location">
-                            <label for="">Location</label>
-                            <input class="w-100 form-element" placeholder="Search Location" type="text" >          
-                          </li>
-                          <li class="main_hero_form_width">
-                            <label for="">Keyword</label>
-                            <input class="w-100 form-element" placeholder="Search Keyword." type="text">          
-                          </li>
-                          <li>
-                            <button class="theme-btn_lg theme-btn-2 theme-btn-ico"><span>Search</span><i class="icon-search"></i></button>
-                          </li>
-                        </ul>  
-                      </div>
-                    </div>     
-                  </div><!-- /.main_hero_tabs_inner -->
-                </div><!-- /.container -->
-              </figcaption><!-- /.main_hero_caption -->
-            </div><!-- /.main_hero_section_wrapper -->
-          </section><!-- /.main_hero_section -->
-          <section class="featured_properties">
-            <div class="featured_properties_inner">
-              <div class="container">
-                <div class="section-title">
-                  <small>Featured Properties</small>
-                  <h3 class="mt-4">Recommended For You</h3>
-                </div><!-- /.section-title -->
-                <div class="featured-properties-tabs mt-5" >
-                  <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                    <li class="nav-item" role="presentation">
-                      <button class="active theme-btn theme-btn-1 propert-tab-color" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#property-type-1" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Apartment</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <button class="theme-btn theme-btn-1 propert-tab-color" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#property-type-2" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Villa</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <button class="theme-btn theme-btn-1 propert-tab-color" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#property-type-3" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Studio</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <button class="theme-btn theme-btn-1 propert-tab-color" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#property-type-4" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">House</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <button class="theme-btn theme-btn-1 propert-tab-color" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#property-type-5" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Office</button>
-                    </li>
-                  </ul>
-                </div><!-- /.featured-properties-tabs -->
-                <div class="tab-content" id="pills-tabContent">
-                  <div class="tab-pane fade show active" id="property-type-1" role="tabpanel" >
-                    <div class="row">
-                      <div class="col-lg-6 col-xl-4">
-                        <div class="property-card">
-                          <a href="#" class="property-card-link">
-                          <figure>
-                            <img src="assets/images/sdfasdf.jpg" alt="">
-                            <div class="top-position-icons">
-                              <a href="" class="theme-btn theme-btn-2">Featured</a>
-                              <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
-                            </div><!-- /.top-position-icons -->
-                            <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit amet.</small>
-                          </figure>
-                        </a>
-                          <figcaption>
-                            <a href="" class="property_title"><h4><small>Casa Lomas de Machalí Machas</small></h4></a>
-                            <ul class="pt-3 pb-4">
-                              <li>
-                                <small><i class="icon-bed"></i><span>Beds:</span><b>3</b></small>
-                              </li>
-                                <li><small><i class="icon-bath"></i><span>Baths:</span><b>2</b></small></li>
-                                <li><small><i class="icon-sqft"></i><span>Sqft:</span><b>1150</b></small></li>
-                            </ul>
-                            <div class="price_details pt-4">
-                              <div class="property-seller">
-                                <img src="assets/images/sdfasdf.jpg" alt="">
-                                <small>Arlene McCoy</small>
-                              </div><!-- /.property-seller -->
-                              <h4><small>$4560,00</small></h4>
-                            </div><!-- /.price_details -->
-                            
-                          </figcaption>
-                        </div><!-- /.property-card -->
-                      </div><!-- /.col-lg-6 -->
-                      <div class="col-lg-6 col-xl-4">
-                        <div class="property-card">
-                          <a href="#" class="property-card-link">
-                          <figure>
-                            <img src="assets/images/main_hero_section_img.jpg" alt="">
-                            <div class="top-position-icons">
-                              <a href="" class="theme-btn theme-btn-2">Featured</a>
-                              <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
-                            </div><!-- /.top-position-icons -->
-                            <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit amet.</small>
-                          </figure>
-                        </a>
-                          <figcaption>
-                            <a href="" class="property_title"><h4><small>Casa Lomas de Machalí Machas</small></h4></a>
-                            <ul class="pt-3 pb-4">
-                              <li>
-                                <small><i class="icon-bed"></i><span>Beds:</span><b>3</b></small>
-                              </li>
-                                <li><small><i class="icon-bath"></i><span>Baths:</span><b>2</b></small></li>
-                                <li><small><i class="icon-sqft"></i><span>Sqft:</span><b>1150</b></small></li>
-                            </ul>
-                            <div class="price_details pt-4">
-                              <div class="property-seller">
-                                <img src="assets/images/sdfasdf.jpg" alt="">
-                                <small>Arlene McCoy</small>
-                              </div><!-- /.property-seller -->
-                              <h4><small>$4560,00</small></h4>
-                            </div><!-- /.price_details -->
-                            
-                          </figcaption>
-                        </div><!-- /.property-card -->
-                      </div><!-- /.col-lg-6 -->
-                      <div class="col-lg-6 col-xl-4">
-                        <div class="property-card">
-                          <a href="#" class="property-card-link">
-                          <figure>
-                            <img src="assets/images/sdfasdf.jpg" alt="">
-                            <div class="top-position-icons">
-                              <a href="" class="theme-btn theme-btn-2">Featured</a>
-                              <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
-                            </div><!-- /.top-position-icons -->
-                            <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit amet.</small>
-                          </figure>
-                        </a>
-                          <figcaption>
-                            <a href="" class="property_title"><h4><small>Casa Lomas de Machalí Machas</small></h4></a>
-                            <ul class="pt-3 pb-4">
-                              <li>
-                                <small><i class="icon-bed"></i><span>Beds:</span><b>3</b></small>
-                              </li>
-                                <li><small><i class="icon-bath"></i><span>Baths:</span><b>2</b></small></li>
-                                <li><small><i class="icon-sqft"></i><span>Sqft:</span><b>1150</b></small></li>
-                            </ul>
-                            <div class="price_details pt-4">
-                              <div class="property-seller">
-                                <img src="assets/images/sdfasdf.jpg" alt="">
-                                <small>Arlene McCoy</small>
-                              </div><!-- /.property-seller -->
-                              <h4><small>$4560,00</small></h4>
-                            </div><!-- /.price_details -->
-                            
-                          </figcaption>
-                        </div><!-- /.property-card -->
-                      </div><!-- /.col-lg-6 -->
-                      <div class="col-lg-6 col-xl-4">
-                        <div class="property-card">
-                          <a href="#" class="property-card-link">
-                          <figure>
-                            <img src="assets/images/main_hero_section_img.jpg" alt="">
-                            <div class="top-position-icons">
-                              <a href="" class="theme-btn theme-btn-2">Featured</a>
-                              <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
-                            </div><!-- /.top-position-icons -->
-                            <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit amet.</small>
-                          </figure>
-                        </a>
-                          <figcaption>
-                            <a href="" class="property_title"><h4><small>Casa Lomas de Machalí Machas</small></h4></a>
-                            <ul class="pt-3 pb-4">
-                              <li>
-                                <small><i class="icon-bed"></i><span>Beds:</span><b>3</b></small>
-                              </li>
-                                <li><small><i class="icon-bath"></i><span>Baths:</span><b>2</b></small></li>
-                                <li><small><i class="icon-sqft"></i><span>Sqft:</span><b>1150</b></small></li>
-                            </ul>
-                            <div class="price_details pt-4">
-                              <div class="property-seller">
-                                <img src="assets/images/sdfasdf.jpg" alt="">
-                                <small>Arlene McCoy</small>
-                              </div><!-- /.property-seller -->
-                              <h4><small>$4560,00</small></h4>
-                            </div><!-- /.price_details -->
-                            
-                          </figcaption>
-                        </div><!-- /.property-card -->
-                      </div><!-- /.col-lg-6 -->
-                      <div class="col-lg-6 col-xl-4">
-                        <div class="property-card">
-                          <a href="#" class="property-card-link">
-                          <figure>
-                            <img src="assets/images/sdfasdf.jpg" alt="">
-                            <div class="top-position-icons">
-                              <a href="" class="theme-btn theme-btn-2">Featured</a>
-                              <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
-                            </div><!-- /.top-position-icons -->
-                            <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit amet.</small>
-                          </figure>
-                        </a>
-                          <figcaption>
-                            <a href="" class="property_title"><h4><small>Casa Lomas de Machalí Machas</small></h4></a>
-                            <ul class="pt-3 pb-4">
-                              <li>
-                                <small><i class="icon-bed"></i><span>Beds:</span><b>3</b></small>
-                              </li>
-                                <li><small><i class="icon-bath"></i><span>Baths:</span><b>2</b></small></li>
-                                <li><small><i class="icon-sqft"></i><span>Sqft:</span><b>1150</b></small></li>
-                            </ul>
-                            <div class="price_details pt-4">
-                              <div class="property-seller">
-                                <img src="assets/images/sdfasdf.jpg" alt="">
-                                <small>Arlene McCoy</small>
-                              </div><!-- /.property-seller -->
-                              <h4><small>$4560,00</small></h4>
-                            </div><!-- /.price_details -->
-                            
-                          </figcaption>
-                        </div><!-- /.property-card -->
-                      </div><!-- /.col-lg-6 -->
-                      <div class="col-lg-6 col-xl-4">
-                        <div class="property-card">
-                          <a href="#" class="property-card-link">
-                          <figure>
-                            <img src="assets/images/main_hero_section_img.jpg" alt="">
-                            <div class="top-position-icons">
-                              <a href="" class="theme-btn theme-btn-2">Featured</a>
-                              <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
-                            </div><!-- /.top-position-icons -->
-                            <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit amet.</small>
-                          </figure>
-                        </a>
-                          <figcaption>
-                            <a href="" class="property_title"><h4><small>Casa Lomas de Machalí Machas</small></h4></a>
-                            <ul class="pt-3 pb-4">
-                              <li>
-                                <small><i class="icon-bed"></i><span>Beds:</span><b>3</b></small>
-                              </li>
-                                <li><small><i class="icon-bath"></i><span>Baths:</span><b>2</b></small></li>
-                                <li><small><i class="icon-sqft"></i><span>Sqft:</span><b>1150</b></small></li>
-                            </ul>
-                            <div class="price_details pt-4">
-                              <div class="property-seller">
-                                <img src="assets/images/sdfasdf.jpg" alt="">
-                                <small>Arlene McCoy</small>
-                              </div><!-- /.property-seller -->
-                              <h4><small>$4560,00</small></h4>
-                            </div><!-- /.price_details -->
-                          </figcaption>
-                        </div><!-- /.property-card -->
-                      </div><!-- /.col-lg-6 -->
-                    </div><!-- /.row -->
                   </div>
-                  <div class="tab-pane fade" id="property-type-2" role="tabpanel" aria-labelledby="pills-profile-tab" >
-                    <div class="row">
-                      <div class="col-lg-6 col-xl-4">
-                        <div class="property-card">
-                          <a href="#" class="property-card-link">
-                          <figure>
-                            <img src="assets/images/villa-1.jpg" alt="">
-                            <div class="top-position-icons">
-                              <a href="" class="theme-btn theme-btn-2">Featured</a>
-                              <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
-                            </div><!-- /.top-position-icons -->
-                            <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit amet.</small>
-                          </figure>
-                        </a>
-                          <figcaption>
-                            <a href="" class="property_title"><h4><small>Casa Lomas de Machalí Machas</small></h4></a>
-                            <ul class="pt-3 pb-4">
-                              <li>
-                                <small><i class="icon-bed"></i><span>Beds:</span><b>3</b></small>
-                              </li>
-                                <li><small><i class="icon-bath"></i><span>Baths:</span><b>2</b></small></li>
-                                <li><small><i class="icon-sqft"></i><span>Sqft:</span><b>1150</b></small></li>
-                            </ul>
-                            <div class="price_details pt-4">
-                              <div class="property-seller">
-                                <img src="assets/images/sdfasdf.jpg" alt="">
-                                <small>Arlene McCoy</small>
-                              </div><!-- /.property-seller -->
-                              <h4><small>$4560,00</small></h4>
-                            </div><!-- /.price_details -->
-                            
-                          </figcaption>
-                        </div><!-- /.property-card -->
-                      </div><!-- /.col-lg-6 -->
-                      <div class="col-lg-6 col-xl-4">
-                        <div class="property-card">
-                          <a href="#" class="property-card-link">
-                          <figure>
-                            <img src="assets/images/villa-2.jpg" alt="">
-                            <div class="top-position-icons">
-                              <a href="" class="theme-btn theme-btn-2">Featured</a>
-                              <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
-                            </div><!-- /.top-position-icons -->
-                            <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit amet.</small>
-                          </figure>
-                        </a>
-                          <figcaption>
-                            <a href="" class="property_title"><h4><small>Casa Lomas de Machalí Machas</small></h4></a>
-                            <ul class="pt-3 pb-4">
-                              <li>
-                                <small><i class="icon-bed"></i><span>Beds:</span><b>3</b></small>
-                              </li>
-                                <li><small><i class="icon-bath"></i><span>Baths:</span><b>2</b></small></li>
-                                <li><small><i class="icon-sqft"></i><span>Sqft:</span><b>1150</b></small></li>
-                            </ul>
-                            <div class="price_details pt-4">
-                              <div class="property-seller">
-                                <img src="assets/images/sdfasdf.jpg" alt="">
-                                <small>Arlene McCoy</small>
-                              </div><!-- /.property-seller -->
-                              <h4><small>$4560,00</small></h4>
-                            </div><!-- /.price_details -->
-                            
-                          </figcaption>
-                        </div><!-- /.property-card -->
-                      </div><!-- /.col-lg-6 -->
-                      <div class="col-lg-6 col-xl-4">
-                        <div class="property-card">
-                          <a href="#" class="property-card-link">
-                          <figure>
-                            <img src="assets/images/villa-3.jpg" alt="">
-                            <div class="top-position-icons">
-                              <a href="" class="theme-btn theme-btn-2">Featured</a>
-                              <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
-                            </div><!-- /.top-position-icons -->
-                            <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit amet.</small>
-                          </figure>
-                        </a>
-                          <figcaption>
-                            <a href="" class="property_title"><h4><small>Casa Lomas de Machalí Machas</small></h4></a>
-                            <ul class="pt-3 pb-4">
-                              <li>
-                                <small><i class="icon-bed"></i><span>Beds:</span><b>3</b></small>
-                              </li>
-                                <li><small><i class="icon-bath"></i><span>Baths:</span><b>2</b></small></li>
-                                <li><small><i class="icon-sqft"></i><span>Sqft:</span><b>1150</b></small></li>
-                            </ul>
-                            <div class="price_details pt-4">
-                              <div class="property-seller">
-                                <img src="assets/images/sdfasdf.jpg" alt="">
-                                <small>Arlene McCoy</small>
-                              </div><!-- /.property-seller -->
-                              <h4><small>$4560,00</small></h4>
-                            </div><!-- /.price_details -->
-                            
-                          </figcaption>
-                        </div><!-- /.property-card -->
-                      </div><!-- /.col-lg-6 -->
-                      <div class="col-lg-6 col-xl-4">
-                        <div class="property-card">
-                          <a href="#" class="property-card-link">
-                          <figure>
-                            <img src="assets/images/villa-1.jpg" alt="">
-                            <div class="top-position-icons">
-                              <a href="" class="theme-btn theme-btn-2">Featured</a>
-                              <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
-                            </div><!-- /.top-position-icons -->
-                            <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit amet.</small>
-                          </figure>
-                        </a>
-                          <figcaption>
-                            <a href="" class="property_title"><h4><small>Casa Lomas de Machalí Machas</small></h4></a>
-                            <ul class="pt-3 pb-4">
-                              <li>
-                                <small><i class="icon-bed"></i><span>Beds:</span><b>3</b></small>
-                              </li>
-                                <li><small><i class="icon-bath"></i><span>Baths:</span><b>2</b></small></li>
-                                <li><small><i class="icon-sqft"></i><span>Sqft:</span><b>1150</b></small></li>
-                            </ul>
-                            <div class="price_details pt-4">
-                              <div class="property-seller">
-                                <img src="assets/images/sdfasdf.jpg" alt="">
-                                <small>Arlene McCoy</small>
-                              </div><!-- /.property-seller -->
-                              <h4><small>$4560,00</small></h4>
-                            </div><!-- /.price_details -->
-                            
-                          </figcaption>
-                        </div><!-- /.property-card -->
-                      </div><!-- /.col-lg-6 -->
-                      <div class="col-lg-6 col-xl-4">
-                        <div class="property-card">
-                          <a href="#" class="property-card-link">
-                          <figure>
-                            <img src="assets/images/villa-2.jpg" alt="">
-                            <div class="top-position-icons">
-                              <a href="" class="theme-btn theme-btn-2">Featured</a>
-                              <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
-                            </div><!-- /.top-position-icons -->
-                            <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit amet.</small>
-                          </figure>
-                        </a>
-                          <figcaption>
-                            <a href="" class="property_title"><h4><small>Casa Lomas de Machalí Machas</small></h4></a>
-                            <ul class="pt-3 pb-4">
-                              <li>
-                                <small><i class="icon-bed"></i><span>Beds:</span><b>3</b></small>
-                              </li>
-                                <li><small><i class="icon-bath"></i><span>Baths:</span><b>2</b></small></li>
-                                <li><small><i class="icon-sqft"></i><span>Sqft:</span><b>1150</b></small></li>
-                            </ul>
-                            <div class="price_details pt-4">
-                              <div class="property-seller">
-                                <img src="assets/images/sdfasdf.jpg" alt="">
-                                <small>Arlene McCoy</small>
-                              </div><!-- /.property-seller -->
-                              <h4><small>$4560,00</small></h4>
-                            </div><!-- /.price_details -->
-                            
-                          </figcaption>
-                        </div><!-- /.property-card -->
-                      </div><!-- /.col-lg-6 -->
-                      <div class="col-lg-6 col-xl-4">
-                        <div class="property-card">
-                          <a href="#" class="property-card-link">
-                          <figure>
-                            <img src="assets/images/villa-3.jpg" alt="">
-                            <div class="top-position-icons">
-                              <a href="" class="theme-btn theme-btn-2">Featured</a>
-                              <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
-                            </div><!-- /.top-position-icons -->
-                            <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit amet.</small>
-                          </figure>
-                        </a>
-                          <figcaption>
-                            <a href="" class="property_title"><h4><small>Casa Lomas de Machalí Machas</small></h4></a>
-                            <ul class="pt-3 pb-4">
-                              <li>
-                                <small><i class="icon-bed"></i><span>Beds:</span><b>3</b></small>
-                              </li>
-                                <li><small><i class="icon-bath"></i><span>Baths:</span><b>2</b></small></li>
-                                <li><small><i class="icon-sqft"></i><span>Sqft:</span><b>1150</b></small></li>
-                            </ul>
-                            <div class="price_details pt-4">
-                              <div class="property-seller">
-                                <img src="assets/images/sdfasdf.jpg" alt="">
-                                <small>Arlene McCoy</small>
-                              </div><!-- /.property-seller -->
-                              <h4><small>$4560,00</small></h4>
-                            </div><!-- /.price_details -->
-                          </figcaption>
-                        </div><!-- /.property-card -->
-                      </div><!-- /.col-lg-6 -->
-                    </div><!-- /.row -->
-                  </div>
-                  <div class="tab-pane fade" id="property-type-3" role="tabpanel" aria-labelledby="pills-contact-tab" >
-                    <div class="row">
-                      <div class="col-lg-6 col-xl-4">
-                        <div class="property-card">
-                          <a href="#" class="property-card-link">
-                          <figure>
-                            <img src="assets/images/sdfasdf.jpg" alt="">
-                            <div class="top-position-icons">
-                              <a href="" class="theme-btn theme-btn-2">Featured</a>
-                              <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
-                            </div><!-- /.top-position-icons -->
-                            <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit amet.</small>
-                          </figure>
-                        </a>
-                          <figcaption>
-                            <a href="" class="property_title"><h4><small>Casa Lomas de Machalí Machas</small></h4></a>
-                            <ul class="pt-3 pb-4">
-                              <li>
-                                <small><i class="icon-bed"></i><span>Beds:</span><b>3</b></small>
-                              </li>
-                                <li><small><i class="icon-bath"></i><span>Baths:</span><b>2</b></small></li>
-                                <li><small><i class="icon-sqft"></i><span>Sqft:</span><b>1150</b></small></li>
-                            </ul>
-                            <div class="price_details pt-4">
-                              <div class="property-seller">
-                                <img src="assets/images/sdfasdf.jpg" alt="">
-                                <small>Arlene McCoy</small>
-                              </div><!-- /.property-seller -->
-                              <h4><small>$4560,00</small></h4>
-                            </div><!-- /.price_details -->
-                            
-                          </figcaption>
-                        </div><!-- /.property-card -->
-                      </div><!-- /.col-lg-6 -->
-                      <div class="col-lg-6 col-xl-4">
-                        <div class="property-card">
-                          <a href="#" class="property-card-link">
-                          <figure>
-                            <img src="assets/images/main_hero_section_img.jpg" alt="">
-                            <div class="top-position-icons">
-                              <a href="" class="theme-btn theme-btn-2">Featured</a>
-                              <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
-                            </div><!-- /.top-position-icons -->
-                            <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit amet.</small>
-                          </figure>
-                        </a>
-                          <figcaption>
-                            <a href="" class="property_title"><h4><small>Casa Lomas de Machalí Machas</small></h4></a>
-                            <ul class="pt-3 pb-4">
-                              <li>
-                                <small><i class="icon-bed"></i><span>Beds:</span><b>3</b></small>
-                              </li>
-                                <li><small><i class="icon-bath"></i><span>Baths:</span><b>2</b></small></li>
-                                <li><small><i class="icon-sqft"></i><span>Sqft:</span><b>1150</b></small></li>
-                            </ul>
-                            <div class="price_details pt-4">
-                              <div class="property-seller">
-                                <img src="assets/images/sdfasdf.jpg" alt="">
-                                <small>Arlene McCoy</small>
-                              </div><!-- /.property-seller -->
-                              <h4><small>$4560,00</small></h4>
-                            </div><!-- /.price_details -->
-                            
-                          </figcaption>
-                        </div><!-- /.property-card -->
-                      </div><!-- /.col-lg-6 -->
-                      <div class="col-lg-6 col-xl-4">
-                        <div class="property-card">
-                          <a href="#" class="property-card-link">
-                          <figure>
-                            <img src="assets/images/sdfasdf.jpg" alt="">
-                            <div class="top-position-icons">
-                              <a href="" class="theme-btn theme-btn-2">Featured</a>
-                              <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
-                            </div><!-- /.top-position-icons -->
-                            <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit amet.</small>
-                          </figure>
-                        </a>
-                          <figcaption>
-                            <a href="" class="property_title"><h4><small>Casa Lomas de Machalí Machas</small></h4></a>
-                            <ul class="pt-3 pb-4">
-                              <li>
-                                <small><i class="icon-bed"></i><span>Beds:</span><b>3</b></small>
-                              </li>
-                                <li><small><i class="icon-bath"></i><span>Baths:</span><b>2</b></small></li>
-                                <li><small><i class="icon-sqft"></i><span>Sqft:</span><b>1150</b></small></li>
-                            </ul>
-                            <div class="price_details pt-4">
-                              <div class="property-seller">
-                                <img src="assets/images/sdfasdf.jpg" alt="">
-                                <small>Arlene McCoy</small>
-                              </div><!-- /.property-seller -->
-                              <h4><small>$4560,00</small></h4>
-                            </div><!-- /.price_details -->
-                            
-                          </figcaption>
-                        </div><!-- /.property-card -->
-                      </div><!-- /.col-lg-6 -->
-                      <div class="col-lg-6 col-xl-4">
-                        <div class="property-card">
-                          <a href="#" class="property-card-link">
-                          <figure>
-                            <img src="assets/images/main_hero_section_img.jpg" alt="">
-                            <div class="top-position-icons">
-                              <a href="" class="theme-btn theme-btn-2">Featured</a>
-                              <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
-                            </div><!-- /.top-position-icons -->
-                            <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit amet.</small>
-                          </figure>
-                        </a>
-                          <figcaption>
-                            <a href="" class="property_title"><h4><small>Casa Lomas de Machalí Machas</small></h4></a>
-                            <ul class="pt-3 pb-4">
-                              <li>
-                                <small><i class="icon-bed"></i><span>Beds:</span><b>3</b></small>
-                              </li>
-                                <li><small><i class="icon-bath"></i><span>Baths:</span><b>2</b></small></li>
-                                <li><small><i class="icon-sqft"></i><span>Sqft:</span><b>1150</b></small></li>
-                            </ul>
-                            <div class="price_details pt-4">
-                              <div class="property-seller">
-                                <img src="assets/images/sdfasdf.jpg" alt="">
-                                <small>Arlene McCoy</small>
-                              </div><!-- /.property-seller -->
-                              <h4><small>$4560,00</small></h4>
-                            </div><!-- /.price_details -->
-                            
-                          </figcaption>
-                        </div><!-- /.property-card -->
-                      </div><!-- /.col-lg-6 -->
-                      <div class="col-lg-6 col-xl-4">
-                        <div class="property-card">
-                          <a href="#" class="property-card-link">
-                          <figure>
-                            <img src="assets/images/sdfasdf.jpg" alt="">
-                            <div class="top-position-icons">
-                              <a href="" class="theme-btn theme-btn-2">Featured</a>
-                              <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
-                            </div><!-- /.top-position-icons -->
-                            <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit amet.</small>
-                          </figure>
-                        </a>
-                          <figcaption>
-                            <a href="" class="property_title"><h4><small>Casa Lomas de Machalí Machas</small></h4></a>
-                            <ul class="pt-3 pb-4">
-                              <li>
-                                <small><i class="icon-bed"></i><span>Beds:</span><b>3</b></small>
-                              </li>
-                                <li><small><i class="icon-bath"></i><span>Baths:</span><b>2</b></small></li>
-                                <li><small><i class="icon-sqft"></i><span>Sqft:</span><b>1150</b></small></li>
-                            </ul>
-                            <div class="price_details pt-4">
-                              <div class="property-seller">
-                                <img src="assets/images/sdfasdf.jpg" alt="">
-                                <small>Arlene McCoy</small>
-                              </div><!-- /.property-seller -->
-                              <h4><small>$4560,00</small></h4>
-                            </div><!-- /.price_details -->
-                            
-                          </figcaption>
-                        </div><!-- /.property-card -->
-                      </div><!-- /.col-lg-6 -->
-                      <div class="col-lg-6 col-xl-4">
-                        <div class="property-card">
-                          <a href="#" class="property-card-link">
-                          <figure>
-                            <img src="assets/images/main_hero_section_img.jpg" alt="">
-                            <div class="top-position-icons">
-                              <a href="" class="theme-btn theme-btn-2">Featured</a>
-                              <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
-                            </div><!-- /.top-position-icons -->
-                            <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit amet.</small>
-                          </figure>
-                        </a>
-                          <figcaption>
-                            <a href="" class="property_title"><h4><small>Casa Lomas de Machalí Machas</small></h4></a>
-                            <ul class="pt-3 pb-4">
-                              <li>
-                                <small><i class="icon-bed"></i><span>Beds:</span><b>3</b></small>
-                              </li>
-                                <li><small><i class="icon-bath"></i><span>Baths:</span><b>2</b></small></li>
-                                <li><small><i class="icon-sqft"></i><span>Sqft:</span><b>1150</b></small></li>
-                            </ul>
-                            <div class="price_details pt-4">
-                              <div class="property-seller">
-                                <img src="assets/images/sdfasdf.jpg" alt="">
-                                <small>Arlene McCoy</small>
-                              </div><!-- /.property-seller -->
-                              <h4><small>$4560,00</small></h4>
-                            </div><!-- /.price_details -->
-                          </figcaption>
-                        </div><!-- /.property-card -->
-                      </div><!-- /.col-lg-6 -->
-                    </div><!-- /.row -->
-                  </div>
-                  <div class="tab-pane fade" id="property-type-4" role="tabpanel" aria-labelledby="pills-contact-tab" >
-                    <div class="row">
-                      <div class="col-lg-6 col-xl-4">
-                        <div class="property-card">
-                          <a href="#" class="property-card-link">
-                          <figure>
-                            <img src="assets/images/sdfasdf.jpg" alt="">
-                            <div class="top-position-icons">
-                              <a href="" class="theme-btn theme-btn-2">Featured</a>
-                              <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
-                            </div><!-- /.top-position-icons -->
-                            <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit amet.</small>
-                          </figure>
-                        </a>
-                          <figcaption>
-                            <a href="" class="property_title"><h4><small>Casa Lomas de Machalí Machas</small></h4></a>
-                            <ul class="pt-3 pb-4">
-                              <li>
-                                <small><i class="icon-bed"></i><span>Beds:</span><b>3</b></small>
-                              </li>
-                                <li><small><i class="icon-bath"></i><span>Baths:</span><b>2</b></small></li>
-                                <li><small><i class="icon-sqft"></i><span>Sqft:</span><b>1150</b></small></li>
-                            </ul>
-                            <div class="price_details pt-4">
-                              <div class="property-seller">
-                                <img src="assets/images/sdfasdf.jpg" alt="">
-                                <small>Arlene McCoy</small>
-                              </div><!-- /.property-seller -->
-                              <h4><small>$4560,00</small></h4>
-                            </div><!-- /.price_details -->
-                            
-                          </figcaption>
-                        </div><!-- /.property-card -->
-                      </div><!-- /.col-lg-6 -->
-                      <div class="col-lg-6 col-xl-4">
-                        <div class="property-card">
-                          <a href="#" class="property-card-link">
-                          <figure>
-                            <img src="assets/images/main_hero_section_img.jpg" alt="">
-                            <div class="top-position-icons">
-                              <a href="" class="theme-btn theme-btn-2">Featured</a>
-                              <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
-                            </div><!-- /.top-position-icons -->
-                            <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit amet.</small>
-                          </figure>
-                        </a>
-                          <figcaption>
-                            <a href="" class="property_title"><h4><small>Casa Lomas de Machalí Machas</small></h4></a>
-                            <ul class="pt-3 pb-4">
-                              <li>
-                                <small><i class="icon-bed"></i><span>Beds:</span><b>3</b></small>
-                              </li>
-                                <li><small><i class="icon-bath"></i><span>Baths:</span><b>2</b></small></li>
-                                <li><small><i class="icon-sqft"></i><span>Sqft:</span><b>1150</b></small></li>
-                            </ul>
-                            <div class="price_details pt-4">
-                              <div class="property-seller">
-                                <img src="assets/images/sdfasdf.jpg" alt="">
-                                <small>Arlene McCoy</small>
-                              </div><!-- /.property-seller -->
-                              <h4><small>$4560,00</small></h4>
-                            </div><!-- /.price_details -->
-                            
-                          </figcaption>
-                        </div><!-- /.property-card -->
-                      </div><!-- /.col-lg-6 -->
-                      <div class="col-lg-6 col-xl-4">
-                        <div class="property-card">
-                          <a href="#" class="property-card-link">
-                          <figure>
-                            <img src="assets/images/sdfasdf.jpg" alt="">
-                            <div class="top-position-icons">
-                              <a href="" class="theme-btn theme-btn-2">Featured</a>
-                              <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
-                            </div><!-- /.top-position-icons -->
-                            <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit amet.</small>
-                          </figure>
-                        </a>
-                          <figcaption>
-                            <a href="" class="property_title"><h4><small>Casa Lomas de Machalí Machas</small></h4></a>
-                            <ul class="pt-3 pb-4">
-                              <li>
-                                <small><i class="icon-bed"></i><span>Beds:</span><b>3</b></small>
-                              </li>
-                                <li><small><i class="icon-bath"></i><span>Baths:</span><b>2</b></small></li>
-                                <li><small><i class="icon-sqft"></i><span>Sqft:</span><b>1150</b></small></li>
-                            </ul>
-                            <div class="price_details pt-4">
-                              <div class="property-seller">
-                                <img src="assets/images/sdfasdf.jpg" alt="">
-                                <small>Arlene McCoy</small>
-                              </div><!-- /.property-seller -->
-                              <h4><small>$4560,00</small></h4>
-                            </div><!-- /.price_details -->
-                            
-                          </figcaption>
-                        </div><!-- /.property-card -->
-                      </div><!-- /.col-lg-6 -->
-                      <div class="col-lg-6 col-xl-4">
-                        <div class="property-card">
-                          <a href="#" class="property-card-link">
-                          <figure>
-                            <img src="assets/images/main_hero_section_img.jpg" alt="">
-                            <div class="top-position-icons">
-                              <a href="" class="theme-btn theme-btn-2">Featured</a>
-                              <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
-                            </div><!-- /.top-position-icons -->
-                            <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit amet.</small>
-                          </figure>
-                        </a>
-                          <figcaption>
-                            <a href="" class="property_title"><h4><small>Casa Lomas de Machalí Machas</small></h4></a>
-                            <ul class="pt-3 pb-4">
-                              <li>
-                                <small><i class="icon-bed"></i><span>Beds:</span><b>3</b></small>
-                              </li>
-                                <li><small><i class="icon-bath"></i><span>Baths:</span><b>2</b></small></li>
-                                <li><small><i class="icon-sqft"></i><span>Sqft:</span><b>1150</b></small></li>
-                            </ul>
-                            <div class="price_details pt-4">
-                              <div class="property-seller">
-                                <img src="assets/images/sdfasdf.jpg" alt="">
-                                <small>Arlene McCoy</small>
-                              </div><!-- /.property-seller -->
-                              <h4><small>$4560,00</small></h4>
-                            </div><!-- /.price_details -->
-                            
-                          </figcaption>
-                        </div><!-- /.property-card -->
-                      </div><!-- /.col-lg-6 -->
-                      <div class="col-lg-6 col-xl-4">
-                        <div class="property-card">
-                          <a href="#" class="property-card-link">
-                          <figure>
-                            <img src="assets/images/sdfasdf.jpg" alt="">
-                            <div class="top-position-icons">
-                              <a href="" class="theme-btn theme-btn-2">Featured</a>
-                              <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
-                            </div><!-- /.top-position-icons -->
-                            <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit amet.</small>
-                          </figure>
-                        </a>
-                          <figcaption>
-                            <a href="" class="property_title"><h4><small>Casa Lomas de Machalí Machas</small></h4></a>
-                            <ul class="pt-3 pb-4">
-                              <li>
-                                <small><i class="icon-bed"></i><span>Beds:</span><b>3</b></small>
-                              </li>
-                                <li><small><i class="icon-bath"></i><span>Baths:</span><b>2</b></small></li>
-                                <li><small><i class="icon-sqft"></i><span>Sqft:</span><b>1150</b></small></li>
-                            </ul>
-                            <div class="price_details pt-4">
-                              <div class="property-seller">
-                                <img src="assets/images/sdfasdf.jpg" alt="">
-                                <small>Arlene McCoy</small>
-                              </div><!-- /.property-seller -->
-                              <h4><small>$4560,00</small></h4>
-                            </div><!-- /.price_details -->
-                            
-                          </figcaption>
-                        </div><!-- /.property-card -->
-                      </div><!-- /.col-lg-6 -->
-                      <div class="col-lg-6 col-xl-4">
-                        <div class="property-card">
-                          <a href="#" class="property-card-link">
-                          <figure>
-                            <img src="assets/images/main_hero_section_img.jpg" alt="">
-                            <div class="top-position-icons">
-                              <a href="" class="theme-btn theme-btn-2">Featured</a>
-                              <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
-                            </div><!-- /.top-position-icons -->
-                            <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit amet.</small>
-                          </figure>
-                        </a>
-                          <figcaption>
-                            <a href="" class="property_title"><h4><small>Casa Lomas de Machalí Machas</small></h4></a>
-                            <ul class="pt-3 pb-4">
-                              <li>
-                                <small><i class="icon-bed"></i><span>Beds:</span><b>3</b></small>
-                              </li>
-                                <li><small><i class="icon-bath"></i><span>Baths:</span><b>2</b></small></li>
-                                <li><small><i class="icon-sqft"></i><span>Sqft:</span><b>1150</b></small></li>
-                            </ul>
-                            <div class="price_details pt-4">
-                              <div class="property-seller">
-                                <img src="assets/images/sdfasdf.jpg" alt="">
-                                <small>Arlene McCoy</small>
-                              </div><!-- /.property-seller -->
-                              <h4><small>$4560,00</small></h4>
-                            </div><!-- /.price_details -->
-                          </figcaption>
-                        </div><!-- /.property-card -->
-                      </div><!-- /.col-lg-6 -->
-                    </div><!-- /.row -->
-                  </div>
-                  <div class="tab-pane fade" id="property-type-5" role="tabpanel" aria-labelledby="pills-contact-tab" >
-                    <div class="row">
-                      <div class="col-lg-6 col-xl-4">
-                        <div class="property-card">
-                          <a href="#" class="property-card-link">
-                          <figure>
-                            <img src="assets/images/sdfasdf.jpg" alt="">
-                            <div class="top-position-icons">
-                              <a href="" class="theme-btn theme-btn-2">Featured</a>
-                              <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
-                            </div><!-- /.top-position-icons -->
-                            <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit amet.</small>
-                          </figure>
-                        </a>
-                          <figcaption>
-                            <a href="" class="property_title"><h4><small>Casa Lomas de Machalí Machas</small></h4></a>
-                            <ul class="pt-3 pb-4">
-                              <li>
-                                <small><i class="icon-bed"></i><span>Beds:</span><b>3</b></small>
-                              </li>
-                                <li><small><i class="icon-bath"></i><span>Baths:</span><b>2</b></small></li>
-                                <li><small><i class="icon-sqft"></i><span>Sqft:</span><b>1150</b></small></li>
-                            </ul>
-                            <div class="price_details pt-4">
-                              <div class="property-seller">
-                                <img src="assets/images/sdfasdf.jpg" alt="">
-                                <small>Arlene McCoy</small>
-                              </div><!-- /.property-seller -->
-                              <h4><small>$4560,00</small></h4>
-                            </div><!-- /.price_details -->
-                            
-                          </figcaption>
-                        </div><!-- /.property-card -->
-                      </div><!-- /.col-lg-6 -->
-                      <div class="col-lg-6 col-xl-4">
-                        <div class="property-card">
-                          <a href="#" class="property-card-link">
-                          <figure>
-                            <img src="assets/images/main_hero_section_img.jpg" alt="">
-                            <div class="top-position-icons">
-                              <a href="" class="theme-btn theme-btn-2">Featured</a>
-                              <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
-                            </div><!-- /.top-position-icons -->
-                            <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit amet.</small>
-                          </figure>
-                        </a>
-                          <figcaption>
-                            <a href="" class="property_title"><h4><small>Casa Lomas de Machalí Machas</small></h4></a>
-                            <ul class="pt-3 pb-4">
-                              <li>
-                                <small><i class="icon-bed"></i><span>Beds:</span><b>3</b></small>
-                              </li>
-                                <li><small><i class="icon-bath"></i><span>Baths:</span><b>2</b></small></li>
-                                <li><small><i class="icon-sqft"></i><span>Sqft:</span><b>1150</b></small></li>
-                            </ul>
-                            <div class="price_details pt-4">
-                              <div class="property-seller">
-                                <img src="assets/images/sdfasdf.jpg" alt="">
-                                <small>Arlene McCoy</small>
-                              </div><!-- /.property-seller -->
-                              <h4><small>$4560,00</small></h4>
-                            </div><!-- /.price_details -->
-                            
-                          </figcaption>
-                        </div><!-- /.property-card -->
-                      </div><!-- /.col-lg-6 -->
-                      <div class="col-lg-6 col-xl-4">
-                        <div class="property-card">
-                          <a href="#" class="property-card-link">
-                          <figure>
-                            <img src="assets/images/sdfasdf.jpg" alt="">
-                            <div class="top-position-icons">
-                              <a href="" class="theme-btn theme-btn-2">Featured</a>
-                              <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
-                            </div><!-- /.top-position-icons -->
-                            <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit amet.</small>
-                          </figure>
-                        </a>
-                          <figcaption>
-                            <a href="" class="property_title"><h4><small>Casa Lomas de Machalí Machas</small></h4></a>
-                            <ul class="pt-3 pb-4">
-                              <li>
-                                <small><i class="icon-bed"></i><span>Beds:</span><b>3</b></small>
-                              </li>
-                                <li><small><i class="icon-bath"></i><span>Baths:</span><b>2</b></small></li>
-                                <li><small><i class="icon-sqft"></i><span>Sqft:</span><b>1150</b></small></li>
-                            </ul>
-                            <div class="price_details pt-4">
-                              <div class="property-seller">
-                                <img src="assets/images/sdfasdf.jpg" alt="">
-                                <small>Arlene McCoy</small>
-                              </div><!-- /.property-seller -->
-                              <h4><small>$4560,00</small></h4>
-                            </div><!-- /.price_details -->
-                            
-                          </figcaption>
-                        </div><!-- /.property-card -->
-                      </div><!-- /.col-lg-6 -->
-                      <div class="col-lg-6 col-xl-4">
-                        <div class="property-card">
-                          <a href="#" class="property-card-link">
-                          <figure>
-                            <img src="assets/images/main_hero_section_img.jpg" alt="">
-                            <div class="top-position-icons">
-                              <a href="" class="theme-btn theme-btn-2">Featured</a>
-                              <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
-                            </div><!-- /.top-position-icons -->
-                            <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit amet.</small>
-                          </figure>
-                        </a>
-                          <figcaption>
-                            <a href="" class="property_title"><h4><small>Casa Lomas de Machalí Machas</small></h4></a>
-                            <ul class="pt-3 pb-4">
-                              <li>
-                                <small><i class="icon-bed"></i><span>Beds:</span><b>3</b></small>
-                              </li>
-                                <li><small><i class="icon-bath"></i><span>Baths:</span><b>2</b></small></li>
-                                <li><small><i class="icon-sqft"></i><span>Sqft:</span><b>1150</b></small></li>
-                            </ul>
-                            <div class="price_details pt-4">
-                              <div class="property-seller">
-                                <img src="assets/images/sdfasdf.jpg" alt="">
-                                <small>Arlene McCoy</small>
-                              </div><!-- /.property-seller -->
-                              <h4><small>$4560,00</small></h4>
-                            </div><!-- /.price_details -->
-                            
-                          </figcaption>
-                        </div><!-- /.property-card -->
-                      </div><!-- /.col-lg-6 -->
-                      <div class="col-lg-6 col-xl-4">
-                        <div class="property-card">
-                          <a href="#" class="property-card-link">
-                          <figure>
-                            <img src="assets/images/sdfasdf.jpg" alt="">
-                            <div class="top-position-icons">
-                              <a href="" class="theme-btn theme-btn-2">Featured</a>
-                              <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
-                            </div><!-- /.top-position-icons -->
-                            <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit amet.</small>
-                          </figure>
-                        </a>
-                          <figcaption>
-                            <a href="" class="property_title"><h4><small>Casa Lomas de Machalí Machas</small></h4></a>
-                            <ul class="pt-3 pb-4">
-                              <li>
-                                <small><i class="icon-bed"></i><span>Beds:</span><b>3</b></small>
-                              </li>
-                                <li><small><i class="icon-bath"></i><span>Baths:</span><b>2</b></small></li>
-                                <li><small><i class="icon-sqft"></i><span>Sqft:</span><b>1150</b></small></li>
-                            </ul>
-                            <div class="price_details pt-4">
-                              <div class="property-seller">
-                                <img src="assets/images/sdfasdf.jpg" alt="">
-                                <small>Arlene McCoy</small>
-                              </div><!-- /.property-seller -->
-                              <h4><small>$4560,00</small></h4>
-                            </div><!-- /.price_details -->
-                            
-                          </figcaption>
-                        </div><!-- /.property-card -->
-                      </div><!-- /.col-lg-6 -->
-                      <div class="col-lg-6 col-xl-4">
-                        <div class="property-card">
-                          <a href="#" class="property-card-link">
-                          <figure>
-                            <img src="assets/images/main_hero_section_img.jpg" alt="">
-                            <div class="top-position-icons">
-                              <a href="" class="theme-btn theme-btn-2">Featured</a>
-                              <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
-                            </div><!-- /.top-position-icons -->
-                            <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit amet.</small>
-                          </figure>
-                        </a>
-                          <figcaption>
-                            <a href="" class="property_title"><h4><small>Casa Lomas de Machalí Machas</small></h4></a>
-                            <ul class="pt-3 pb-4">
-                              <li>
-                                <small><i class="icon-bed"></i><span>Beds:</span><b>3</b></small>
-                              </li>
-                                <li><small><i class="icon-bath"></i><span>Baths:</span><b>2</b></small></li>
-                                <li><small><i class="icon-sqft"></i><span>Sqft:</span><b>1150</b></small></li>
-                            </ul>
-                            <div class="price_details pt-4">
-                              <div class="property-seller">
-                                <img src="assets/images/sdfasdf.jpg" alt="">
-                                <small>Arlene McCoy</small>
-                              </div><!-- /.property-seller -->
-                              <h4><small>$4560,00</small></h4>
-                            </div><!-- /.price_details -->
-                          </figcaption>
-                        </div><!-- /.property-card -->
-                      </div><!-- /.col-lg-6 -->
-                    </div><!-- /.row -->
+                  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                    <ul class="tab-content_inner">
+                      <li class="main_hero_form_width after_content">
+                        <label for="">Type</label>
+                        <select class="form-select form-element" aria-label="Default select example">
+                          <option selected>All</option>
+                          <option value="1">Villa</option>
+                          <option value="2">Studio</option>
+                          <option value="3">Office</option>
+                          <option value="4">House</option>
+                        </select>
+                      </li>
+                      <li class="main_hero_form_width after_content search_location">
+                        <label for="">Location</label>
+                        <input class="w-100 form-element" placeholder="Search Location" type="text">
+                      </li>
+                      <li class="main_hero_form_width">
+                        <label for="">Keyword</label>
+                        <input class="w-100 form-element" placeholder="Search Keyword." type="text">
+                      </li>
+                      <li>
+                        <button class="theme-btn_lg theme-btn-2 theme-btn-ico"><span>Search</span><i
+                            class="icon-search"></i></button>
+                      </li>
+                    </ul>
                   </div>
                 </div>
-                <div class="view-all-properties just-center">
-                  <a href="" class="theme-btn_lg theme-btn-2 theme-btn-ico"><span>View All Properties</span><i class="icon-link"></i></a>
-                </div><!-- /.view-all-properties -->
-              </div><!-- /.container -->
-            </div><!-- /.featured_properties_inner -->
-          </section><!-- /.featured_properties -->
-          <section class="explore-cities">
-            <div class="section-title mb-5">
-              <small>Explore Cities</small>
-              <h3 class="mt-4">Our Location For You</h3>
+              </div><!-- /.main_hero_tabs_inner -->
+            </div><!-- /.container -->
+          </figcaption><!-- /.main_hero_caption -->
+        </div><!-- /.main_hero_section_wrapper -->
+      </section><!-- /.main_hero_section -->
+      <section class="featured_properties">
+        <div class="featured_properties_inner">
+          <div class="container">
+            <div class="section-title">
+              <small>Featured Properties</small>
+              <h3 class="mt-4">Recommended For You</h3>
             </div><!-- /.section-title -->
-            <div class="explore-cities-swiper">
-              <div class="container-fluid">
-                <div class="swiper mySwiper">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <a href="./city-locations.html" class="card-main-link">
-                      <figure>
-                        <img src="assets/images/explore_cities_1.jpg" alt="">
-                        <div class="card-description">
-                          <div class="detail">
-                            <small>321 Property</small>
-                            <h4><small>Naperville</small></h4>
-                          </div><!-- /.detail -->
-                          <div class="card-link">
-                            <button class="card-link"><i class="icon-link"></i></button>
-                          </div><!-- /.card-link -->
-                        </div><!-- /.card-footer -->
-                      </figure>
-                    </a>
-                    </div>
-                    <div class="swiper-slide">
-                      <a href="./city-locations.html" class="card-main-link">
-                      <figure>
-                        <img src="assets/images/explore_cities_2.jpg" alt="">
-                        <div class="card-description">
-                          <div class="detail">
-                            <small>321 Property</small>
-                            <h4><small>Naperville</small></h4>
-                          </div><!-- /.detail -->
-                          <div class="card-link">
-                            <button class="card-link"><i class="icon-link"></i></button>
-                          </div><!-- /.card-link -->
-                        </div><!-- /.card-footer -->
-                      </figure>
-                    </a>
-                    </div>
-                    <div class="swiper-slide">
-                      <a href="./city-locations.html" class="card-main-link">
-                      <figure>
-                        <img src="assets/images/villa-1.jpg" alt="">
-                        <div class="card-description">
-                          <div class="detail">
-                            <small>321 Property</small>
-                            <h4><small>Naperville</small></h4>
-                          </div><!-- /.detail -->
-                          <div class="card-link">
-                            <button class="card-link"><i class="icon-link"></i></button>
-                          </div><!-- /.card-link -->
-                        </div><!-- /.card-footer -->
-                      </figure>
-                    </a>
-                    </div>
-                    <div class="swiper-slide">
-                      <a href="./city-locations.html" class="card-main-link">
-                      <figure>
-                        <img src="assets/images/villa-1.jpg" alt="">
-                        <div class="card-description">
-                          <div class="detail">
-                            <small>321 Property</small>
-                            <h4><small>Naperville</small></h4>
-                          </div><!-- /.detail -->
-                          <div class="card-link">
-                            <button class="card-link"><i class="icon-link"></i></button>
-                          </div><!-- /.card-link -->
-                        </div><!-- /.card-footer -->
-                      </figure>
-                    </a>
-                    </div>
-                    <div class="swiper-slide">
-                      <a href="./city-locations.html" class="card-main-link">
-                      <figure>
-                        <img src="assets/images/villa-1.jpg" alt="">
-                        <div class="card-description">
-                          <div class="detail">
-                            <small>321 Property</small>
-                            <h4><small>Naperville</small></h4>
-                          </div><!-- /.detail -->
-                          <div class="card-link">
-                            <button class="card-link"><i class="icon-link"></i></button>
-                          </div><!-- /.card-link -->
-                        </div><!-- /.card-footer -->
-                      </figure>
-                    </a>
-                    </div>
-                    <div class="swiper-slide">
-                      <a href="./city-locations.html" class="card-main-link">
-                      <figure>
-                        <img src="assets/images/villa-1.jpg" alt="">
-                        <div class="card-description">
-                          <div class="detail">
-                            <small>321 Property</small>
-                            <h4><small>Naperville</small></h4>
-                          </div><!-- /.detail -->
-                          <div class="card-link">
-                            <button class="card-link"><i class="icon-link"></i></button>
-                          </div><!-- /.card-link -->
-                        </div><!-- /.card-footer -->
-                      </figure>
-                    </a>
-                    </div>
-                    <div class="swiper-slide">
-                      <a href="./city-locations.html" class="card-main-link">
-                      <figure>
-                        <img src="assets/images/villa-1.jpg" alt="">
-                        <div class="card-description">
-                          <div class="detail">
-                            <small>321 Property</small>
-                            <h4><small>Naperville</small></h4>
-                          </div><!-- /.detail -->
-                          <div class="card-link">
-                            <button class="card-link"><i class="icon-link"></i></button>
-                          </div><!-- /.card-link -->
-                        </div><!-- /.card-footer -->
-                      </figure>
-                    </a>
-                    </div>
-                    <div class="swiper-slide">
-                      <a href="./city-locations.html" class="card-main-link">
-                      <figure>
-                        <img src="assets/images/villa-1.jpg" alt="">
-                        <div class="card-description">
-                          <div class="detail">
-                            <small>321 Property</small>
-                            <h4><small>Naperville</small></h4>
-                          </div><!-- /.detail -->
-                          <div class="card-link">
-                            <button class="card-link"><i class="icon-link"></i></button>
-                          </div><!-- /.card-link -->
-                        </div><!-- /.card-footer -->
-                      </figure>
-                    </a>
-                    </div>
-                   
-                  </div>
-                  <div class="bullets">
-                    <div class="swiper-pagination"></div>
-                  </div>
-                </div>
-              </div><!-- /.container-fluid -->
-            </div><!-- /.explore-cities-swiper -->
-          </section><!-- /.explore-cities -->
-           <section class="our_services">
-            <div class="section-title mb-5">
-              <small>our services</small>
-              <h3 class="mt-4">What We Do?</h3>
-            </div><!-- /.section-title -->
-            <div class="our_services_inner">
-              <div class="container">
+            <div class="featured-properties-tabs mt-5">
+              <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="active theme-btn theme-btn-1 propert-tab-color" id="pills-home-tab"
+                    data-bs-toggle="pill" data-bs-target="#property-type-1" type="button" role="tab"
+                    aria-controls="pills-home" aria-selected="true">Apartment</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="theme-btn theme-btn-1 propert-tab-color" id="pills-profile-tab" data-bs-toggle="pill"
+                    data-bs-target="#property-type-2" type="button" role="tab" aria-controls="pills-profile"
+                    aria-selected="false">Villa</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="theme-btn theme-btn-1 propert-tab-color" id="pills-contact-tab" data-bs-toggle="pill"
+                    data-bs-target="#property-type-3" type="button" role="tab" aria-controls="pills-contact"
+                    aria-selected="false">Studio</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="theme-btn theme-btn-1 propert-tab-color" id="pills-contact-tab" data-bs-toggle="pill"
+                    data-bs-target="#property-type-4" type="button" role="tab" aria-controls="pills-contact"
+                    aria-selected="false">House</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="theme-btn theme-btn-1 propert-tab-color" id="pills-contact-tab" data-bs-toggle="pill"
+                    data-bs-target="#property-type-5" type="button" role="tab" aria-controls="pills-contact"
+                    aria-selected="false">Office</button>
+                </li>
+              </ul>
+            </div><!-- /.featured-properties-tabs -->
+            <div class="tab-content" id="pills-tabContent">
+              <div class="tab-pane fade show active" id="property-type-1" role="tabpanel">
                 <div class="row">
-                  <div class="col-lg-4">
-                    <div class="col-inner">
-                      <div class="card_body">
+                  <div class="col-lg-6 col-xl-4">
+                    <div class="property-card">
+                      <a href="#" class="property-card-link">
                         <figure>
-                        <img src="assets/images/home-1.png" alt="">
-                      </figure>
-                         <h4 class="pb-4">buy a new home</h4>
-                      <p>Discover your dream home effortlessly. Explore diverse properties and expert guidance for a seamless buying experience.</p>
-                      </div><!-- /.card_body -->
-                      <a href="" class="theme-btn_lg theme-btn-2 theme-btn-ico"><span>Learn More</span><i class="icon-link"></i></a>
-                    </div><!-- /.col-inner -->
-                  </div><!-- /.col-lg-4 -->
-                  <div class="col-lg-4">
-                    <div class="col-inner">
-                      <div class="card_body">
+                          <img src="assets/images/sdfasdf.jpg" alt="">
+                          <div class="top-position-icons">
+                            <a href="" class="theme-btn theme-btn-2">Featured</a>
+                            <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
+                          </div><!-- /.top-position-icons -->
+                          <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit
+                            amet.</small>
+                        </figure>
+                      </a>
+                      <figcaption>
+                        <a href="" class="property_title">
+                          <h4><small>Casa Lomas de Machalí Machas</small></h4>
+                        </a>
+                        <ul class="pt-3 pb-4">
+                          <li>
+                            <small><i class="icon-bed"></i><span>Beds:</span><b>3</b></small>
+                          </li>
+                          <li><small><i class="icon-bath"></i><span>Baths:</span><b>2</b></small></li>
+                          <li><small><i class="icon-sqft"></i><span>Sqft:</span><b>1150</b></small></li>
+                        </ul>
+                        <div class="price_details pt-4">
+                          <div class="property-seller">
+                            <img src="assets/images/sdfasdf.jpg" alt="">
+                            <small>Arlene McCoy</small>
+                          </div><!-- /.property-seller -->
+                          <h4><small>$4560,00</small></h4>
+                        </div><!-- /.price_details -->
+
+                      </figcaption>
+                    </div><!-- /.property-card -->
+                  </div><!-- /.col-lg-6 -->
+                  <div class="col-lg-6 col-xl-4">
+                    <div class="property-card">
+                      <a href="#" class="property-card-link">
                         <figure>
-                        <img src="assets/images/home-2.png" alt="">
-                      </figure>
-                         <h4 class="pb-4">sell a home</h4>
-                      <p>Sell confidently with expert guidance and effective strategies, showcasing your property's best features for a successful sale.</p>
-                      </div><!-- /.card_body -->
-                      <a href="" class="theme-btn_lg theme-btn-2 theme-btn-ico"><span>Learn More</span><i class="icon-link"></i></a>
-                    </div><!-- /.col-inner -->
-                  </div><!-- /.col-lg-4 -->
-                  <div class="col-lg-4">
-                    <div class="col-inner">
-                      <div class="card_body">
+                          <img src="assets/images/main_hero_section_img.jpg" alt="">
+                          <div class="top-position-icons">
+                            <a href="" class="theme-btn theme-btn-2">Featured</a>
+                            <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
+                          </div><!-- /.top-position-icons -->
+                          <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit
+                            amet.</small>
+                        </figure>
+                      </a>
+                      <figcaption>
+                        <a href="" class="property_title">
+                          <h4><small>Casa Lomas de Machalí Machas</small></h4>
+                        </a>
+                        <ul class="pt-3 pb-4">
+                          <li>
+                            <small><i class="icon-bed"></i><span>Beds:</span><b>3</b></small>
+                          </li>
+                          <li><small><i class="icon-bath"></i><span>Baths:</span><b>2</b></small></li>
+                          <li><small><i class="icon-sqft"></i><span>Sqft:</span><b>1150</b></small></li>
+                        </ul>
+                        <div class="price_details pt-4">
+                          <div class="property-seller">
+                            <img src="assets/images/sdfasdf.jpg" alt="">
+                            <small>Arlene McCoy</small>
+                          </div><!-- /.property-seller -->
+                          <h4><small>$4560,00</small></h4>
+                        </div><!-- /.price_details -->
+
+                      </figcaption>
+                    </div><!-- /.property-card -->
+                  </div><!-- /.col-lg-6 -->
+                  <div class="col-lg-6 col-xl-4">
+                    <div class="property-card">
+                      <a href="#" class="property-card-link">
                         <figure>
-                        <img src="assets/images/home-3.png" alt="">
-                      </figure>
-                         <h4 class="pb-4">rent a home</h4>
-                      <p>Discover your perfect rental effortlessly. Explore a diverse variety of listings tailored precisely to suit your unique lifestyle needs.</p>
-                      </div><!-- /.card_body -->
-                      <a href="" class="theme-btn_lg theme-btn-2 theme-btn-ico"><span>Learn More</span><i class="icon-link"></i></a>
-                    </div><!-- /.col-inner -->
-                  </div><!-- /.col-lg-4 -->
+                          <img src="assets/images/sdfasdf.jpg" alt="">
+                          <div class="top-position-icons">
+                            <a href="" class="theme-btn theme-btn-2">Featured</a>
+                            <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
+                          </div><!-- /.top-position-icons -->
+                          <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit
+                            amet.</small>
+                        </figure>
+                      </a>
+                      <figcaption>
+                        <a href="" class="property_title">
+                          <h4><small>Casa Lomas de Machalí Machas</small></h4>
+                        </a>
+                        <ul class="pt-3 pb-4">
+                          <li>
+                            <small><i class="icon-bed"></i><span>Beds:</span><b>3</b></small>
+                          </li>
+                          <li><small><i class="icon-bath"></i><span>Baths:</span><b>2</b></small></li>
+                          <li><small><i class="icon-sqft"></i><span>Sqft:</span><b>1150</b></small></li>
+                        </ul>
+                        <div class="price_details pt-4">
+                          <div class="property-seller">
+                            <img src="assets/images/sdfasdf.jpg" alt="">
+                            <small>Arlene McCoy</small>
+                          </div><!-- /.property-seller -->
+                          <h4><small>$4560,00</small></h4>
+                        </div><!-- /.price_details -->
+
+                      </figcaption>
+                    </div><!-- /.property-card -->
+                  </div><!-- /.col-lg-6 -->
+                  <div class="col-lg-6 col-xl-4">
+                    <div class="property-card">
+                      <a href="#" class="property-card-link">
+                        <figure>
+                          <img src="assets/images/main_hero_section_img.jpg" alt="">
+                          <div class="top-position-icons">
+                            <a href="" class="theme-btn theme-btn-2">Featured</a>
+                            <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
+                          </div><!-- /.top-position-icons -->
+                          <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit
+                            amet.</small>
+                        </figure>
+                      </a>
+                      <figcaption>
+                        <a href="" class="property_title">
+                          <h4><small>Casa Lomas de Machalí Machas</small></h4>
+                        </a>
+                        <ul class="pt-3 pb-4">
+                          <li>
+                            <small><i class="icon-bed"></i><span>Beds:</span><b>3</b></small>
+                          </li>
+                          <li><small><i class="icon-bath"></i><span>Baths:</span><b>2</b></small></li>
+                          <li><small><i class="icon-sqft"></i><span>Sqft:</span><b>1150</b></small></li>
+                        </ul>
+                        <div class="price_details pt-4">
+                          <div class="property-seller">
+                            <img src="assets/images/sdfasdf.jpg" alt="">
+                            <small>Arlene McCoy</small>
+                          </div><!-- /.property-seller -->
+                          <h4><small>$4560,00</small></h4>
+                        </div><!-- /.price_details -->
+
+                      </figcaption>
+                    </div><!-- /.property-card -->
+                  </div><!-- /.col-lg-6 -->
+                  <div class="col-lg-6 col-xl-4">
+                    <div class="property-card">
+                      <a href="#" class="property-card-link">
+                        <figure>
+                          <img src="assets/images/sdfasdf.jpg" alt="">
+                          <div class="top-position-icons">
+                            <a href="" class="theme-btn theme-btn-2">Featured</a>
+                            <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
+                          </div><!-- /.top-position-icons -->
+                          <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit
+                            amet.</small>
+                        </figure>
+                      </a>
+                      <figcaption>
+                        <a href="" class="property_title">
+                          <h4><small>Casa Lomas de Machalí Machas</small></h4>
+                        </a>
+                        <ul class="pt-3 pb-4">
+                          <li>
+                            <small><i class="icon-bed"></i><span>Beds:</span><b>3</b></small>
+                          </li>
+                          <li><small><i class="icon-bath"></i><span>Baths:</span><b>2</b></small></li>
+                          <li><small><i class="icon-sqft"></i><span>Sqft:</span><b>1150</b></small></li>
+                        </ul>
+                        <div class="price_details pt-4">
+                          <div class="property-seller">
+                            <img src="assets/images/sdfasdf.jpg" alt="">
+                            <small>Arlene McCoy</small>
+                          </div><!-- /.property-seller -->
+                          <h4><small>$4560,00</small></h4>
+                        </div><!-- /.price_details -->
+
+                      </figcaption>
+                    </div><!-- /.property-card -->
+                  </div><!-- /.col-lg-6 -->
+                  <div class="col-lg-6 col-xl-4">
+                    <div class="property-card">
+                      <a href="#" class="property-card-link">
+                        <figure>
+                          <img src="assets/images/main_hero_section_img.jpg" alt="">
+                          <div class="top-position-icons">
+                            <a href="" class="theme-btn theme-btn-2">Featured</a>
+                            <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
+                          </div><!-- /.top-position-icons -->
+                          <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit
+                            amet.</small>
+                        </figure>
+                      </a>
+                      <figcaption>
+                        <a href="" class="property_title">
+                          <h4><small>Casa Lomas de Machalí Machas</small></h4>
+                        </a>
+                        <ul class="pt-3 pb-4">
+                          <li>
+                            <small><i class="icon-bed"></i><span>Beds:</span><b>3</b></small>
+                          </li>
+                          <li><small><i class="icon-bath"></i><span>Baths:</span><b>2</b></small></li>
+                          <li><small><i class="icon-sqft"></i><span>Sqft:</span><b>1150</b></small></li>
+                        </ul>
+                        <div class="price_details pt-4">
+                          <div class="property-seller">
+                            <img src="assets/images/sdfasdf.jpg" alt="">
+                            <small>Arlene McCoy</small>
+                          </div><!-- /.property-seller -->
+                          <h4><small>$4560,00</small></h4>
+                        </div><!-- /.price_details -->
+                      </figcaption>
+                    </div><!-- /.property-card -->
+                  </div><!-- /.col-lg-6 -->
                 </div><!-- /.row -->
-              </div><!-- /.container -->
-            </div><!-- /.our_services_inner -->
-           </section><!-- /.our_services -->
-        </main><!-- /.main-content -->
-        <footer class="footer"></footer><!-- /.footer -->
-    </div><!-- /.site-wrapper -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="assets/js/bootstrap.js"></script>
-    <script src="assets/js/swiper.js"></script>
-    <script src="assets/js/main.js"></script>
+              </div>
+              <div class="tab-pane fade" id="property-type-2" role="tabpanel" aria-labelledby="pills-profile-tab">
+                <div class="row">
+                  <div class="col-lg-6 col-xl-4">
+                    <div class="property-card">
+                      <a href="#" class="property-card-link">
+                        <figure>
+                          <img src="assets/images/villa-1.jpg" alt="">
+                          <div class="top-position-icons">
+                            <a href="" class="theme-btn theme-btn-2">Featured</a>
+                            <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
+                          </div><!-- /.top-position-icons -->
+                          <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit
+                            amet.</small>
+                        </figure>
+                      </a>
+                      <figcaption>
+                        <a href="" class="property_title">
+                          <h4><small>Casa Lomas de Machalí Machas</small></h4>
+                        </a>
+                        <ul class="pt-3 pb-4">
+                          <li>
+                            <small><i class="icon-bed"></i><span>Beds:</span><b>3</b></small>
+                          </li>
+                          <li><small><i class="icon-bath"></i><span>Baths:</span><b>2</b></small></li>
+                          <li><small><i class="icon-sqft"></i><span>Sqft:</span><b>1150</b></small></li>
+                        </ul>
+                        <div class="price_details pt-4">
+                          <div class="property-seller">
+                            <img src="assets/images/sdfasdf.jpg" alt="">
+                            <small>Arlene McCoy</small>
+                          </div><!-- /.property-seller -->
+                          <h4><small>$4560,00</small></h4>
+                        </div><!-- /.price_details -->
+
+                      </figcaption>
+                    </div><!-- /.property-card -->
+                  </div><!-- /.col-lg-6 -->
+                  <div class="col-lg-6 col-xl-4">
+                    <div class="property-card">
+                      <a href="#" class="property-card-link">
+                        <figure>
+                          <img src="assets/images/villa-2.jpg" alt="">
+                          <div class="top-position-icons">
+                            <a href="" class="theme-btn theme-btn-2">Featured</a>
+                            <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
+                          </div><!-- /.top-position-icons -->
+                          <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit
+                            amet.</small>
+                        </figure>
+                      </a>
+                      <figcaption>
+                        <a href="" class="property_title">
+                          <h4><small>Casa Lomas de Machalí Machas</small></h4>
+                        </a>
+                        <ul class="pt-3 pb-4">
+                          <li>
+                            <small><i class="icon-bed"></i><span>Beds:</span><b>3</b></small>
+                          </li>
+                          <li><small><i class="icon-bath"></i><span>Baths:</span><b>2</b></small></li>
+                          <li><small><i class="icon-sqft"></i><span>Sqft:</span><b>1150</b></small></li>
+                        </ul>
+                        <div class="price_details pt-4">
+                          <div class="property-seller">
+                            <img src="assets/images/sdfasdf.jpg" alt="">
+                            <small>Arlene McCoy</small>
+                          </div><!-- /.property-seller -->
+                          <h4><small>$4560,00</small></h4>
+                        </div><!-- /.price_details -->
+
+                      </figcaption>
+                    </div><!-- /.property-card -->
+                  </div><!-- /.col-lg-6 -->
+                  <div class="col-lg-6 col-xl-4">
+                    <div class="property-card">
+                      <a href="#" class="property-card-link">
+                        <figure>
+                          <img src="assets/images/villa-3.jpg" alt="">
+                          <div class="top-position-icons">
+                            <a href="" class="theme-btn theme-btn-2">Featured</a>
+                            <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
+                          </div><!-- /.top-position-icons -->
+                          <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit
+                            amet.</small>
+                        </figure>
+                      </a>
+                      <figcaption>
+                        <a href="" class="property_title">
+                          <h4><small>Casa Lomas de Machalí Machas</small></h4>
+                        </a>
+                        <ul class="pt-3 pb-4">
+                          <li>
+                            <small><i class="icon-bed"></i><span>Beds:</span><b>3</b></small>
+                          </li>
+                          <li><small><i class="icon-bath"></i><span>Baths:</span><b>2</b></small></li>
+                          <li><small><i class="icon-sqft"></i><span>Sqft:</span><b>1150</b></small></li>
+                        </ul>
+                        <div class="price_details pt-4">
+                          <div class="property-seller">
+                            <img src="assets/images/sdfasdf.jpg" alt="">
+                            <small>Arlene McCoy</small>
+                          </div><!-- /.property-seller -->
+                          <h4><small>$4560,00</small></h4>
+                        </div><!-- /.price_details -->
+
+                      </figcaption>
+                    </div><!-- /.property-card -->
+                  </div><!-- /.col-lg-6 -->
+                  <div class="col-lg-6 col-xl-4">
+                    <div class="property-card">
+                      <a href="#" class="property-card-link">
+                        <figure>
+                          <img src="assets/images/villa-1.jpg" alt="">
+                          <div class="top-position-icons">
+                            <a href="" class="theme-btn theme-btn-2">Featured</a>
+                            <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
+                          </div><!-- /.top-position-icons -->
+                          <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit
+                            amet.</small>
+                        </figure>
+                      </a>
+                      <figcaption>
+                        <a href="" class="property_title">
+                          <h4><small>Casa Lomas de Machalí Machas</small></h4>
+                        </a>
+                        <ul class="pt-3 pb-4">
+                          <li>
+                            <small><i class="icon-bed"></i><span>Beds:</span><b>3</b></small>
+                          </li>
+                          <li><small><i class="icon-bath"></i><span>Baths:</span><b>2</b></small></li>
+                          <li><small><i class="icon-sqft"></i><span>Sqft:</span><b>1150</b></small></li>
+                        </ul>
+                        <div class="price_details pt-4">
+                          <div class="property-seller">
+                            <img src="assets/images/sdfasdf.jpg" alt="">
+                            <small>Arlene McCoy</small>
+                          </div><!-- /.property-seller -->
+                          <h4><small>$4560,00</small></h4>
+                        </div><!-- /.price_details -->
+
+                      </figcaption>
+                    </div><!-- /.property-card -->
+                  </div><!-- /.col-lg-6 -->
+                  <div class="col-lg-6 col-xl-4">
+                    <div class="property-card">
+                      <a href="#" class="property-card-link">
+                        <figure>
+                          <img src="assets/images/villa-2.jpg" alt="">
+                          <div class="top-position-icons">
+                            <a href="" class="theme-btn theme-btn-2">Featured</a>
+                            <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
+                          </div><!-- /.top-position-icons -->
+                          <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit
+                            amet.</small>
+                        </figure>
+                      </a>
+                      <figcaption>
+                        <a href="" class="property_title">
+                          <h4><small>Casa Lomas de Machalí Machas</small></h4>
+                        </a>
+                        <ul class="pt-3 pb-4">
+                          <li>
+                            <small><i class="icon-bed"></i><span>Beds:</span><b>3</b></small>
+                          </li>
+                          <li><small><i class="icon-bath"></i><span>Baths:</span><b>2</b></small></li>
+                          <li><small><i class="icon-sqft"></i><span>Sqft:</span><b>1150</b></small></li>
+                        </ul>
+                        <div class="price_details pt-4">
+                          <div class="property-seller">
+                            <img src="assets/images/sdfasdf.jpg" alt="">
+                            <small>Arlene McCoy</small>
+                          </div><!-- /.property-seller -->
+                          <h4><small>$4560,00</small></h4>
+                        </div><!-- /.price_details -->
+
+                      </figcaption>
+                    </div><!-- /.property-card -->
+                  </div><!-- /.col-lg-6 -->
+                  <div class="col-lg-6 col-xl-4">
+                    <div class="property-card">
+                      <a href="#" class="property-card-link">
+                        <figure>
+                          <img src="assets/images/villa-3.jpg" alt="">
+                          <div class="top-position-icons">
+                            <a href="" class="theme-btn theme-btn-2">Featured</a>
+                            <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
+                          </div><!-- /.top-position-icons -->
+                          <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit
+                            amet.</small>
+                        </figure>
+                      </a>
+                      <figcaption>
+                        <a href="" class="property_title">
+                          <h4><small>Casa Lomas de Machalí Machas</small></h4>
+                        </a>
+                        <ul class="pt-3 pb-4">
+                          <li>
+                            <small><i class="icon-bed"></i><span>Beds:</span><b>3</b></small>
+                          </li>
+                          <li><small><i class="icon-bath"></i><span>Baths:</span><b>2</b></small></li>
+                          <li><small><i class="icon-sqft"></i><span>Sqft:</span><b>1150</b></small></li>
+                        </ul>
+                        <div class="price_details pt-4">
+                          <div class="property-seller">
+                            <img src="assets/images/sdfasdf.jpg" alt="">
+                            <small>Arlene McCoy</small>
+                          </div><!-- /.property-seller -->
+                          <h4><small>$4560,00</small></h4>
+                        </div><!-- /.price_details -->
+                      </figcaption>
+                    </div><!-- /.property-card -->
+                  </div><!-- /.col-lg-6 -->
+                </div><!-- /.row -->
+              </div>
+              <div class="tab-pane fade" id="property-type-3" role="tabpanel" aria-labelledby="pills-contact-tab">
+                <div class="row">
+                  <div class="col-lg-6 col-xl-4">
+                    <div class="property-card">
+                      <a href="#" class="property-card-link">
+                        <figure>
+                          <img src="assets/images/sdfasdf.jpg" alt="">
+                          <div class="top-position-icons">
+                            <a href="" class="theme-btn theme-btn-2">Featured</a>
+                            <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
+                          </div><!-- /.top-position-icons -->
+                          <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit
+                            amet.</small>
+                        </figure>
+                      </a>
+                      <figcaption>
+                        <a href="" class="property_title">
+                          <h4><small>Casa Lomas de Machalí Machas</small></h4>
+                        </a>
+                        <ul class="pt-3 pb-4">
+                          <li>
+                            <small><i class="icon-bed"></i><span>Beds:</span><b>3</b></small>
+                          </li>
+                          <li><small><i class="icon-bath"></i><span>Baths:</span><b>2</b></small></li>
+                          <li><small><i class="icon-sqft"></i><span>Sqft:</span><b>1150</b></small></li>
+                        </ul>
+                        <div class="price_details pt-4">
+                          <div class="property-seller">
+                            <img src="assets/images/sdfasdf.jpg" alt="">
+                            <small>Arlene McCoy</small>
+                          </div><!-- /.property-seller -->
+                          <h4><small>$4560,00</small></h4>
+                        </div><!-- /.price_details -->
+
+                      </figcaption>
+                    </div><!-- /.property-card -->
+                  </div><!-- /.col-lg-6 -->
+                  <div class="col-lg-6 col-xl-4">
+                    <div class="property-card">
+                      <a href="#" class="property-card-link">
+                        <figure>
+                          <img src="assets/images/main_hero_section_img.jpg" alt="">
+                          <div class="top-position-icons">
+                            <a href="" class="theme-btn theme-btn-2">Featured</a>
+                            <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
+                          </div><!-- /.top-position-icons -->
+                          <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit
+                            amet.</small>
+                        </figure>
+                      </a>
+                      <figcaption>
+                        <a href="" class="property_title">
+                          <h4><small>Casa Lomas de Machalí Machas</small></h4>
+                        </a>
+                        <ul class="pt-3 pb-4">
+                          <li>
+                            <small><i class="icon-bed"></i><span>Beds:</span><b>3</b></small>
+                          </li>
+                          <li><small><i class="icon-bath"></i><span>Baths:</span><b>2</b></small></li>
+                          <li><small><i class="icon-sqft"></i><span>Sqft:</span><b>1150</b></small></li>
+                        </ul>
+                        <div class="price_details pt-4">
+                          <div class="property-seller">
+                            <img src="assets/images/sdfasdf.jpg" alt="">
+                            <small>Arlene McCoy</small>
+                          </div><!-- /.property-seller -->
+                          <h4><small>$4560,00</small></h4>
+                        </div><!-- /.price_details -->
+
+                      </figcaption>
+                    </div><!-- /.property-card -->
+                  </div><!-- /.col-lg-6 -->
+                  <div class="col-lg-6 col-xl-4">
+                    <div class="property-card">
+                      <a href="#" class="property-card-link">
+                        <figure>
+                          <img src="assets/images/sdfasdf.jpg" alt="">
+                          <div class="top-position-icons">
+                            <a href="" class="theme-btn theme-btn-2">Featured</a>
+                            <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
+                          </div><!-- /.top-position-icons -->
+                          <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit
+                            amet.</small>
+                        </figure>
+                      </a>
+                      <figcaption>
+                        <a href="" class="property_title">
+                          <h4><small>Casa Lomas de Machalí Machas</small></h4>
+                        </a>
+                        <ul class="pt-3 pb-4">
+                          <li>
+                            <small><i class="icon-bed"></i><span>Beds:</span><b>3</b></small>
+                          </li>
+                          <li><small><i class="icon-bath"></i><span>Baths:</span><b>2</b></small></li>
+                          <li><small><i class="icon-sqft"></i><span>Sqft:</span><b>1150</b></small></li>
+                        </ul>
+                        <div class="price_details pt-4">
+                          <div class="property-seller">
+                            <img src="assets/images/sdfasdf.jpg" alt="">
+                            <small>Arlene McCoy</small>
+                          </div><!-- /.property-seller -->
+                          <h4><small>$4560,00</small></h4>
+                        </div><!-- /.price_details -->
+
+                      </figcaption>
+                    </div><!-- /.property-card -->
+                  </div><!-- /.col-lg-6 -->
+                  <div class="col-lg-6 col-xl-4">
+                    <div class="property-card">
+                      <a href="#" class="property-card-link">
+                        <figure>
+                          <img src="assets/images/main_hero_section_img.jpg" alt="">
+                          <div class="top-position-icons">
+                            <a href="" class="theme-btn theme-btn-2">Featured</a>
+                            <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
+                          </div><!-- /.top-position-icons -->
+                          <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit
+                            amet.</small>
+                        </figure>
+                      </a>
+                      <figcaption>
+                        <a href="" class="property_title">
+                          <h4><small>Casa Lomas de Machalí Machas</small></h4>
+                        </a>
+                        <ul class="pt-3 pb-4">
+                          <li>
+                            <small><i class="icon-bed"></i><span>Beds:</span><b>3</b></small>
+                          </li>
+                          <li><small><i class="icon-bath"></i><span>Baths:</span><b>2</b></small></li>
+                          <li><small><i class="icon-sqft"></i><span>Sqft:</span><b>1150</b></small></li>
+                        </ul>
+                        <div class="price_details pt-4">
+                          <div class="property-seller">
+                            <img src="assets/images/sdfasdf.jpg" alt="">
+                            <small>Arlene McCoy</small>
+                          </div><!-- /.property-seller -->
+                          <h4><small>$4560,00</small></h4>
+                        </div><!-- /.price_details -->
+
+                      </figcaption>
+                    </div><!-- /.property-card -->
+                  </div><!-- /.col-lg-6 -->
+                  <div class="col-lg-6 col-xl-4">
+                    <div class="property-card">
+                      <a href="#" class="property-card-link">
+                        <figure>
+                          <img src="assets/images/sdfasdf.jpg" alt="">
+                          <div class="top-position-icons">
+                            <a href="" class="theme-btn theme-btn-2">Featured</a>
+                            <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
+                          </div><!-- /.top-position-icons -->
+                          <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit
+                            amet.</small>
+                        </figure>
+                      </a>
+                      <figcaption>
+                        <a href="" class="property_title">
+                          <h4><small>Casa Lomas de Machalí Machas</small></h4>
+                        </a>
+                        <ul class="pt-3 pb-4">
+                          <li>
+                            <small><i class="icon-bed"></i><span>Beds:</span><b>3</b></small>
+                          </li>
+                          <li><small><i class="icon-bath"></i><span>Baths:</span><b>2</b></small></li>
+                          <li><small><i class="icon-sqft"></i><span>Sqft:</span><b>1150</b></small></li>
+                        </ul>
+                        <div class="price_details pt-4">
+                          <div class="property-seller">
+                            <img src="assets/images/sdfasdf.jpg" alt="">
+                            <small>Arlene McCoy</small>
+                          </div><!-- /.property-seller -->
+                          <h4><small>$4560,00</small></h4>
+                        </div><!-- /.price_details -->
+
+                      </figcaption>
+                    </div><!-- /.property-card -->
+                  </div><!-- /.col-lg-6 -->
+                  <div class="col-lg-6 col-xl-4">
+                    <div class="property-card">
+                      <a href="#" class="property-card-link">
+                        <figure>
+                          <img src="assets/images/main_hero_section_img.jpg" alt="">
+                          <div class="top-position-icons">
+                            <a href="" class="theme-btn theme-btn-2">Featured</a>
+                            <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
+                          </div><!-- /.top-position-icons -->
+                          <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit
+                            amet.</small>
+                        </figure>
+                      </a>
+                      <figcaption>
+                        <a href="" class="property_title">
+                          <h4><small>Casa Lomas de Machalí Machas</small></h4>
+                        </a>
+                        <ul class="pt-3 pb-4">
+                          <li>
+                            <small><i class="icon-bed"></i><span>Beds:</span><b>3</b></small>
+                          </li>
+                          <li><small><i class="icon-bath"></i><span>Baths:</span><b>2</b></small></li>
+                          <li><small><i class="icon-sqft"></i><span>Sqft:</span><b>1150</b></small></li>
+                        </ul>
+                        <div class="price_details pt-4">
+                          <div class="property-seller">
+                            <img src="assets/images/sdfasdf.jpg" alt="">
+                            <small>Arlene McCoy</small>
+                          </div><!-- /.property-seller -->
+                          <h4><small>$4560,00</small></h4>
+                        </div><!-- /.price_details -->
+                      </figcaption>
+                    </div><!-- /.property-card -->
+                  </div><!-- /.col-lg-6 -->
+                </div><!-- /.row -->
+              </div>
+              <div class="tab-pane fade" id="property-type-4" role="tabpanel" aria-labelledby="pills-contact-tab">
+                <div class="row">
+                  <div class="col-lg-6 col-xl-4">
+                    <div class="property-card">
+                      <a href="#" class="property-card-link">
+                        <figure>
+                          <img src="assets/images/sdfasdf.jpg" alt="">
+                          <div class="top-position-icons">
+                            <a href="" class="theme-btn theme-btn-2">Featured</a>
+                            <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
+                          </div><!-- /.top-position-icons -->
+                          <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit
+                            amet.</small>
+                        </figure>
+                      </a>
+                      <figcaption>
+                        <a href="" class="property_title">
+                          <h4><small>Casa Lomas de Machalí Machas</small></h4>
+                        </a>
+                        <ul class="pt-3 pb-4">
+                          <li>
+                            <small><i class="icon-bed"></i><span>Beds:</span><b>3</b></small>
+                          </li>
+                          <li><small><i class="icon-bath"></i><span>Baths:</span><b>2</b></small></li>
+                          <li><small><i class="icon-sqft"></i><span>Sqft:</span><b>1150</b></small></li>
+                        </ul>
+                        <div class="price_details pt-4">
+                          <div class="property-seller">
+                            <img src="assets/images/sdfasdf.jpg" alt="">
+                            <small>Arlene McCoy</small>
+                          </div><!-- /.property-seller -->
+                          <h4><small>$4560,00</small></h4>
+                        </div><!-- /.price_details -->
+
+                      </figcaption>
+                    </div><!-- /.property-card -->
+                  </div><!-- /.col-lg-6 -->
+                  <div class="col-lg-6 col-xl-4">
+                    <div class="property-card">
+                      <a href="#" class="property-card-link">
+                        <figure>
+                          <img src="assets/images/main_hero_section_img.jpg" alt="">
+                          <div class="top-position-icons">
+                            <a href="" class="theme-btn theme-btn-2">Featured</a>
+                            <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
+                          </div><!-- /.top-position-icons -->
+                          <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit
+                            amet.</small>
+                        </figure>
+                      </a>
+                      <figcaption>
+                        <a href="" class="property_title">
+                          <h4><small>Casa Lomas de Machalí Machas</small></h4>
+                        </a>
+                        <ul class="pt-3 pb-4">
+                          <li>
+                            <small><i class="icon-bed"></i><span>Beds:</span><b>3</b></small>
+                          </li>
+                          <li><small><i class="icon-bath"></i><span>Baths:</span><b>2</b></small></li>
+                          <li><small><i class="icon-sqft"></i><span>Sqft:</span><b>1150</b></small></li>
+                        </ul>
+                        <div class="price_details pt-4">
+                          <div class="property-seller">
+                            <img src="assets/images/sdfasdf.jpg" alt="">
+                            <small>Arlene McCoy</small>
+                          </div><!-- /.property-seller -->
+                          <h4><small>$4560,00</small></h4>
+                        </div><!-- /.price_details -->
+
+                      </figcaption>
+                    </div><!-- /.property-card -->
+                  </div><!-- /.col-lg-6 -->
+                  <div class="col-lg-6 col-xl-4">
+                    <div class="property-card">
+                      <a href="#" class="property-card-link">
+                        <figure>
+                          <img src="assets/images/sdfasdf.jpg" alt="">
+                          <div class="top-position-icons">
+                            <a href="" class="theme-btn theme-btn-2">Featured</a>
+                            <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
+                          </div><!-- /.top-position-icons -->
+                          <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit
+                            amet.</small>
+                        </figure>
+                      </a>
+                      <figcaption>
+                        <a href="" class="property_title">
+                          <h4><small>Casa Lomas de Machalí Machas</small></h4>
+                        </a>
+                        <ul class="pt-3 pb-4">
+                          <li>
+                            <small><i class="icon-bed"></i><span>Beds:</span><b>3</b></small>
+                          </li>
+                          <li><small><i class="icon-bath"></i><span>Baths:</span><b>2</b></small></li>
+                          <li><small><i class="icon-sqft"></i><span>Sqft:</span><b>1150</b></small></li>
+                        </ul>
+                        <div class="price_details pt-4">
+                          <div class="property-seller">
+                            <img src="assets/images/sdfasdf.jpg" alt="">
+                            <small>Arlene McCoy</small>
+                          </div><!-- /.property-seller -->
+                          <h4><small>$4560,00</small></h4>
+                        </div><!-- /.price_details -->
+
+                      </figcaption>
+                    </div><!-- /.property-card -->
+                  </div><!-- /.col-lg-6 -->
+                  <div class="col-lg-6 col-xl-4">
+                    <div class="property-card">
+                      <a href="#" class="property-card-link">
+                        <figure>
+                          <img src="assets/images/main_hero_section_img.jpg" alt="">
+                          <div class="top-position-icons">
+                            <a href="" class="theme-btn theme-btn-2">Featured</a>
+                            <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
+                          </div><!-- /.top-position-icons -->
+                          <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit
+                            amet.</small>
+                        </figure>
+                      </a>
+                      <figcaption>
+                        <a href="" class="property_title">
+                          <h4><small>Casa Lomas de Machalí Machas</small></h4>
+                        </a>
+                        <ul class="pt-3 pb-4">
+                          <li>
+                            <small><i class="icon-bed"></i><span>Beds:</span><b>3</b></small>
+                          </li>
+                          <li><small><i class="icon-bath"></i><span>Baths:</span><b>2</b></small></li>
+                          <li><small><i class="icon-sqft"></i><span>Sqft:</span><b>1150</b></small></li>
+                        </ul>
+                        <div class="price_details pt-4">
+                          <div class="property-seller">
+                            <img src="assets/images/sdfasdf.jpg" alt="">
+                            <small>Arlene McCoy</small>
+                          </div><!-- /.property-seller -->
+                          <h4><small>$4560,00</small></h4>
+                        </div><!-- /.price_details -->
+
+                      </figcaption>
+                    </div><!-- /.property-card -->
+                  </div><!-- /.col-lg-6 -->
+                  <div class="col-lg-6 col-xl-4">
+                    <div class="property-card">
+                      <a href="#" class="property-card-link">
+                        <figure>
+                          <img src="assets/images/sdfasdf.jpg" alt="">
+                          <div class="top-position-icons">
+                            <a href="" class="theme-btn theme-btn-2">Featured</a>
+                            <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
+                          </div><!-- /.top-position-icons -->
+                          <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit
+                            amet.</small>
+                        </figure>
+                      </a>
+                      <figcaption>
+                        <a href="" class="property_title">
+                          <h4><small>Casa Lomas de Machalí Machas</small></h4>
+                        </a>
+                        <ul class="pt-3 pb-4">
+                          <li>
+                            <small><i class="icon-bed"></i><span>Beds:</span><b>3</b></small>
+                          </li>
+                          <li><small><i class="icon-bath"></i><span>Baths:</span><b>2</b></small></li>
+                          <li><small><i class="icon-sqft"></i><span>Sqft:</span><b>1150</b></small></li>
+                        </ul>
+                        <div class="price_details pt-4">
+                          <div class="property-seller">
+                            <img src="assets/images/sdfasdf.jpg" alt="">
+                            <small>Arlene McCoy</small>
+                          </div><!-- /.property-seller -->
+                          <h4><small>$4560,00</small></h4>
+                        </div><!-- /.price_details -->
+
+                      </figcaption>
+                    </div><!-- /.property-card -->
+                  </div><!-- /.col-lg-6 -->
+                  <div class="col-lg-6 col-xl-4">
+                    <div class="property-card">
+                      <a href="#" class="property-card-link">
+                        <figure>
+                          <img src="assets/images/main_hero_section_img.jpg" alt="">
+                          <div class="top-position-icons">
+                            <a href="" class="theme-btn theme-btn-2">Featured</a>
+                            <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
+                          </div><!-- /.top-position-icons -->
+                          <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit
+                            amet.</small>
+                        </figure>
+                      </a>
+                      <figcaption>
+                        <a href="" class="property_title">
+                          <h4><small>Casa Lomas de Machalí Machas</small></h4>
+                        </a>
+                        <ul class="pt-3 pb-4">
+                          <li>
+                            <small><i class="icon-bed"></i><span>Beds:</span><b>3</b></small>
+                          </li>
+                          <li><small><i class="icon-bath"></i><span>Baths:</span><b>2</b></small></li>
+                          <li><small><i class="icon-sqft"></i><span>Sqft:</span><b>1150</b></small></li>
+                        </ul>
+                        <div class="price_details pt-4">
+                          <div class="property-seller">
+                            <img src="assets/images/sdfasdf.jpg" alt="">
+                            <small>Arlene McCoy</small>
+                          </div><!-- /.property-seller -->
+                          <h4><small>$4560,00</small></h4>
+                        </div><!-- /.price_details -->
+                      </figcaption>
+                    </div><!-- /.property-card -->
+                  </div><!-- /.col-lg-6 -->
+                </div><!-- /.row -->
+              </div>
+              <div class="tab-pane fade" id="property-type-5" role="tabpanel" aria-labelledby="pills-contact-tab">
+                <div class="row">
+                  <div class="col-lg-6 col-xl-4">
+                    <div class="property-card">
+                      <a href="#" class="property-card-link">
+                        <figure>
+                          <img src="assets/images/sdfasdf.jpg" alt="">
+                          <div class="top-position-icons">
+                            <a href="" class="theme-btn theme-btn-2">Featured</a>
+                            <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
+                          </div><!-- /.top-position-icons -->
+                          <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit
+                            amet.</small>
+                        </figure>
+                      </a>
+                      <figcaption>
+                        <a href="" class="property_title">
+                          <h4><small>Casa Lomas de Machalí Machas</small></h4>
+                        </a>
+                        <ul class="pt-3 pb-4">
+                          <li>
+                            <small><i class="icon-bed"></i><span>Beds:</span><b>3</b></small>
+                          </li>
+                          <li><small><i class="icon-bath"></i><span>Baths:</span><b>2</b></small></li>
+                          <li><small><i class="icon-sqft"></i><span>Sqft:</span><b>1150</b></small></li>
+                        </ul>
+                        <div class="price_details pt-4">
+                          <div class="property-seller">
+                            <img src="assets/images/sdfasdf.jpg" alt="">
+                            <small>Arlene McCoy</small>
+                          </div><!-- /.property-seller -->
+                          <h4><small>$4560,00</small></h4>
+                        </div><!-- /.price_details -->
+
+                      </figcaption>
+                    </div><!-- /.property-card -->
+                  </div><!-- /.col-lg-6 -->
+                  <div class="col-lg-6 col-xl-4">
+                    <div class="property-card">
+                      <a href="#" class="property-card-link">
+                        <figure>
+                          <img src="assets/images/main_hero_section_img.jpg" alt="">
+                          <div class="top-position-icons">
+                            <a href="" class="theme-btn theme-btn-2">Featured</a>
+                            <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
+                          </div><!-- /.top-position-icons -->
+                          <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit
+                            amet.</small>
+                        </figure>
+                      </a>
+                      <figcaption>
+                        <a href="" class="property_title">
+                          <h4><small>Casa Lomas de Machalí Machas</small></h4>
+                        </a>
+                        <ul class="pt-3 pb-4">
+                          <li>
+                            <small><i class="icon-bed"></i><span>Beds:</span><b>3</b></small>
+                          </li>
+                          <li><small><i class="icon-bath"></i><span>Baths:</span><b>2</b></small></li>
+                          <li><small><i class="icon-sqft"></i><span>Sqft:</span><b>1150</b></small></li>
+                        </ul>
+                        <div class="price_details pt-4">
+                          <div class="property-seller">
+                            <img src="assets/images/sdfasdf.jpg" alt="">
+                            <small>Arlene McCoy</small>
+                          </div><!-- /.property-seller -->
+                          <h4><small>$4560,00</small></h4>
+                        </div><!-- /.price_details -->
+
+                      </figcaption>
+                    </div><!-- /.property-card -->
+                  </div><!-- /.col-lg-6 -->
+                  <div class="col-lg-6 col-xl-4">
+                    <div class="property-card">
+                      <a href="#" class="property-card-link">
+                        <figure>
+                          <img src="assets/images/sdfasdf.jpg" alt="">
+                          <div class="top-position-icons">
+                            <a href="" class="theme-btn theme-btn-2">Featured</a>
+                            <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
+                          </div><!-- /.top-position-icons -->
+                          <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit
+                            amet.</small>
+                        </figure>
+                      </a>
+                      <figcaption>
+                        <a href="" class="property_title">
+                          <h4><small>Casa Lomas de Machalí Machas</small></h4>
+                        </a>
+                        <ul class="pt-3 pb-4">
+                          <li>
+                            <small><i class="icon-bed"></i><span>Beds:</span><b>3</b></small>
+                          </li>
+                          <li><small><i class="icon-bath"></i><span>Baths:</span><b>2</b></small></li>
+                          <li><small><i class="icon-sqft"></i><span>Sqft:</span><b>1150</b></small></li>
+                        </ul>
+                        <div class="price_details pt-4">
+                          <div class="property-seller">
+                            <img src="assets/images/sdfasdf.jpg" alt="">
+                            <small>Arlene McCoy</small>
+                          </div><!-- /.property-seller -->
+                          <h4><small>$4560,00</small></h4>
+                        </div><!-- /.price_details -->
+
+                      </figcaption>
+                    </div><!-- /.property-card -->
+                  </div><!-- /.col-lg-6 -->
+                  <div class="col-lg-6 col-xl-4">
+                    <div class="property-card">
+                      <a href="#" class="property-card-link">
+                        <figure>
+                          <img src="assets/images/main_hero_section_img.jpg" alt="">
+                          <div class="top-position-icons">
+                            <a href="" class="theme-btn theme-btn-2">Featured</a>
+                            <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
+                          </div><!-- /.top-position-icons -->
+                          <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit
+                            amet.</small>
+                        </figure>
+                      </a>
+                      <figcaption>
+                        <a href="" class="property_title">
+                          <h4><small>Casa Lomas de Machalí Machas</small></h4>
+                        </a>
+                        <ul class="pt-3 pb-4">
+                          <li>
+                            <small><i class="icon-bed"></i><span>Beds:</span><b>3</b></small>
+                          </li>
+                          <li><small><i class="icon-bath"></i><span>Baths:</span><b>2</b></small></li>
+                          <li><small><i class="icon-sqft"></i><span>Sqft:</span><b>1150</b></small></li>
+                        </ul>
+                        <div class="price_details pt-4">
+                          <div class="property-seller">
+                            <img src="assets/images/sdfasdf.jpg" alt="">
+                            <small>Arlene McCoy</small>
+                          </div><!-- /.property-seller -->
+                          <h4><small>$4560,00</small></h4>
+                        </div><!-- /.price_details -->
+
+                      </figcaption>
+                    </div><!-- /.property-card -->
+                  </div><!-- /.col-lg-6 -->
+                  <div class="col-lg-6 col-xl-4">
+                    <div class="property-card">
+                      <a href="#" class="property-card-link">
+                        <figure>
+                          <img src="assets/images/sdfasdf.jpg" alt="">
+                          <div class="top-position-icons">
+                            <a href="" class="theme-btn theme-btn-2">Featured</a>
+                            <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
+                          </div><!-- /.top-position-icons -->
+                          <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit
+                            amet.</small>
+                        </figure>
+                      </a>
+                      <figcaption>
+                        <a href="" class="property_title">
+                          <h4><small>Casa Lomas de Machalí Machas</small></h4>
+                        </a>
+                        <ul class="pt-3 pb-4">
+                          <li>
+                            <small><i class="icon-bed"></i><span>Beds:</span><b>3</b></small>
+                          </li>
+                          <li><small><i class="icon-bath"></i><span>Baths:</span><b>2</b></small></li>
+                          <li><small><i class="icon-sqft"></i><span>Sqft:</span><b>1150</b></small></li>
+                        </ul>
+                        <div class="price_details pt-4">
+                          <div class="property-seller">
+                            <img src="assets/images/sdfasdf.jpg" alt="">
+                            <small>Arlene McCoy</small>
+                          </div><!-- /.property-seller -->
+                          <h4><small>$4560,00</small></h4>
+                        </div><!-- /.price_details -->
+
+                      </figcaption>
+                    </div><!-- /.property-card -->
+                  </div><!-- /.col-lg-6 -->
+                  <div class="col-lg-6 col-xl-4">
+                    <div class="property-card">
+                      <a href="#" class="property-card-link">
+                        <figure>
+                          <img src="assets/images/main_hero_section_img.jpg" alt="">
+                          <div class="top-position-icons">
+                            <a href="" class="theme-btn theme-btn-2">Featured</a>
+                            <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
+                          </div><!-- /.top-position-icons -->
+                          <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit
+                            amet.</small>
+                        </figure>
+                      </a>
+                      <figcaption>
+                        <a href="" class="property_title">
+                          <h4><small>Casa Lomas de Machalí Machas</small></h4>
+                        </a>
+                        <ul class="pt-3 pb-4">
+                          <li>
+                            <small><i class="icon-bed"></i><span>Beds:</span><b>3</b></small>
+                          </li>
+                          <li><small><i class="icon-bath"></i><span>Baths:</span><b>2</b></small></li>
+                          <li><small><i class="icon-sqft"></i><span>Sqft:</span><b>1150</b></small></li>
+                        </ul>
+                        <div class="price_details pt-4">
+                          <div class="property-seller">
+                            <img src="assets/images/sdfasdf.jpg" alt="">
+                            <small>Arlene McCoy</small>
+                          </div><!-- /.property-seller -->
+                          <h4><small>$4560,00</small></h4>
+                        </div><!-- /.price_details -->
+                      </figcaption>
+                    </div><!-- /.property-card -->
+                  </div><!-- /.col-lg-6 -->
+                </div><!-- /.row -->
+              </div>
+            </div>
+            <div class="view-all-properties just-center">
+              <a href="" class="theme-btn_lg theme-btn-2 theme-btn-ico"><span>View All Properties</span><i
+                  class="icon-link"></i></a>
+            </div><!-- /.view-all-properties -->
+          </div><!-- /.container -->
+        </div><!-- /.featured_properties_inner -->
+      </section><!-- /.featured_properties -->
+      <section class="explore-cities">
+        <div class="section-title mb-5">
+          <small>Explore Cities</small>
+          <h3 class="mt-4">Our Location For You</h3>
+        </div><!-- /.section-title -->
+        <div class="explore-cities-swiper">
+          <div class="container-fluid">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="./city-locations.html" class="card-main-link">
+                    <figure>
+                      <img src="assets/images/explore_cities_1.jpg" alt="">
+                      <div class="card-description">
+                        <div class="detail">
+                          <small>321 Property</small>
+                          <h4><small>Naperville</small></h4>
+                        </div><!-- /.detail -->
+                        <div class="card-link">
+                          <button class="card-link"><i class="icon-link"></i></button>
+                        </div><!-- /.card-link -->
+                      </div><!-- /.card-footer -->
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="./city-locations.html" class="card-main-link">
+                    <figure>
+                      <img src="assets/images/explore_cities_2.jpg" alt="">
+                      <div class="card-description">
+                        <div class="detail">
+                          <small>321 Property</small>
+                          <h4><small>pembroke pines</small></h4>
+                        </div><!-- /.detail -->
+                        <div class="card-link">
+                          <button class="card-link"><i class="icon-link"></i></button>
+                        </div><!-- /.card-link -->
+                      </div><!-- /.card-footer -->
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="./city-locations.html" class="card-main-link">
+                    <figure>
+                      <img src="assets/images/explore_cities_3.jpg" alt="">
+                      <div class="card-description">
+                        <div class="detail">
+                          <small>321 Property</small>
+                          <h4><small>toledo</small></h4>
+                        </div><!-- /.detail -->
+                        <div class="card-link">
+                          <button class="card-link"><i class="icon-link"></i></button>
+                        </div><!-- /.card-link -->
+                      </div><!-- /.card-footer -->
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="./city-locations.html" class="card-main-link">
+                    <figure>
+                      <img src="assets/images/explore_cities_4.jpg" alt="">
+                      <div class="card-description">
+                        <div class="detail">
+                          <small>321 Property</small>
+                          <h4><small>orange</small></h4>
+                        </div><!-- /.detail -->
+                        <div class="card-link">
+                          <button class="card-link"><i class="icon-link"></i></button>
+                        </div><!-- /.card-link -->
+                      </div><!-- /.card-footer -->
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="./city-locations.html" class="card-main-link">
+                    <figure>
+                      <img src="assets/images/explore_cities_5.jpg" alt="">
+                      <div class="card-description">
+                        <div class="detail">
+                          <small>321 Property</small>
+                          <h4><small>fairfield</small></h4>
+                        </div><!-- /.detail -->
+                        <div class="card-link">
+                          <button class="card-link"><i class="icon-link"></i></button>
+                        </div><!-- /.card-link -->
+                      </div><!-- /.card-footer -->
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="./city-locations.html" class="card-main-link">
+                    <figure>
+                      <img src="assets/images/explore_cities_6.jpg" alt="">
+                      <div class="card-description">
+                        <div class="detail">
+                          <small>321 Property</small>
+                          <h4><small>naperville</small></h4>
+                        </div><!-- /.detail -->
+                        <div class="card-link">
+                          <button class="card-link"><i class="icon-link"></i></button>
+                        </div><!-- /.card-link -->
+                      </div><!-- /.card-footer -->
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="./city-locations.html" class="card-main-link">
+                    <figure>
+                      <img src="assets/images/explore_cities_7.jpg" alt="">
+                      <div class="card-description">
+                        <div class="detail">
+                          <small>321 Property</small>
+                          <h4><small>austin</small></h4>
+                        </div><!-- /.detail -->
+                        <div class="card-link">
+                          <button class="card-link"><i class="icon-link"></i></button>
+                        </div><!-- /.card-link -->
+                      </div><!-- /.card-footer -->
+                    </figure>
+                  </a>
+                </div>
+              </div>
+              <div class="bullets">
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div><!-- /.container-fluid -->
+        </div><!-- /.explore-cities-swiper -->
+      </section><!-- /.explore-cities -->
+      <section class="our_services">
+        <div class="section-title mb-5">
+          <small>our services</small>
+          <h3 class="mt-4">What We Do?</h3>
+        </div><!-- /.section-title -->
+        <div class="our_services_inner">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="col-inner">
+                  <div class="card_body">
+                    <figure>
+                      <img src="assets/images/home-1.png" alt="">
+                    </figure>
+                    <h4 class="pb-4">buy a new home</h4>
+                    <p>Discover your dream home effortlessly. Explore diverse properties and expert guidance for a
+                      seamless buying experience.</p>
+                  </div><!-- /.card_body -->
+                  <a href="" class="theme-btn_lg theme-btn-2 theme-btn-ico"><span>Learn More</span><i
+                      class="icon-link"></i></a>
+                </div><!-- /.col-inner -->
+              </div><!-- /.col-lg-4 -->
+              <div class="col-lg-4">
+                <div class="col-inner">
+                  <div class="card_body">
+                    <figure>
+                      <img src="assets/images/home-2.png" alt="">
+                    </figure>
+                    <h4 class="pb-4">sell a home</h4>
+                    <p>Sell confidently with expert guidance and effective strategies, showcasing your property's best
+                      features for a successful sale.</p>
+                  </div><!-- /.card_body -->
+                  <a href="" class="theme-btn_lg theme-btn-2 theme-btn-ico"><span>Learn More</span><i
+                      class="icon-link"></i></a>
+                </div><!-- /.col-inner -->
+              </div><!-- /.col-lg-4 -->
+              <div class="col-lg-4">
+                <div class="col-inner">
+                  <div class="card_body">
+                    <figure>
+                      <img src="assets/images/home-3.png" alt="">
+                    </figure>
+                    <h4 class="pb-4">rent a home</h4>
+                    <p>Discover your perfect rental effortlessly. Explore a diverse variety of listings tailored
+                      precisely to suit your unique lifestyle needs.</p>
+                  </div><!-- /.card_body -->
+                  <a href="" class="theme-btn_lg theme-btn-2 theme-btn-ico"><span>Learn More</span><i
+                      class="icon-link"></i></a>
+                </div><!-- /.col-inner -->
+              </div><!-- /.col-lg-4 -->
+            </div><!-- /.row -->
+          </div><!-- /.container -->
+        </div><!-- /.our_services_inner -->
+      </section><!-- /.our_services -->
+      <section class="our_benefit">
+        <div class="container-fluid">
+          <div class="our_benefit_inner">
+            <div class="partial-container-right">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="col-inner">
+                    <figure><img src="assets/images/main_hero_section_img.jpg" alt=""></figure>
+                  </div><!-- /.col-inner -->
+                </div><!-- /.col-lg-6 -->
+                <div class="col-lg-5 offset-lg-1">
+                  <div class="col-inner our_benefit_content">
+                     <div class="section-title mb-4">
+                    <small>our benefit</small>
+                    <h3 class="mt-4">why choose EliteHomes</h3>
+                  </div><!-- /.section-title -->
+                  <p>Our seasoned team excels in real estate with years of successful market
+                    navigation, offering informed decisions and optimal results.</p>
+                  </div><!-- /.col-inner -->
+                </div><!-- /.col-lg-5 -->
+              </div><!-- /.row -->
+            </div><!-- /.partial-container-right -->
+          </div><!-- /.our_benefit_inner -->
+        </div><!-- /.container-fluid -->
+      </section><!-- /.our_benefit -->
+    </main><!-- /.main-content -->
+    <footer class="footer"></footer><!-- /.footer -->
+  </div><!-- /.site-wrapper -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="assets/js/bootstrap.js"></script>
+  <script src="assets/js/swiper.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
+
 </html>

@@ -1,3 +1,6 @@
+
+
+
 window.addEventListener("load", function () {
   // Add delay before triggering "loaded"
   setTimeout(() => {
@@ -83,13 +86,18 @@ var swiper = new Swiper(".mySwiper", {
 
 
 
-let main_hero = document.querySelector("#main_hero");
-let sect = document.querySelector("#wrapper");
 
 
-let wrapperHeight = sect.offsetHeight / 1;
-
-main_hero.style.marginBottom = wrapperHeight + "px";
 
 
-// sect.style.paddingTop = wrapperHeight + "px";
+// popover JS initialization
+window.addEventListener("load", function () {
+const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
+const popoverList = [...popoverTriggerList].map(popoverTriggerEl =>
+  new bootstrap.Popover(popoverTriggerEl, {
+    trigger: 'hover',
+    html: true,
+  })
+);
+});
+

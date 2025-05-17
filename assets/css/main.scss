@@ -372,6 +372,7 @@
 
     h4 {
         font-size: clamp(1rem, 1vw, 2rem);
+        text-transform: capitalize;
     }
 
     .card-link {
@@ -442,58 +443,6 @@
 
 
 
-
-
-// dasfsa
-.map-hero {
-    position: relative;
-
-    img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        z-index: 1;
-    }
-
-    .main_img {
-        width: 400px;
-        height: 400px;
-        object-fit: cover;
-        display: none;
-    }
-
-    svg {
-        position: absolute;
-        top: 0;
-        right: 0;
-        z-index: 3;
-        height: 100%;
-
-        .location_btn {
-            cursor: pointer;
-
-            &:hover {
-                fill: red;
-            }
-        }
-
-
-    }
-
-    &::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: $universal-color-1;
-        opacity: .5;
-    }
-
-
-}
-
 .our_services {
     padding-bottom: $section-space-md;
 
@@ -529,7 +478,7 @@
 
         p {
             display: -webkit-box;
-            -webkit-line-clamp: 3;
+            -webkit-line-clamp: 4;
             -webkit-box-orient: vertical;
             overflow: hidden;
             text-transform: ellipsis;
@@ -562,6 +511,100 @@
 }
 
 
+
+
+
+section.our_benefit{
+    padding-bottom: $section-space-md;
+    .our_benefit_inner{
+        background-color: $theme-color-2;
+        border-radius: 25px;
+        .col-inner{
+            height: 100%;
+        }
+        figure{
+            height: 100%;
+            width: 100%;
+            aspect-ratio: 1/1;
+            border-radius: 25px 0 0 25px;
+            overflow: hidden;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .our_benefit_content{
+            padding: 5rem 0;
+        }
+        .section-title{
+            align-items: flex-start;
+        }
+    }
+}
+
+
+
+// city-locations
+.map-hero {
+    position: relative;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 1;
+    }
+    svg {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 3;
+        height: 100%;
+
+        .location_btn {
+            cursor: pointer;
+
+            &:hover {
+                fill: red;
+            }
+        }
+       
+
+
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $universal-color-1;
+        opacity: .5;
+    }
+
+
+}
+     .map_images{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        height: 100%;
+        .map_property_content{
+            background-color: $universal-color-2;
+            // height: 100%;
+            // min-width: 300px;
+            // padding: 1rem;
+        }
+            img{
+                width: 100%;
+                min-height: 100%;
+                border-radius: 10px;
+                object-fit: cover;
+            }
+        }
 
 
 @import './partials/mediaqueries';
