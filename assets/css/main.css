@@ -2,8 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @font-face {
   font-family: "icomoon";
-  src: url("fonts/icomoon.eot?ckc1en");
-  src: url("fonts/icomoon.eot?ckc1en#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?ckc1en") format("truetype"), url("fonts/icomoon.woff?ckc1en") format("woff"), url("fonts/icomoon.svg?ckc1en#icomoon") format("svg");
+  src: url("fonts/icomoon.eot?xlsjvi");
+  src: url("fonts/icomoon.eot?xlsjvi#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?xlsjvi") format("truetype"), url("fonts/icomoon.woff?xlsjvi") format("woff"), url("fonts/icomoon.svg?xlsjvi#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -38,36 +38,48 @@
   content: "\e903";
 }
 
-.icon-ham_btn:before {
+.icon-customized-solutions:before {
   content: "\e904";
 }
 
-.icon-link:before {
+.icon-ham_btn:before {
   content: "\e905";
 }
 
-.icon-location:before {
+.icon-link:before {
   content: "\e906";
 }
 
-.icon-login:before {
+.icon-location:before {
   content: "\e907";
 }
 
-.icon-search:before {
+.icon-login:before {
   content: "\e908";
 }
 
-.icon-search_location:before {
+.icon-proven-expertise:before {
   content: "\e909";
 }
 
-.icon-sqft:before {
+.icon-search:before {
   content: "\e90a";
 }
 
-.icon-submit_property:before {
+.icon-search_location:before {
   content: "\e90b";
+}
+
+.icon-sqft:before {
+  content: "\e90c";
+}
+
+.icon-submit_property:before {
+  content: "\e90d";
+}
+
+.icon-transparent-partnerships:before {
+  content: "\e90e";
 }
 
 /*!
@@ -12048,7 +12060,7 @@ body {
 }
 
 .partial-container-right {
-  max-width: calc((1360px) + 50% - 1360px / 2);
+  max-width: calc((1320px) + 50% - 1320px / 2);
   padding-right: 1rem;
   margin-right: auto;
 }
@@ -12467,11 +12479,6 @@ ul.property-map-rooms li small i, ul.property-map-rooms li .small i {
   color: #1563df;
 }
 
-.main_hero_section {
-  padding-top: 5rem;
-  padding-bottom: 8rem;
-}
-
 .back-to-top {
   background-color: #ffffff;
   width: 3rem;
@@ -12489,6 +12496,11 @@ ul.property-map-rooms li small i, ul.property-map-rooms li .small i {
 .back-to-top i {
   color: #1563df;
   font-size: 1.3rem;
+}
+
+.main_hero_section {
+  padding-top: 5rem;
+  padding-bottom: 8rem;
 }
 
 .main_hero_section_wrapper {
@@ -12531,7 +12543,7 @@ ul.property-map-rooms li small i, ul.property-map-rooms li .small i {
   width: 100%;
   height: 100%;
   background-color: #000000;
-  opacity: 0.3;
+  opacity: 0.6;
   z-index: 2;
 }
 
@@ -12680,16 +12692,30 @@ ul.property-map-rooms li small i, ul.property-map-rooms li .small i {
   padding-bottom: 8rem;
 }
 .our_services .col-inner {
+  height: 100%;
+}
+.our_services .col-inner .service_card {
   border: 1px solid #e2e2e2;
   border-radius: 25px;
   padding: 2rem 1rem;
-  height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
   gap: 2rem;
   transition: all ease-in-out 0.5s;
+}
+.our_services .col-inner .service_card:hover {
+  border: 1px solid #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.our_services .col-inner .service_card:hover figure img {
+  transform: rotateY(360deg);
+}
+.our_services .col-inner .service_card:hover a {
+  padding: 1rem 4rem;
+  background-color: #1563df;
+  color: #ffffff !important;
 }
 .our_services .col-inner .card_body {
   display: flex;
@@ -12717,47 +12743,67 @@ ul.property-map-rooms li small i, ul.property-map-rooms li .small i {
   color: #000000 !important;
   border: 1px solid #1563df;
 }
-.our_services .col-inner:hover {
-  border: 1px solid #ffffff;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-.our_services .col-inner:hover figure img {
-  transform: rotateY(360deg);
-}
-.our_services .col-inner:hover a {
-  padding: 1rem 4rem;
-  background-color: #1563df;
-  color: #ffffff !important;
-}
 
 section.our_benefit {
   padding-bottom: 8rem;
 }
-section.our_benefit .our_benefit_inner {
+
+.our_benefit_inner {
   background-color: rgb(243, 247, 253);
   border-radius: 25px;
 }
-section.our_benefit .our_benefit_inner .col-inner {
+.our_benefit_inner .col-inner {
   height: 100%;
 }
-section.our_benefit .our_benefit_inner figure {
+.our_benefit_inner figure {
   height: 100%;
   width: 100%;
   aspect-ratio: 1/1;
   border-radius: 25px 0 0 25px;
   overflow: hidden;
 }
-section.our_benefit .our_benefit_inner figure img {
+.our_benefit_inner figure img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-section.our_benefit .our_benefit_inner .our_benefit_content {
+.our_benefit_inner .our_benefit_content {
   padding: 5rem 0;
 }
-section.our_benefit .our_benefit_inner .section-title {
+.our_benefit_inner .section-title {
   align-items: flex-start;
+}
+
+.benefits {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 20px;
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
+}
+.benefits .benefits_icon {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  color: #1563df;
+  transition: all ease-in-out 0.4s;
+}
+.benefits h4, .benefits .h4 {
+  text-transform: capitalize;
+}
+.benefits:not(:last-child) {
+  margin-bottom: 2rem;
+}
+.benefits:hover {
+  scale: 1.03;
+}
+.benefits:hover .benefits_icon {
+  transform: rotateY(360deg);
+}
+
+section.top_properties {
+  padding-bottom: 8rem;
 }
 
 .map-hero {
@@ -12798,7 +12844,6 @@ section.our_benefit .our_benefit_inner .section-title {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  height: 100%;
 }
 .map_images .map_property_content {
   background-color: #ffffff;
@@ -12840,6 +12885,10 @@ section.our_benefit .our_benefit_inner .section-title {
   }
 }
 @media (max-width: 991px) {
+  .partial-container-right {
+    max-width: 100%;
+    padding: 0;
+  }
   .tab-content_inner {
     flex-direction: column;
     border-radius: 20px;
@@ -12858,8 +12907,22 @@ section.our_benefit .our_benefit_inner .section-title {
     border-radius: 30px;
     padding: 0.5rem 1rem;
   }
+  .our_services .col-inner .service_card {
+    margin-bottom: 2rem;
+  }
+  .benefits {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  .our_benefit_inner figure {
+    border-radius: 25px 25px 0 0;
+  }
+  .our_benefit_inner .our_benefit_content {
+    padding: 5rem 1rem !important;
+  }
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) and (max-width: 767px) {
   .md-hide {
     display: none;
   }

@@ -1,8 +1,7 @@
-
-@media (max-width:1200px){
-    .nav-collapse{
+@media (max-width:1200px) {
+    .nav-collapse {
         position: fixed;
-        top:0;
+        top: 0;
         left: 0;
         width: 300px;
         height: 100vh;
@@ -14,18 +13,20 @@
         overflow-y: auto;
         z-index: 100;
 
-        ul{
+        ul {
             flex-direction: column;
 
-            .nav_links{
-                padding-bottom: 2rem!important;
-                &::after{
-                    content: none!important;
+            .nav_links {
+                padding-bottom: 2rem !important;
+
+                &::after {
+                    content: none !important;
                 }
             }
 
         }
     }
+
     // .dropdown{
     //     .dropdown-toggle:focus + .dropdown-menu {
     //         display: block !important;
@@ -38,50 +39,78 @@
     //         }
     //     }
     // }
-    .element-show{
-        display: block!important;
+    .element-show {
+        display: block !important;
     }
-   
+
 }
 
 
-@media(max-width:991px){
+@media(max-width:991px) {
+    .partial-container-right {
+        max-width: 100%;
+        padding: 0;
+    }
 
-    .tab-content_inner{
+    .tab-content_inner {
         flex-direction: column;
         border-radius: 20px;
-        .main_hero_form_width{
+
+        .main_hero_form_width {
             width: 100%;
 
         }
-        li{
-            &:not(:last-child){
+
+        li {
+            &:not(:last-child) {
                 margin-bottom: 2rem;
-                &::after{
-                    content: none!important;
+
+                &::after {
+                    content: none !important;
                 }
             }
         }
-        .form-element{
+
+        .form-element {
             border: 1px solid $border-color;
             border-radius: 30px;
             padding: .5rem 1rem;
         }
     }
-}
 
-
-@media (max-width:767px){
-    .md-hide{
-        display: none;
+    .our_services {
+        .col-inner {
+            .service_card {
+                margin-bottom: 2rem;
+            }
+        }
     }
-    .right-links-lg{
-        display: block!important;
-    
-        li{
-            margin: 2rem 0;
+        .benefits{
+        display: flex;
+        gap: 1rem;
+        padding: 1rem;}
+    .our_benefit_inner {
+            figure {
+                border-radius: 25px 25px 0 0;
+            }
+
+            .our_benefit_content {
+                padding: 5rem 1rem!important;
+            }
+        }
+
+
+    @media (max-width:767px) {
+        .md-hide {
+            display: none;
+        }
+
+        .right-links-lg {
+            display: block !important;
+
+            li {
+                margin: 2rem 0;
+            }
         }
     }
 }
-
-

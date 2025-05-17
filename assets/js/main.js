@@ -13,7 +13,7 @@ window.addEventListener("load", function () {
         preloader.remove();
       }
     }, 500); // Fade-out duration
-  }, 3000); // Delay after page is fully loaded (in ms)
+  }, 2000); // Delay after page is fully loaded (in ms)
 });
 
 var back_to_top = $('#back_to_top');
@@ -82,6 +82,8 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
+
+let our_benefit_section = document.querySelector("#our_benefit_section");
 
 
 
