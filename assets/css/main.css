@@ -12407,42 +12407,6 @@ ul.property-map-rooms li small i, ul.property-map-rooms li .small i {
   background-color: #e2e2e2;
 }
 
-.pre_loader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ffffff;
-  z-index: 9999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: opacity 1s ease;
-}
-.pre_loader .pre_loader_svg {
-  width: 100px;
-  height: 100px;
-  animation: pulse 1.5s infinite ease-in-out;
-}
-
-@keyframes pulse {
-  0% {
-    transform: rotate(0deg);
-    opacity: 1;
-  }
-  100% {
-    transform: rotate(360deg);
-    opacity: 0.7;
-  }
-}
-.site-wrapper {
-  opacity: 0;
-  transition: opacity 0.5s ease;
-  overflow: hidden;
-  height: 100vh;
-}
-
 .main-navbar {
   background-color: #ffffff;
   position: fixed;
@@ -12730,6 +12694,7 @@ ul.property-map-rooms li small i, ul.property-map-rooms li .small i {
   justify-content: space-between;
   flex-direction: column;
   gap: 2rem;
+  height: 100%;
   transition: all ease-in-out 0.5s;
 }
 .our_services .col-inner .service_card:hover {
@@ -12842,7 +12807,7 @@ section.our_teams .team_card {
 section.our_teams .team_card figure {
   position: relative;
   width: 100%;
-  aspect-ratio: 1/1.1;
+  aspect-ratio: 1/1.2;
   border-radius: 20px;
   overflow: hidden;
   display: flex;
@@ -12916,6 +12881,8 @@ section.trusted_companies {
   padding-bottom: 8rem;
 }
 section.trusted_companies .swiper-slide {
+  display: flex;
+  justify-content: center;
   cursor: pointer;
 }
 section.trusted_companies .swiper-slide .trusted_company_logo {
