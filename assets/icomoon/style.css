@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?jxef2');
-  src:  url('fonts/icomoon.eot?jxef2#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?jxef2') format('truetype'),
-    url('fonts/icomoon.woff?jxef2') format('woff'),
-    url('fonts/icomoon.svg?jxef2#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?3lpsd6');
+  src:  url('fonts/icomoon.eot?3lpsd6#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?3lpsd6') format('truetype'),
+    url('fonts/icomoon.woff?3lpsd6') format('woff'),
+    url('fonts/icomoon.svg?3lpsd6#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -34,51 +34,57 @@
 .icon-bed:before {
   content: "\e902";
 }
-.icon-close_icon:before {
+.icon-call_icon:before {
   content: "\e903";
 }
-.icon-customized-solutions:before {
+.icon-close_icon:before {
   content: "\e904";
 }
-.icon-facebook:before {
+.icon-customized-solutions:before {
   content: "\e905";
 }
-.icon-ham_btn:before {
+.icon-facebook_icon:before {
   content: "\e906";
 }
-.icon-instagram:before {
+.icon-ham_btn:before {
   content: "\e907";
 }
-.icon-link:before {
+.icon-instagram:before {
   content: "\e908";
 }
-.icon-linkedin:before {
+.icon-link:before {
   content: "\e909";
 }
-.icon-location:before {
+.icon-linkedin:before {
   content: "\e90a";
 }
-.icon-login:before {
+.icon-linkedin_icon:before {
   content: "\e90b";
 }
-.icon-proven-expertise:before {
+.icon-location:before {
   content: "\e90c";
 }
-.icon-search:before {
+.icon-login:before {
   content: "\e90d";
 }
-.icon-search_location:before {
+.icon-proven-expertise:before {
   content: "\e90e";
 }
-.icon-sqft:before {
+.icon-search:before {
   content: "\e90f";
 }
-.icon-submit_property:before {
+.icon-search_location:before {
   content: "\e910";
 }
-.icon-transparent-partnerships:before {
+.icon-sqft:before {
   content: "\e911";
 }
-.icon-twitter-x:before {
+.icon-submit_property:before {
   content: "\e912";
+}
+.icon-transparent-partnerships:before {
+  content: "\e913";
+}
+.icon-twitter-x:before {
+  content: "\e914";
 }
