@@ -1,13 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?xlsjvi');
-  src:  url('fonts/icomoon.eot?xlsjvi#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?xlsjvi') format('truetype'),
-    url('fonts/icomoon.woff?xlsjvi') format('woff'),
-    url('fonts/icomoon.svg?xlsjvi#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?jxef2');
+  src:  url('fonts/icomoon.eot?jxef2#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?jxef2') format('truetype'),
+    url('fonts/icomoon.woff?jxef2') format('woff'),
+    url('fonts/icomoon.svg?jxef2#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -43,33 +42,45 @@
 .icon-customized-solutions:before {
   content: "\e904";
 }
-.icon-ham_btn:before {
+.icon-facebook:before {
   content: "\e905";
 }
-.icon-link:before {
+.icon-ham_btn:before {
   content: "\e906";
 }
-.icon-location:before {
+.icon-instagram:before {
   content: "\e907";
 }
-.icon-login:before {
+.icon-link:before {
   content: "\e908";
 }
-.icon-proven-expertise:before {
+.icon-linkedin:before {
   content: "\e909";
 }
-.icon-search:before {
+.icon-location:before {
   content: "\e90a";
 }
-.icon-search_location:before {
+.icon-login:before {
   content: "\e90b";
 }
-.icon-sqft:before {
+.icon-proven-expertise:before {
   content: "\e90c";
 }
-.icon-submit_property:before {
+.icon-search:before {
   content: "\e90d";
 }
-.icon-transparent-partnerships:before {
+.icon-search_location:before {
   content: "\e90e";
+}
+.icon-sqft:before {
+  content: "\e90f";
+}
+.icon-submit_property:before {
+  content: "\e910";
+}
+.icon-transparent-partnerships:before {
+  content: "\e911";
+}
+.icon-twitter-x:before {
+  content: "\e912";
 }

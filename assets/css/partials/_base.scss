@@ -20,6 +20,8 @@ body {
 
 }
 
+
+
 .partial-container-right {
     max-width: calc((#{$container-width}) + (50% - (#{$container-width}/2)));
     padding-right: 1rem;
@@ -80,6 +82,7 @@ p {
 
 .main_logo {
     height: 3.5rem;
+
 }
 
 
@@ -265,7 +268,7 @@ p {
             color: rgb(22, 30, 45);
 
             h4 {
-                font-size: clamp(1.1rem, 2vw, 1.4rem);
+                font-size: clamp(1rem, 2vw, 1.3rem);
             }
 
             &:hover {
@@ -306,6 +309,16 @@ p {
     }
 }
 
+.card-description_position{
+    bottom: 3%;
+    left: 50%;
+    width: 95%;
+    transform: translateX(-50%);
+    padding: 1rem;
+    border-radius: 15px;
+    background-color: $universal-color-2;
+    position: absolute;
+}
 
 .propert-tab-color {
     background-color: rgb(247, 247, 247);
