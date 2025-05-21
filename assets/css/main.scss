@@ -661,6 +661,11 @@ section.our_teams {
                     color: $universal-color-2;
                 }
             }
+                            }
+                             a.card-link{
+                i{
+                    color: #adadad;
+                }
            
         }
         &:hover {
@@ -674,6 +679,7 @@ section.our_teams {
                     }
                 a.card-link{
                     background-color: $theme-color-1;
+                    border: 1px solid $theme-color-1;
                     i{
                         color: $universal-color-2;
                     }
