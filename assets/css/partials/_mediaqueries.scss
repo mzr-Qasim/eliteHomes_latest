@@ -27,18 +27,20 @@
         }
     }
 
-    // .dropdown{
-    //     .dropdown-toggle:focus + .dropdown-menu {
-    //         display: block !important;
-    //         position: static;
+    .dropdown {
 
-    //       }
-    //     &:hover{
-    //         .dropdown-menu{
-    //             display: none!important;
-    //         }
-    //     }
-    // }
+        &:hover {
+            .dropdown-menu {
+                position: static;
+                height: auto; // Let height grow with content
+                overflow-y: auto;
+                opacity: 1;
+                width: 100% !important;
+
+            }
+        }
+    }
+
     .element-show {
         display: block !important;
     }
@@ -85,19 +87,22 @@
             }
         }
     }
-        .benefits{
+
+    .benefits {
         display: flex;
         gap: 1rem;
-        padding: 1rem;}
-    .our_benefit_inner {
-            figure {
-                border-radius: 25px 25px 0 0;
-            }
+        padding: 1rem;
+    }
 
-            .our_benefit_content {
-                padding: 5rem 1rem!important;
-            }
+    .our_benefit_inner {
+        figure {
+            border-radius: 25px 25px 0 0;
         }
+
+        .our_benefit_content {
+            padding: 5rem 1rem !important;
+        }
+    }
 
 
     @media (max-width:767px) {

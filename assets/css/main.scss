@@ -81,21 +81,61 @@
                     background-color: $theme-color-1;
                     opacity: 0;
                     transition: all ease-in-out .5s;
+                    pointer-events: none;
                 }
 
+                // .dropdown {
+                //     .dropdown-toggle {
+                //         &:active {
+                //             pointer-events: none;
+                //         }
+                //     }
+
+                //     &:hover {
+                //         .dropdown-menu {
+                //             display: block;
+                //         }
+                //     }
+
+                // }
                 .dropdown {
-                    .dropdown-toggle {
-                        &:active {
-                            pointer-events: none;
+                    .dropdown-menu {
+                        display: none;
+                        padding: 2rem 1rem;
+                        width: 18rem;
+                        transition: all ease-in-out 3s;
+
+                        li{
+                            // position: relative;
+                            // &::after{
+                            //     font-family: 'icomoon' !important;
+                            //     content: "\e909";
+                            //     position: absolute;
+                            //     top: 50%;
+                            //     left: 0;
+                            //     transform: translateY(-50%);
+                            //     color: $theme-color-1;
+                            //     margin-right: 5rem!important;
+                            //     font-size: .7rem;
+                            // }
+                            &:not(:last-child){
+                                margin-bottom: 1rem;
+                            }
+                            a{
+                                font-weight: 400;
+                            }
                         }
+
                     }
 
                     &:hover {
                         .dropdown-menu {
-                            display: block;
+                            display: block !important;
+                            margin-left: 0.125em;
+
+
                         }
                     }
-
                 }
 
                 &:not(:last-child) {
@@ -129,7 +169,7 @@
     }
 
     a {
-        color: black;
+        color: $universal-color-1;
         display: flex;
         align-items: center;
 
@@ -593,6 +633,7 @@ section.our_teams {
 
     .team_card {
         margin-bottom: 3rem;
+
         figure {
             position: relative;
             width: 100%;
@@ -661,32 +702,36 @@ section.our_teams {
                     color: $universal-color-2;
                 }
             }
-                            }
-                             a.card-link{
-                i{
-                    color: #adadad;
-                }
-           
         }
+
+        a.card-link {
+            i {
+                color: #adadad;
+            }
+
+        }
+
         &:hover {
-                img {
-                    scale: 1.02;
-                }
+            img {
+                scale: 1.02;
+            }
 
-                    .social_media_links {
-                        margin-bottom: 2rem;
-                        transform: translateY(0);
-                    }
-                a.card-link{
-                    background-color: $theme-color-1;
-                    border: 1px solid $theme-color-1;
-                    i{
-                        color: $universal-color-2;
-                    }
+            .social_media_links {
+                margin-bottom: 2rem;
+                transform: translateY(0);
+            }
 
+            a.card-link {
+                background-color: $theme-color-1;
+                border: 1px solid $theme-color-1;
+
+                i {
+                    color: $universal-color-2;
                 }
 
             }
+
+        }
     }
 }
 

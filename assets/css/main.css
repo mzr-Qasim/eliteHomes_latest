@@ -12474,12 +12474,23 @@ ul.property-map-rooms li small i, ul.property-map-rooms li .small i {
   background-color: #1563df;
   opacity: 0;
   transition: all ease-in-out 0.5s;
-}
-.nav-inner .nav-collapse ul .nav_links .dropdown .dropdown-toggle:active {
   pointer-events: none;
 }
+.nav-inner .nav-collapse ul .nav_links .dropdown .dropdown-menu {
+  display: none;
+  padding: 2rem 1rem;
+  width: 18rem;
+  transition: all ease-in-out 3s;
+}
+.nav-inner .nav-collapse ul .nav_links .dropdown .dropdown-menu li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.nav-inner .nav-collapse ul .nav_links .dropdown .dropdown-menu li a {
+  font-weight: 400;
+}
 .nav-inner .nav-collapse ul .nav_links .dropdown:hover .dropdown-menu {
-  display: block;
+  display: block !important;
+  margin-left: 0.125em;
 }
 .nav-inner .nav-collapse ul .nav_links:not(:last-child) {
   padding-right: 0.5rem;
@@ -12498,7 +12509,7 @@ ul.property-map-rooms li small i, ul.property-map-rooms li .small i {
   padding-right: 1rem;
 }
 .right-links a {
-  color: black;
+  color: #000000;
   display: flex;
   align-items: center;
 }
@@ -13007,6 +13018,13 @@ section.trusted_companies .swiper-slide:hover .trusted_company_logo {
   }
   .nav-collapse ul .nav_links::after {
     content: none !important;
+  }
+  .dropdown:hover .dropdown-menu {
+    position: static;
+    height: auto;
+    overflow-y: auto;
+    opacity: 1;
+    width: 100% !important;
   }
   .element-show {
     display: block !important;
