@@ -12266,6 +12266,9 @@ p {
   padding: 1rem;
   z-index: 2;
 }
+.property-card figure .top-position-icons a {
+  font-size: 0.8rem;
+}
 .property-card figure .property-location {
   position: absolute;
   bottom: 0;
@@ -12851,7 +12854,7 @@ section.top_properties {
 }
 
 section.our_teams {
-  padding-bottom: 8rem;
+  padding-bottom: 5rem;
 }
 section.our_teams .team_card {
   margin-bottom: 3rem;
