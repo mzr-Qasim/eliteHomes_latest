@@ -121,13 +121,6 @@ var swiper = new Swiper(".mySwiper", {
     el: ".swiper-pagination",
     clickable: true,
   },
-      speed: 1500,
-      parallax: true,
-      loop: true,
-        autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-      },
        breakpoints: {
     768: {
       slidesPerView: 2,
