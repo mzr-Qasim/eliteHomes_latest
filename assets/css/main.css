@@ -12706,6 +12706,10 @@ ul.property-map-rooms li small i, ul.property-map-rooms li .small i {
   padding-top: 5rem;
 }
 
+.team_section_bullets {
+  padding-top: 1rem !important;
+}
+
 .swiper-pagination-bullet {
   width: 0.6rem;
   height: 0.6rem;
@@ -12855,7 +12859,7 @@ section.our_teams .team_card {
 section.our_teams .team_card figure {
   position: relative;
   width: 100%;
-  aspect-ratio: 1/1.2;
+  aspect-ratio: 1/1.1;
   border-radius: 20px;
   overflow: hidden;
   display: flex;
@@ -13020,10 +13024,10 @@ section.trusted_companies .swiper-slide:hover .trusted_company_logo {
     content: none !important;
   }
   .dropdown:hover .dropdown-menu {
+    background-color: #1563df;
     position: static;
     height: auto;
     overflow-y: auto;
-    opacity: 1;
     width: 100% !important;
   }
   .element-show {

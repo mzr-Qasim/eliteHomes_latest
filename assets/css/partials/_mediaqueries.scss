@@ -29,13 +29,16 @@
 
     .dropdown {
 
+  
+
         &:hover {
             .dropdown-menu {
+                background-color: $theme-color-1;
                 position: static;
                 height: auto; // Let height grow with content
                 overflow-y: auto;
-                opacity: 1;
                 width: 100% !important;
+
 
             }
         }

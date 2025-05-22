@@ -114,6 +114,33 @@ var swiper = new Swiper(".mySwiper", {
 
 
 
+      var swiper = new Swiper(".mySwiper4", {
+    slidesPerView: 1,
+  spaceBetween: 10,
+    pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+      speed: 1500,
+      parallax: true,
+      loop: true,
+        autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+       breakpoints: {
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    1024: {
+      slidesPerView: 4,
+      spaceBetween: 10,
+    },
+  
+  },
+    });
+
 // popover JS initialization
 window.addEventListener("load", function () {
 const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');

@@ -429,6 +429,10 @@
     padding-top: $section-space-sm;
 }
 
+.team_section_bullets{
+    padding-top: 1rem!important;
+}
+
 .swiper-pagination-bullet {
     width: .6rem;
     height: .6rem;
@@ -637,7 +641,7 @@ section.our_teams {
         figure {
             position: relative;
             width: 100%;
-            aspect-ratio: 1/1.2;
+            aspect-ratio: 1/1.1;
             border-radius: 20px;
             overflow: hidden;
             display: flex;
