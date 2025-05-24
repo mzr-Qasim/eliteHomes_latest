@@ -12132,6 +12132,14 @@ p {
   display: none;
 }
 
+.d_flex {
+  display: flex;
+}
+
+.just_space {
+  justify-content: space-between;
+}
+
 .align-center {
   display: flex;
   align-items: center;
@@ -12327,6 +12335,29 @@ p {
   scale: 1.1;
 }
 
+a.card-link {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all ease-in-out 0.3s;
+}
+a.card-link i {
+  color: #ffffff;
+  font-weight: 500;
+}
+a.card-link:hover {
+  background-color: #1563df;
+}
+
+a.card-link-small {
+  width: 2.5rem !important;
+  height: 2.5rem !important;
+}
+
 .card-description_position {
   bottom: 3%;
   left: 50%;
@@ -12409,42 +12440,6 @@ ul.property-map-rooms li small i, ul.property-map-rooms li .small i {
   width: 100%;
   height: 1px;
   background-color: #e2e2e2;
-}
-
-.pre_loader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ffffff;
-  z-index: 9999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: opacity 1s ease;
-}
-.pre_loader .pre_loader_svg {
-  width: 100px;
-  height: 100px;
-  animation: pulse 1.5s infinite ease-in-out;
-}
-
-@keyframes pulse {
-  0% {
-    transform: rotate(0deg);
-    opacity: 1;
-  }
-  100% {
-    transform: rotate(360deg);
-    opacity: 0.7;
-  }
-}
-.site-wrapper {
-  opacity: 0;
-  transition: opacity 0.5s ease;
-  overflow: hidden;
-  height: 100vh;
 }
 
 .main-navbar {
@@ -12959,6 +12954,17 @@ section.trusted_companies .swiper-slide .trusted_company_logo {
 }
 section.trusted_companies .swiper-slide:hover .trusted_company_logo {
   fill: #1563df;
+}
+
+.footer-wrapper {
+  background-color: #161e2d;
+  padding: 2rem;
+}
+.footer-wrapper a.card-link {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.footer-wrapper a.card-link:hover {
+  background-color: #1563df;
 }
 
 .map-hero {
