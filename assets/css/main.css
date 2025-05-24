@@ -12960,6 +12960,9 @@ section.trusted_companies .swiper-slide:hover .trusted_company_logo {
   background-color: #161e2d;
   padding: 2rem;
 }
+.footer-wrapper .footer-top .col-inner {
+  padding-bottom: 1rem;
+}
 .footer-wrapper a.card-link {
   background-color: rgba(255, 255, 255, 0.1);
 }

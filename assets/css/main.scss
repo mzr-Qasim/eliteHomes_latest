@@ -780,6 +780,12 @@ section.trusted_companies {
     background-color: #161e2d;
     padding: 2rem;
 
+    .footer-top{
+        .col-inner{
+            padding-bottom: 1rem;
+        }
+    }
+
     a.card-link {
         background-color: rgba(255, 255, 255, 0.1);
 
