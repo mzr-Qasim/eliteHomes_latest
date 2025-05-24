@@ -12485,15 +12485,23 @@ ul.property-map-rooms li small i, ul.property-map-rooms li .small i {
   padding: 2rem 1rem;
   width: 18rem;
   transition: all ease-in-out 3s;
+  border: none;
+  border-radius: 20px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 .nav-inner .nav-collapse ul .nav_links .dropdown .dropdown-menu li:not(:last-child) {
   margin-bottom: 1rem;
 }
 .nav-inner .nav-collapse ul .nav_links .dropdown .dropdown-menu li a {
   font-weight: 400;
+  transition: all ease-in-out 0.3s;
+}
+.nav-inner .nav-collapse ul .nav_links .dropdown .dropdown-menu li a:hover {
+  background-color: transparent !important;
+  color: #1563df;
 }
 .nav-inner .nav-collapse ul .nav_links .dropdown:hover .dropdown-menu {
-  display: block !important;
+  display: block;
   margin-left: 0.125em;
 }
 .nav-inner .nav-collapse ul .nav_links:not(:last-child) {
@@ -13028,11 +13036,12 @@ section.trusted_companies .swiper-slide:hover .trusted_company_logo {
     content: none !important;
   }
   .dropdown:hover .dropdown-menu {
-    background-color: #1563df;
+    background-color: rgb(243, 247, 253);
     position: static;
     height: auto;
     overflow-y: auto;
     width: 100% !important;
+    box-shadow: none !important;
   }
   .element-show {
     display: block !important;

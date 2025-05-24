@@ -104,6 +104,9 @@
                         padding: 2rem 1rem;
                         width: 18rem;
                         transition: all ease-in-out 3s;
+                        border: none;
+                        border-radius: 20px;
+                            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 
                         li{
                             // position: relative;
@@ -121,8 +124,14 @@
                             &:not(:last-child){
                                 margin-bottom: 1rem;
                             }
+
                             a{
                                 font-weight: 400;
+                                transition: all ease-in-out .3s;
+                                &:hover{
+                                    background-color: transparent!important;
+                                    color: $theme-color-1;
+                                }
                             }
                         }
 
@@ -130,7 +139,7 @@
 
                     &:hover {
                         .dropdown-menu {
-                            display: block !important;
+                            display: block;
                             margin-left: 0.125em;
 
 
