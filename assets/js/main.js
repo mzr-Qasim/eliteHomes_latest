@@ -45,7 +45,9 @@ ham_btn.addEventListener("click", function(){
     nav_collapse.classList.toggle("nav_show");
     ham_btn_icon.classList.toggle("icon-ham_btn");
     ham_btn_icon.classList.toggle("icon-close_icon");
+    back_to_top.toggle("show")
     body.classList.toggle("body_overflow");
+
 })
 
 

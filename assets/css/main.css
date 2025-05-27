@@ -8,6 +8,14 @@
   font-style: normal;
   font-display: block;
 }
+@font-face {
+  font-family: "icomoon";
+  src: url("fonts/icomoon.eot?it0nop");
+  src: url("fonts/icomoon.eot?it0nop#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?it0nop") format("truetype"), url("fonts/icomoon.woff?it0nop") format("woff"), url("fonts/icomoon.svg?it0nop#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
 [class^=icon-], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "icomoon" !important;
@@ -12442,6 +12450,27 @@ ul.property-map-rooms li small i, ul.property-map-rooms li .small i {
   background-color: #e2e2e2;
 }
 
+.theme-btn {
+  display: inline-block;
+  border: none;
+  padding: 0.75rem 1.75rem;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.primary-btn {
+  background-color: #1563df;
+  color: #ffffff;
+}
+
+.secondary-btn {
+  background-color: #ffffff;
+  color: #1563df;
+}
+
 .main-navbar {
   background-color: #ffffff;
   position: fixed;
@@ -12528,14 +12557,14 @@ ul.property-map-rooms li small i, ul.property-map-rooms li .small i {
 }
 
 .ham_btn {
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   color: #1563df;
 }
 
 .back-to-top {
   background-color: #ffffff;
-  width: 3rem;
-  height: 3rem;
+  width: 2.5rem;
+  height: 2.5rem;
   border-radius: 50%;
   position: fixed;
   bottom: 0;
@@ -12548,7 +12577,7 @@ ul.property-map-rooms li small i, ul.property-map-rooms li .small i {
 }
 .back-to-top i {
   color: #1563df;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 .main_hero_section {
@@ -12800,7 +12829,7 @@ section.our_benefit {
 }
 
 .our_benefit_inner {
-  background-color: rgb(243, 247, 253);
+  background-color: #f3f7fd;
   border-radius: 25px;
 }
 .our_benefit_inner .col-inner {
@@ -12961,7 +12990,13 @@ section.trusted_companies .swiper-slide:hover .trusted_company_logo {
   padding: 2rem;
 }
 .footer-wrapper .footer-top .col-inner {
+  height: 100%;
+  display: flex;
+  align-items: center;
   padding-bottom: 1rem;
+}
+.footer-wrapper .footer-top .col-inner .footer-social-media {
+  width: 100%;
 }
 .footer-wrapper a.card-link {
   background-color: rgba(255, 255, 255, 0.1);
@@ -13045,7 +13080,7 @@ section.trusted_companies .swiper-slide:hover .trusted_company_logo {
     content: none !important;
   }
   .dropdown:hover .dropdown-menu {
-    background-color: rgb(243, 247, 253);
+    background-color: #f3f7fd;
     position: static;
     height: auto;
     overflow-y: auto;

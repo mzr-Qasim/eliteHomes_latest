@@ -1,7 +1,7 @@
 $universal-color-1: #000000;
 $universal-color-2: #ffffff;
 $theme-color-1 : #1563df;
-$theme-color-2 : rgb(243, 247, 253);
+$theme-color-2 : #f3f7fd;
 ;
 $border-color : #e2e2e2;
 $label-color : #a3abb0;
@@ -438,3 +438,25 @@ ul.property-map-rooms {
         background-color: $border-color;
     }
 }
+
+
+.theme-btn{
+    display: inline-block;
+    border: none;
+    padding: .75rem 1.75rem;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+.primary-btn{
+    background-color: $theme-color-1;
+    color: $universal-color-2;
+}
+.secondary-btn{
+    background-color: $universal-color-2;
+    color: $theme-color-1;
+}
+
+

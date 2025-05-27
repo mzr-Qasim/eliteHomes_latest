@@ -12,6 +12,18 @@
   font-display: block;
 }
 
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?it0nop');
+  src:  url('fonts/icomoon.eot?it0nop#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?it0nop') format('truetype'),
+    url('fonts/icomoon.woff?it0nop') format('woff'),
+    url('fonts/icomoon.svg?it0nop#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;

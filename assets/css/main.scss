@@ -198,14 +198,14 @@
 
 
 .ham_btn {
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     color: $theme-color-1;
 }
 
 .back-to-top {
     background-color: $universal-color-2;
-    width: 3rem;
-    height: 3rem;
+    width: 2.5rem;
+    height: 2.5rem;
     border-radius: 50%;
     position: fixed;
     bottom: 0;
@@ -218,7 +218,7 @@
 
     i {
         color: $theme-color-1;
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 }
 
@@ -782,7 +782,13 @@ section.trusted_companies {
 
     .footer-top{
         .col-inner{
+            height: 100%;
+            display: flex;
+            align-items: center;
             padding-bottom: 1rem;
+            .footer-social-media{
+                width: 100%;
+            }
         }
     }
 
@@ -857,6 +863,23 @@ section.trusted_companies {
         object-fit: cover;
     }
 }
+
+// .svg-el{
+//     .circle{
+//         position: relative;
+
+//     }
+
+//     &::after{
+//         content: '';
+//         position: absolute;
+//         width: 100%;
+//         height: 100%;
+//         background-color: white;
+//         top: 0;
+//         left: 0;
+//     }
+// }
 
 
 @import './partials/mediaqueries';
