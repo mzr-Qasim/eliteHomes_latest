@@ -12175,6 +12175,11 @@ p {
   justify-content: center;
 }
 
+.w_fit {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 .main_logo {
   height: 3.5rem;
 }
