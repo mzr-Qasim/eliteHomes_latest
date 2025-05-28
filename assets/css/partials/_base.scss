@@ -68,10 +68,11 @@ p {
     display: none;
 }
 
-.d_flex{
+.d_flex {
     display: flex;
 }
-.just_space{
+
+.just_space {
     justify-content: space-between;
 }
 
@@ -92,77 +93,7 @@ p {
 }
 
 
-.theme-btn {
-    border-radius: 25px;
-    padding: .5rem 1rem;
-    transition: all ease-in-out .5s;
-}
 
-.theme-btn-ico {
-
-    display: flex;
-    align-items: center;
-    transition: all ease-in-out .5s;
-
-    span {
-        margin-right: .5rem;
-    }
-}
-
-
-.theme-btn_lg {
-    border-radius: 35px;
-    padding: 1rem 3rem;
-    transition: all ease-in-out .5s;
-}
-
-
-.theme-btn-1 {
-    border: 1px solid $theme-color-1;
-
-
-    &:hover {
-        background-color: $theme-color-1;
-        color: $universal-color-2 !important;
-    }
-}
-
-.theme-btn-1_white {
-    border: 1px solid $universal-color-2;
-    color: $universal-color-2;
-
-
-    &:hover {
-        border-color: $theme-color-1;
-        background-color: $theme-color-1;
-        color: $universal-color-2 !important;
-    }
-}
-
-
-.theme-btn-2 {
-    background-color: $theme-color-1;
-    color: $universal-color-2 !important;
-    display: flex;
-
-
-    &:hover {
-        background-color: rgb(10, 10, 145) !important;
-    }
-}
-
-.theme-btn-2-grey {
-    background-color: rgba(0, 0, 0, 0.3);
-    ;
-}
-
-
-
-
-
-.icon-close_icon {
-    color: $universal-color-1;
-}
 
 
 .main_hero_form_width {
@@ -324,7 +255,7 @@ a.card-link {
     width: 3rem;
     height: 3rem;
     border-radius: 50%;
-        background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.1);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -334,14 +265,15 @@ a.card-link {
         color: $universal-color-2;
         font-weight: 500;
     }
-    &:hover{
-                            background-color: $theme-color-1;
+
+    &:hover {
+        background-color: $theme-color-1;
     }
 }
 
-a.card-link-small{
-    width: 2.5rem!important;
-    height: 2.5rem!important;
+a.card-link-small {
+    width: 2.5rem !important;
+    height: 2.5rem !important;
 
 }
 
@@ -356,10 +288,7 @@ a.card-link-small{
     position: absolute;
 }
 
-.propert-tab-color {
-    background-color: rgb(247, 247, 247);
-    border: none;
-}
+
 
 body.loaded .pre_loader {
     opacity: 0;
@@ -440,7 +369,7 @@ ul.property-map-rooms {
 }
 
 
-.theme-btn{
+.theme-btn {
     display: inline-block;
     border: none;
     padding: .75rem 1.75rem;
@@ -449,14 +378,69 @@ ul.property-map-rooms {
     align-items: center;
     justify-content: center;
     gap: .5rem;
+    transition: all ease-in-out .3s;
 }
-.primary-btn{
+
+
+.theme-btn-ico {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.primary-btn {
     background-color: $theme-color-1;
-    color: $universal-color-2;
+    color: $universal-color-2 !important;
+    border: 1px solid $theme-color-1;
 }
-.secondary-btn{
-    background-color: $universal-color-2;
+
+.secondary-btn {
+    border: 1px solid $theme-color-1;
     color: $theme-color-1;
 }
 
 
+
+
+.grey-btn {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: $universal-color-2;
+}
+
+.tab-btn {
+    background-color: rgb(247, 247, 247);
+    border: none;
+
+    &:hover {
+        background-color: $theme-color-1;
+        color: $universal-color-2;
+    }
+
+
+}
+
+.tertiary-btn {
+    border: 1px solid $universal-color-2;
+    color: $universal-color-2;
+
+    &:hover {
+        background-color: $theme-color-1;
+        color: $universal-color-2;
+        border: 1px solid $theme-color-1;
+    }
+}
+
+.primary-hover {
+    &:hover {
+        background-color: rgb(10, 10, 145);
+        border: 1px solid rgb(10, 10, 145);
+    }
+}
+
+.secondary-hover {
+    &:hover {
+        background-color: $theme-color-1;
+        color: $universal-color-2;
+    }
+}

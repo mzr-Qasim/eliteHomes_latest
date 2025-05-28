@@ -2,16 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @font-face {
   font-family: "icomoon";
-  src: url("fonts/icomoon.eot?3lpsd6");
-  src: url("fonts/icomoon.eot?3lpsd6#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?3lpsd6") format("truetype"), url("fonts/icomoon.woff?3lpsd6") format("woff"), url("fonts/icomoon.svg?3lpsd6#icomoon") format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
-}
-@font-face {
-  font-family: "icomoon";
-  src: url("fonts/icomoon.eot?it0nop");
-  src: url("fonts/icomoon.eot?it0nop#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?it0nop") format("truetype"), url("fonts/icomoon.woff?it0nop") format("woff"), url("fonts/icomoon.svg?it0nop#icomoon") format("svg");
+  src: url("fonts/icomoon.eot?9h1sb0");
+  src: url("fonts/icomoon.eot?9h1sb0#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?9h1sb0") format("truetype"), url("fonts/icomoon.woff?9h1sb0") format("woff"), url("fonts/icomoon.svg?9h1sb0#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -12163,62 +12155,6 @@ p {
   height: 3.5rem;
 }
 
-.theme-btn {
-  border-radius: 25px;
-  padding: 0.5rem 1rem;
-  transition: all ease-in-out 0.5s;
-}
-
-.theme-btn-ico {
-  display: flex;
-  align-items: center;
-  transition: all ease-in-out 0.5s;
-}
-.theme-btn-ico span {
-  margin-right: 0.5rem;
-}
-
-.theme-btn_lg {
-  border-radius: 35px;
-  padding: 1rem 3rem;
-  transition: all ease-in-out 0.5s;
-}
-
-.theme-btn-1 {
-  border: 1px solid #1563df;
-}
-.theme-btn-1:hover {
-  background-color: #1563df;
-  color: #ffffff !important;
-}
-
-.theme-btn-1_white {
-  border: 1px solid #ffffff;
-  color: #ffffff;
-}
-.theme-btn-1_white:hover {
-  border-color: #1563df;
-  background-color: #1563df;
-  color: #ffffff !important;
-}
-
-.theme-btn-2 {
-  background-color: #1563df;
-  color: #ffffff !important;
-  display: flex;
-}
-.theme-btn-2:hover {
-  background-color: rgb(10, 10, 145) !important;
-}
-
-.theme-btn-2-grey {
-  background-color: rgba(0, 0, 0, 0.3);
-}
-
-.icon-close_icon {
-  color: #000000;
-}
-
 .main_hero_form_width {
   width: 25%;
 }
@@ -12377,11 +12313,6 @@ a.card-link-small {
   position: absolute;
 }
 
-.propert-tab-color {
-  background-color: rgb(247, 247, 247);
-  border: none;
-}
-
 body.loaded .pre_loader {
   opacity: 0;
   visibility: hidden;
@@ -12459,16 +12390,59 @@ ul.property-map-rooms li small i, ul.property-map-rooms li .small i {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
+  transition: all ease-in-out 0.3s;
+}
+
+.theme-btn-ico {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
 }
 
 .primary-btn {
   background-color: #1563df;
-  color: #ffffff;
+  color: #ffffff !important;
+  border: 1px solid #1563df;
 }
 
 .secondary-btn {
-  background-color: #ffffff;
+  border: 1px solid #1563df;
   color: #1563df;
+}
+
+.grey-btn {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+}
+
+.tab-btn {
+  background-color: rgb(247, 247, 247);
+  border: none;
+}
+.tab-btn:hover {
+  background-color: #1563df;
+  color: #ffffff;
+}
+
+.tertiary-btn {
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+.tertiary-btn:hover {
+  background-color: #1563df;
+  color: #ffffff;
+  border: 1px solid #1563df;
+}
+
+.primary-hover:hover {
+  background-color: rgb(10, 10, 145);
+  border: 1px solid rgb(10, 10, 145);
+}
+
+.secondary-hover:hover {
+  background-color: #1563df;
+  color: #ffffff;
 }
 
 .main-navbar {
@@ -12489,10 +12463,12 @@ ul.property-map-rooms li small i, ul.property-map-rooms li .small i {
   justify-content: space-between;
   align-items: center;
 }
-.nav-inner .nav-collapse ul .nav_links {
+.nav-inner .nav-collapse ul .nav_links .nav_hover_element {
   position: relative;
+  overflow: hidden;
+  display: inline-block;
 }
-.nav-inner .nav-collapse ul .nav_links::after {
+.nav-inner .nav-collapse ul .nav_links .nav_hover_element::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -12500,9 +12476,13 @@ ul.property-map-rooms li small i, ul.property-map-rooms li .small i {
   width: 100%;
   height: 2px;
   background-color: #1563df;
-  opacity: 0;
+  transform: translateX(-100%);
   transition: all ease-in-out 0.5s;
   pointer-events: none;
+  opacity: 0;
+}
+.nav-inner .nav-collapse ul .nav_links .dropdown {
+  overflow: visible !important;
 }
 .nav-inner .nav-collapse ul .nav_links .dropdown .dropdown-menu {
   display: none;
@@ -12512,17 +12492,6 @@ ul.property-map-rooms li small i, ul.property-map-rooms li .small i {
   border: none;
   border-radius: 20px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-}
-.nav-inner .nav-collapse ul .nav_links .dropdown .dropdown-menu li:not(:last-child) {
-  margin-bottom: 1rem;
-}
-.nav-inner .nav-collapse ul .nav_links .dropdown .dropdown-menu li a {
-  font-weight: 400;
-  transition: all ease-in-out 0.3s;
-}
-.nav-inner .nav-collapse ul .nav_links .dropdown .dropdown-menu li a:hover {
-  background-color: transparent !important;
-  color: #1563df;
 }
 .nav-inner .nav-collapse ul .nav_links .dropdown:hover .dropdown-menu {
   display: block;
@@ -12534,8 +12503,9 @@ ul.property-map-rooms li small i, ul.property-map-rooms li .small i {
 .nav-inner .nav-collapse ul .nav_links a {
   color: #000000;
 }
-.nav-inner .nav-collapse ul .nav_links:hover::after {
+.nav-inner .nav-collapse ul .nav_links:hover .nav_hover_element::after {
   opacity: 1;
+  transform: translateX(0);
 }
 
 .right-links {
@@ -12551,9 +12521,6 @@ ul.property-map-rooms li small i, ul.property-map-rooms li .small i {
 }
 .right-links a i {
   font-size: 1.2rem;
-}
-.right-links a span {
-  margin-left: 0.5rem;
 }
 
 .ham_btn {
@@ -12793,7 +12760,7 @@ ul.property-map-rooms li small i, ul.property-map-rooms li .small i {
   transform: rotateY(360deg);
 }
 .our_services .col-inner .service_card:hover a {
-  padding: 1rem 4rem;
+  padding: 0.75rem 2.5rem;
   background-color: #1563df;
   color: #ffffff !important;
 }
@@ -12987,7 +12954,21 @@ section.trusted_companies .swiper-slide:hover .trusted_company_logo {
 
 .footer-wrapper {
   background-color: #161e2d;
-  padding: 2rem;
+  padding: 2rem 0;
+}
+.footer-wrapper .footer-top {
+  padding-bottom: 2rem;
+  position: relative;
+}
+.footer-wrapper .footer-top::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background-color: #e2e2e2;
+  opacity: 0.1;
 }
 .footer-wrapper .footer-top .col-inner {
   height: 100%;

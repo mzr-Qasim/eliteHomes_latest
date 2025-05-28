@@ -23,13 +23,13 @@
               <ul class="d-flex">
                 <li class="nav_links d-none element-show"><a href=""><img class="main_logo"
                       src="assets/images/site_logo.svg" alt=""></a></li>
-                <li class="nav_links"><a href="#" class="btn">Home</a></li>
+                <li class="nav_links"><a href="#" class="btn nav_hover_element">Home</a></li>
                 <li class="nav_links">
-                  <a href="" class="btn">Property Details</a>
+                  <a href="" class="btn nav_hover_element">Property Details</a>
                 </li>
                 <li class="nav_links">
                   <div class="dropdown">
-                    <button data-mdb-button-init data-mdb-ripple-init data-mdb-dropdown-init class="btn dropdown-toggle"
+                    <button  data-mdb-button-init data-mdb-ripple-init data-mdb-dropdown-init class="btn nav_hover_element"
                       type="button" id="dropdownMenuButton" data-mdb-toggle="dropdown" aria-expanded="false">
                       Pages
                     </button>
@@ -44,11 +44,11 @@
                   </div>
                 </li>
                 <li class="nav_links">
-                  <a href="" class="btn">Blogs</a>
+                  <a href="" class="btn nav_hover_element">Blogs</a>
                 </li>
                 <li class="nav_links">
                   <div class="dropdown">
-                    <button data-mdb-button-init data-mdb-ripple-init data-mdb-dropdown-init class="btn dropdown-toggle"
+                    <button data-mdb-button-init data-mdb-ripple-init data-mdb-dropdown-init class="btn nav_hover_element"
                       type="button" id="dropdownMenuButton" data-mdb-toggle="dropdown" aria-expanded="false">
                       Dashboard
                     </button>
@@ -65,14 +65,14 @@
                 </li>
               </ul>
               <ul class="right-links-lg right-links d-none">
-                <li><a href="" class="theme-btn theme-btn-1"><i class="icon-login"></i><span>Sign in</span></a></li>
-                <li><a href="" class="theme-btn theme-btn-2"><i class="icon-submit_property"></i><span>Submit
+                <li><a href="" class=""><i class="icon-login"></i><span>Sign in</span></a></li>
+                <li><a href="" class=""><i class="icon-submit_property"></i><span>Submit
                       Property</span></a></li>
               </ul>
             </div><!-- /.nav-collapse -->
             <ul class="right-links md-hide">
-              <li><a href="" class="theme-btn theme-btn-1"><i class="icon-login"></i><span>Sign in</span></a></li>
-              <li><a href="" class="theme-btn theme-btn-2"><i class="icon-submit_property"></i><span>Submit
+              <li><a href="" class="theme-btn secondary-btn theme-btn-ico secondary-hover"><i class="icon-login"></i><span>Sign in</span></a></li>
+              <li><a href="" class="theme-btn primary-btn theme-btn-ico primary-hover"><i class="icon-submit_property"></i><span>Submit
                     Property</span></a></li>
             </ul>
             <button id="ham_btn" class="ham_btn d-none element-show"><i id="ham_btn_icon"
@@ -96,12 +96,12 @@
                 <ul class="nav nav-pills " style="display: flex; justify-content: center; gap: 2rem;" id="pills-tab"
                   role="tablist">
                   <li class="nav-item" role="presentation">
-                    <button class="active theme-btn_lg theme-btn-1_white" id="pills-home-tab" data-bs-toggle="pill"
+                    <button class="active theme-btn tertiary-btn" id="pills-home-tab" data-bs-toggle="pill"
                       data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
                       aria-selected="true">For Rent</button>
                   </li>
                   <li class="nav-item" role="presentation">
-                    <button class="theme-btn_lg theme-btn-1_white" id="pills-profile-tab" data-bs-toggle="pill"
+                    <button class="theme-btn tertiary-btn" id="pills-profile-tab" data-bs-toggle="pill"
                       data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
                       aria-selected="false">For Sale</button>
                   </li>
@@ -131,7 +131,7 @@
                         <input class="w-100 form-element" placeholder="Search Keyword." type="text">
                       </li>
                       <li>
-                        <button class="theme-btn_lg theme-btn-2 theme-btn-ico"><span>Search</span><i
+                        <button class="theme-btn primary-btn theme-btn-ico primary-hover"><span>Search</span><i
                             class="icon-search"></i></button>
                       </li>
                     </ul>
@@ -157,7 +157,7 @@
                         <input class="w-100 form-element" placeholder="Search Keyword." type="text">
                       </li>
                       <li>
-                        <button class="theme-btn_lg theme-btn-2 theme-btn-ico"><span>Search</span><i
+                        <button class="theme-btn primary-btn theme-btn-ico primary-hover"><span>Search</span><i
                             class="icon-search"></i></button>
                       </li>
                     </ul>
@@ -178,27 +178,27 @@
             <div class="featured-properties-tabs mt-5">
               <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                 <li class="nav-item" role="presentation">
-                  <button class="active theme-btn theme-btn-1 propert-tab-color" id="pills-home-tab"
+                  <button class="active theme-btn tab-btn" id="pills-home-tab"
                     data-bs-toggle="pill" data-bs-target="#property-type-1" type="button" role="tab"
                     aria-controls="pills-home" aria-selected="true">Apartment</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                  <button class="theme-btn theme-btn-1 propert-tab-color" id="pills-profile-tab" data-bs-toggle="pill"
+                  <button class="theme-btn tab-btn" id="pills-profile-tab" data-bs-toggle="pill"
                     data-bs-target="#property-type-2" type="button" role="tab" aria-controls="pills-profile"
                     aria-selected="false">Villa</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                  <button class="theme-btn theme-btn-1 propert-tab-color" id="pills-contact-tab" data-bs-toggle="pill"
+                  <button class="theme-btn tab-btn" id="pills-contact-tab" data-bs-toggle="pill"
                     data-bs-target="#property-type-3" type="button" role="tab" aria-controls="pills-contact"
                     aria-selected="false">Studio</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                  <button class="theme-btn theme-btn-1 propert-tab-color" id="pills-contact-tab" data-bs-toggle="pill"
+                  <button class="theme-btn tab-btn" id="pills-contact-tab" data-bs-toggle="pill"
                     data-bs-target="#property-type-4" type="button" role="tab" aria-controls="pills-contact"
                     aria-selected="false">House</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                  <button class="theme-btn theme-btn-1 propert-tab-color" id="pills-contact-tab" data-bs-toggle="pill"
+                  <button class="theme-btn tab-btn" id="pills-contact-tab" data-bs-toggle="pill"
                     data-bs-target="#property-type-5" type="button" role="tab" aria-controls="pills-contact"
                     aria-selected="false">Office</button>
                 </li>
@@ -212,10 +212,10 @@
                       <a href="#" class="property-card-link">
                         <figure>
                           <img src="assets/images/sdfasdf.jpg" alt="">
-                          <div class="top-position-icons">
-                            <a href="" class="theme-btn theme-btn-2">Featured</a>
-                            <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
-                          </div><!-- /.top-position-icons -->
+                                                <div class="top-position-icons">
+                                                <a href="" class="theme-btn primary-btn">Featured</a>
+                        <a href="" class="theme-btn grey-btn secondary-hover">For Sale</a>
+                      </div><!-- /.top-position-icons -->
                           <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit
                             amet.</small>
                         </figure>
@@ -247,10 +247,10 @@
                       <a href="#" class="property-card-link">
                         <figure>
                           <img src="assets/images/main_hero_section_img.jpg" alt="">
-                          <div class="top-position-icons">
-                            <a href="" class="theme-btn theme-btn-2">Featured</a>
-                            <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
-                          </div><!-- /.top-position-icons -->
+                                                <div class="top-position-icons">
+                                                <a href="" class="theme-btn primary-btn">Featured</a>
+                        <a href="" class="theme-btn grey-btn secondary-hover">For Sale</a>
+                      </div><!-- /.top-position-icons -->
                           <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit
                             amet.</small>
                         </figure>
@@ -282,10 +282,10 @@
                       <a href="#" class="property-card-link">
                         <figure>
                           <img src="assets/images/sdfasdf.jpg" alt="">
-                          <div class="top-position-icons">
-                            <a href="" class="theme-btn theme-btn-2">Featured</a>
-                            <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
-                          </div><!-- /.top-position-icons -->
+                                                <div class="top-position-icons">
+                                                <a href="" class="theme-btn primary-btn">Featured</a>
+                        <a href="" class="theme-btn grey-btn secondary-hover">For Sale</a>
+                      </div><!-- /.top-position-icons -->
                           <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit
                             amet.</small>
                         </figure>
@@ -317,10 +317,10 @@
                       <a href="#" class="property-card-link">
                         <figure>
                           <img src="assets/images/main_hero_section_img.jpg" alt="">
-                          <div class="top-position-icons">
-                            <a href="" class="theme-btn theme-btn-2">Featured</a>
-                            <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
-                          </div><!-- /.top-position-icons -->
+                                                <div class="top-position-icons">
+                                                <a href="" class="theme-btn primary-btn">Featured</a>
+                        <a href="" class="theme-btn grey-btn secondary-hover">For Sale</a>
+                      </div><!-- /.top-position-icons -->
                           <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit
                             amet.</small>
                         </figure>
@@ -352,10 +352,10 @@
                       <a href="#" class="property-card-link">
                         <figure>
                           <img src="assets/images/sdfasdf.jpg" alt="">
-                          <div class="top-position-icons">
-                            <a href="" class="theme-btn theme-btn-2">Featured</a>
-                            <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
-                          </div><!-- /.top-position-icons -->
+                                                <div class="top-position-icons">
+                                                <a href="" class="theme-btn primary-btn">Featured</a>
+                        <a href="" class="theme-btn grey-btn secondary-hover">For Sale</a>
+                      </div><!-- /.top-position-icons -->
                           <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit
                             amet.</small>
                         </figure>
@@ -387,10 +387,10 @@
                       <a href="#" class="property-card-link">
                         <figure>
                           <img src="assets/images/main_hero_section_img.jpg" alt="">
-                          <div class="top-position-icons">
-                            <a href="" class="theme-btn theme-btn-2">Featured</a>
-                            <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
-                          </div><!-- /.top-position-icons -->
+                                                <div class="top-position-icons">
+                                                <a href="" class="theme-btn primary-btn">Featured</a>
+                        <a href="" class="theme-btn grey-btn secondary-hover">For Sale</a>
+                      </div><!-- /.top-position-icons -->
                           <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit
                             amet.</small>
                         </figure>
@@ -425,10 +425,10 @@
                       <a href="#" class="property-card-link">
                         <figure>
                           <img src="assets/images/villa-1.jpg" alt="">
-                          <div class="top-position-icons">
-                            <a href="" class="theme-btn theme-btn-2">Featured</a>
-                            <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
-                          </div><!-- /.top-position-icons -->
+                      <div class="top-position-icons">
+                                                <a href="" class="theme-btn primary-btn">Featured</a>
+                        <a href="" class="theme-btn grey-btn secondary-hover">For Sale</a>
+                      </div><!-- /.top-position-icons -->
                           <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit
                             amet.</small>
                         </figure>
@@ -460,10 +460,10 @@
                       <a href="#" class="property-card-link">
                         <figure>
                           <img src="assets/images/villa-2.jpg" alt="">
-                          <div class="top-position-icons">
-                            <a href="" class="theme-btn theme-btn-2">Featured</a>
-                            <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
-                          </div><!-- /.top-position-icons -->
+                                                <div class="top-position-icons">
+                                                <a href="" class="theme-btn primary-btn">Featured</a>
+                        <a href="" class="theme-btn grey-btn secondary-hover">For Sale</a>
+                      </div><!-- /.top-position-icons -->
                           <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit
                             amet.</small>
                         </figure>
@@ -495,10 +495,10 @@
                       <a href="#" class="property-card-link">
                         <figure>
                           <img src="assets/images/villa-3.jpg" alt="">
-                          <div class="top-position-icons">
-                            <a href="" class="theme-btn theme-btn-2">Featured</a>
-                            <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
-                          </div><!-- /.top-position-icons -->
+                                                <div class="top-position-icons">
+                                                <a href="" class="theme-btn primary-btn">Featured</a>
+                        <a href="" class="theme-btn grey-btn secondary-hover">For Sale</a>
+                      </div><!-- /.top-position-icons -->
                           <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit
                             amet.</small>
                         </figure>
@@ -530,10 +530,10 @@
                       <a href="#" class="property-card-link">
                         <figure>
                           <img src="assets/images/villa-1.jpg" alt="">
-                          <div class="top-position-icons">
-                            <a href="" class="theme-btn theme-btn-2">Featured</a>
-                            <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
-                          </div><!-- /.top-position-icons -->
+                                                <div class="top-position-icons">
+                                                <a href="" class="theme-btn primary-btn">Featured</a>
+                        <a href="" class="theme-btn grey-btn secondary-hover">For Sale</a>
+                      </div><!-- /.top-position-icons -->
                           <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit
                             amet.</small>
                         </figure>
@@ -565,10 +565,10 @@
                       <a href="#" class="property-card-link">
                         <figure>
                           <img src="assets/images/villa-2.jpg" alt="">
-                          <div class="top-position-icons">
-                            <a href="" class="theme-btn theme-btn-2">Featured</a>
-                            <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
-                          </div><!-- /.top-position-icons -->
+                                                <div class="top-position-icons">
+                                                <a href="" class="theme-btn primary-btn">Featured</a>
+                        <a href="" class="theme-btn grey-btn secondary-hover">For Sale</a>
+                      </div><!-- /.top-position-icons -->
                           <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit
                             amet.</small>
                         </figure>
@@ -600,10 +600,10 @@
                       <a href="#" class="property-card-link">
                         <figure>
                           <img src="assets/images/villa-3.jpg" alt="">
-                          <div class="top-position-icons">
-                            <a href="" class="theme-btn theme-btn-2">Featured</a>
-                            <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
-                          </div><!-- /.top-position-icons -->
+                                                <div class="top-position-icons">
+                                                <a href="" class="theme-btn primary-btn">Featured</a>
+                        <a href="" class="theme-btn grey-btn secondary-hover">For Sale</a>
+                      </div><!-- /.top-position-icons -->
                           <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit
                             amet.</small>
                         </figure>
@@ -638,10 +638,10 @@
                       <a href="#" class="property-card-link">
                         <figure>
                           <img src="assets/images/sdfasdf.jpg" alt="">
-                          <div class="top-position-icons">
-                            <a href="" class="theme-btn theme-btn-2">Featured</a>
-                            <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
-                          </div><!-- /.top-position-icons -->
+                                                <div class="top-position-icons">
+                                                <a href="" class="theme-btn primary-btn">Featured</a>
+                        <a href="" class="theme-btn grey-btn secondary-hover">For Sale</a>
+                      </div><!-- /.top-position-icons -->
                           <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit
                             amet.</small>
                         </figure>
@@ -673,10 +673,10 @@
                       <a href="#" class="property-card-link">
                         <figure>
                           <img src="assets/images/main_hero_section_img.jpg" alt="">
-                          <div class="top-position-icons">
-                            <a href="" class="theme-btn theme-btn-2">Featured</a>
-                            <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
-                          </div><!-- /.top-position-icons -->
+                                                <div class="top-position-icons">
+                                                <a href="" class="theme-btn primary-btn">Featured</a>
+                        <a href="" class="theme-btn grey-btn secondary-hover">For Sale</a>
+                      </div><!-- /.top-position-icons -->
                           <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit
                             amet.</small>
                         </figure>
@@ -708,10 +708,10 @@
                       <a href="#" class="property-card-link">
                         <figure>
                           <img src="assets/images/sdfasdf.jpg" alt="">
-                          <div class="top-position-icons">
-                            <a href="" class="theme-btn theme-btn-2">Featured</a>
-                            <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
-                          </div><!-- /.top-position-icons -->
+                                                <div class="top-position-icons">
+                                                <a href="" class="theme-btn primary-btn">Featured</a>
+                        <a href="" class="theme-btn grey-btn secondary-hover">For Sale</a>
+                      </div><!-- /.top-position-icons -->
                           <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit
                             amet.</small>
                         </figure>
@@ -743,10 +743,10 @@
                       <a href="#" class="property-card-link">
                         <figure>
                           <img src="assets/images/main_hero_section_img.jpg" alt="">
-                          <div class="top-position-icons">
-                            <a href="" class="theme-btn theme-btn-2">Featured</a>
-                            <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
-                          </div><!-- /.top-position-icons -->
+                                                <div class="top-position-icons">
+                                                <a href="" class="theme-btn primary-btn">Featured</a>
+                        <a href="" class="theme-btn grey-btn secondary-hover">For Sale</a>
+                      </div><!-- /.top-position-icons -->
                           <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit
                             amet.</small>
                         </figure>
@@ -778,10 +778,10 @@
                       <a href="#" class="property-card-link">
                         <figure>
                           <img src="assets/images/sdfasdf.jpg" alt="">
-                          <div class="top-position-icons">
-                            <a href="" class="theme-btn theme-btn-2">Featured</a>
-                            <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
-                          </div><!-- /.top-position-icons -->
+                                                <div class="top-position-icons">
+                                                <a href="" class="theme-btn primary-btn">Featured</a>
+                        <a href="" class="theme-btn grey-btn secondary-hover">For Sale</a>
+                      </div><!-- /.top-position-icons -->
                           <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit
                             amet.</small>
                         </figure>
@@ -813,10 +813,10 @@
                       <a href="#" class="property-card-link">
                         <figure>
                           <img src="assets/images/main_hero_section_img.jpg" alt="">
-                          <div class="top-position-icons">
-                            <a href="" class="theme-btn theme-btn-2">Featured</a>
-                            <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
-                          </div><!-- /.top-position-icons -->
+                                                <div class="top-position-icons">
+                                                <a href="" class="theme-btn primary-btn">Featured</a>
+                        <a href="" class="theme-btn grey-btn secondary-hover">For Sale</a>
+                      </div><!-- /.top-position-icons -->
                           <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit
                             amet.</small>
                         </figure>
@@ -851,10 +851,10 @@
                       <a href="#" class="property-card-link">
                         <figure>
                           <img src="assets/images/sdfasdf.jpg" alt="">
-                          <div class="top-position-icons">
-                            <a href="" class="theme-btn theme-btn-2">Featured</a>
-                            <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
-                          </div><!-- /.top-position-icons -->
+                                                <div class="top-position-icons">
+                                                <a href="" class="theme-btn primary-btn">Featured</a>
+                        <a href="" class="theme-btn grey-btn secondary-hover">For Sale</a>
+                      </div><!-- /.top-position-icons -->
                           <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit
                             amet.</small>
                         </figure>
@@ -886,10 +886,10 @@
                       <a href="#" class="property-card-link">
                         <figure>
                           <img src="assets/images/main_hero_section_img.jpg" alt="">
-                          <div class="top-position-icons">
-                            <a href="" class="theme-btn theme-btn-2">Featured</a>
-                            <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
-                          </div><!-- /.top-position-icons -->
+                                                <div class="top-position-icons">
+                                                <a href="" class="theme-btn primary-btn">Featured</a>
+                        <a href="" class="theme-btn grey-btn secondary-hover">For Sale</a>
+                      </div><!-- /.top-position-icons -->
                           <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit
                             amet.</small>
                         </figure>
@@ -921,10 +921,10 @@
                       <a href="#" class="property-card-link">
                         <figure>
                           <img src="assets/images/sdfasdf.jpg" alt="">
-                          <div class="top-position-icons">
-                            <a href="" class="theme-btn theme-btn-2">Featured</a>
-                            <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
-                          </div><!-- /.top-position-icons -->
+                                                <div class="top-position-icons">
+                                                <a href="" class="theme-btn primary-btn">Featured</a>
+                        <a href="" class="theme-btn grey-btn secondary-hover">For Sale</a>
+                      </div><!-- /.top-position-icons -->
                           <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit
                             amet.</small>
                         </figure>
@@ -956,10 +956,10 @@
                       <a href="#" class="property-card-link">
                         <figure>
                           <img src="assets/images/main_hero_section_img.jpg" alt="">
-                          <div class="top-position-icons">
-                            <a href="" class="theme-btn theme-btn-2">Featured</a>
-                            <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
-                          </div><!-- /.top-position-icons -->
+                                                <div class="top-position-icons">
+                                                <a href="" class="theme-btn primary-btn">Featured</a>
+                        <a href="" class="theme-btn grey-btn secondary-hover">For Sale</a>
+                      </div><!-- /.top-position-icons -->
                           <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit
                             amet.</small>
                         </figure>
@@ -991,10 +991,10 @@
                       <a href="#" class="property-card-link">
                         <figure>
                           <img src="assets/images/sdfasdf.jpg" alt="">
-                          <div class="top-position-icons">
-                            <a href="" class="theme-btn theme-btn-2">Featured</a>
-                            <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
-                          </div><!-- /.top-position-icons -->
+                                                <div class="top-position-icons">
+                                                <a href="" class="theme-btn primary-btn">Featured</a>
+                        <a href="" class="theme-btn grey-btn secondary-hover">For Sale</a>
+                      </div><!-- /.top-position-icons -->
                           <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit
                             amet.</small>
                         </figure>
@@ -1026,10 +1026,10 @@
                       <a href="#" class="property-card-link">
                         <figure>
                           <img src="assets/images/main_hero_section_img.jpg" alt="">
-                          <div class="top-position-icons">
-                            <a href="" class="theme-btn theme-btn-2">Featured</a>
-                            <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
-                          </div><!-- /.top-position-icons -->
+                                                <div class="top-position-icons">
+                                                <a href="" class="theme-btn primary-btn">Featured</a>
+                        <a href="" class="theme-btn grey-btn secondary-hover">For Sale</a>
+                      </div><!-- /.top-position-icons -->
                           <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit
                             amet.</small>
                         </figure>
@@ -1064,10 +1064,10 @@
                       <a href="#" class="property-card-link">
                         <figure>
                           <img src="assets/images/sdfasdf.jpg" alt="">
-                          <div class="top-position-icons">
-                            <a href="" class="theme-btn theme-btn-2">Featured</a>
-                            <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
-                          </div><!-- /.top-position-icons -->
+                                                <div class="top-position-icons">
+                                                <a href="" class="theme-btn primary-btn">Featured</a>
+                        <a href="" class="theme-btn grey-btn secondary-hover">For Sale</a>
+                      </div><!-- /.top-position-icons -->
                           <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit
                             amet.</small>
                         </figure>
@@ -1099,10 +1099,10 @@
                       <a href="#" class="property-card-link">
                         <figure>
                           <img src="assets/images/main_hero_section_img.jpg" alt="">
-                          <div class="top-position-icons">
-                            <a href="" class="theme-btn theme-btn-2">Featured</a>
-                            <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
-                          </div><!-- /.top-position-icons -->
+                                                <div class="top-position-icons">
+                                                <a href="" class="theme-btn primary-btn">Featured</a>
+                        <a href="" class="theme-btn grey-btn secondary-hover">For Sale</a>
+                      </div><!-- /.top-position-icons -->
                           <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit
                             amet.</small>
                         </figure>
@@ -1134,10 +1134,10 @@
                       <a href="#" class="property-card-link">
                         <figure>
                           <img src="assets/images/sdfasdf.jpg" alt="">
-                          <div class="top-position-icons">
-                            <a href="" class="theme-btn theme-btn-2">Featured</a>
-                            <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
-                          </div><!-- /.top-position-icons -->
+                                                <div class="top-position-icons">
+                                                <a href="" class="theme-btn primary-btn">Featured</a>
+                        <a href="" class="theme-btn grey-btn secondary-hover">For Sale</a>
+                      </div><!-- /.top-position-icons -->
                           <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit
                             amet.</small>
                         </figure>
@@ -1169,10 +1169,10 @@
                       <a href="#" class="property-card-link">
                         <figure>
                           <img src="assets/images/main_hero_section_img.jpg" alt="">
-                          <div class="top-position-icons">
-                            <a href="" class="theme-btn theme-btn-2">Featured</a>
-                            <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
-                          </div><!-- /.top-position-icons -->
+                                                                          <div class="top-position-icons">
+                                                <a href="" class="theme-btn primary-btn">Featured</a>
+                        <a href="" class="theme-btn grey-btn secondary-hover">For Sale</a>
+                      </div><!-- /.top-position-icons -->
                           <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit
                             amet.</small>
                         </figure>
@@ -1204,10 +1204,10 @@
                       <a href="#" class="property-card-link">
                         <figure>
                           <img src="assets/images/sdfasdf.jpg" alt="">
-                          <div class="top-position-icons">
-                            <a href="" class="theme-btn theme-btn-2">Featured</a>
-                            <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
-                          </div><!-- /.top-position-icons -->
+                                                                          <div class="top-position-icons">
+                                                <a href="" class="theme-btn primary-btn">Featured</a>
+                        <a href="" class="theme-btn grey-btn secondary-hover">For Sale</a>
+                      </div><!-- /.top-position-icons -->
                           <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit
                             amet.</small>
                         </figure>
@@ -1239,10 +1239,10 @@
                       <a href="#" class="property-card-link">
                         <figure>
                           <img src="assets/images/main_hero_section_img.jpg" alt="">
-                          <div class="top-position-icons">
-                            <a href="" class="theme-btn theme-btn-2">Featured</a>
-                            <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
-                          </div><!-- /.top-position-icons -->
+                                                                          <div class="top-position-icons">
+                                                <a href="" class="theme-btn primary-btn">Featured</a>
+                        <a href="" class="theme-btn grey-btn secondary-hover">For Sale</a>
+                      </div><!-- /.top-position-icons -->
                           <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit
                             amet.</small>
                         </figure>
@@ -1272,7 +1272,7 @@
               </div>
             </div>
             <div class="view-all-properties just-center">
-              <a href="" class="theme-btn_lg theme-btn-2 theme-btn-ico"><span>View All Properties</span><i
+              <a href="" class="theme-btn primary-btn theme-btn-ico primary-hover"><span>View All Properties</span><i
                   class="icon-link"></i></a>
             </div><!-- /.view-all-properties -->
           </div><!-- /.container -->
@@ -1426,7 +1426,7 @@
                       <p>Discover your dream home effortlessly. Explore diverse properties and expert guidance for a
                         seamless buying experience.</p>
                     </div><!-- /.card_body -->
-                    <a href="" class="theme-btn_lg theme-btn-2 theme-btn-ico"><span>Learn More</span><i
+                    <a href="" class="theme-btn primary-btn theme-btn-ico"><span>Learn More</span><i
                         class="icon-link"></i></a>
                   </div> <!-- /.service_card -->
                 </div><!-- /.col-inner -->
@@ -1442,7 +1442,7 @@
                       <p>Sell confidently with expert guidance and effective strategies, showcasing your property's best
                         features for a successful sale.</p>
                     </div><!-- /.card_body -->
-                    <a href="" class="theme-btn_lg theme-btn-2 theme-btn-ico"><span>Learn More</span><i
+                    <a href="" class="theme-btn primary-btn theme-btn-ico"><span>Learn More</span><i
                         class="icon-link"></i></a>
                   </div> <!-- /.service_card -->
                 </div><!-- /.col-inner -->
@@ -1458,7 +1458,7 @@
                       <p>Discover your perfect rental effortlessly. Explore a diverse variety of listings tailored
                         precisely to suit your unique lifestyle needs.</p>
                     </div><!-- /.card_body -->
-                    <a href="" class="theme-btn_lg theme-btn-2 theme-btn-ico"><span>Learn More</span><i
+                    <a href="" class="theme-btn primary-btn theme-btn-ico"><span>Learn More</span><i
                         class="icon-link"></i></a>
                   </div> <!-- /.service_card -->
                 </div><!-- /.col-inner -->
@@ -1530,8 +1530,8 @@
                     <figure>
                       <img src="assets/images/sdfasdf.jpg" alt="">
                       <div class="top-position-icons">
-                        <a href="" class="theme-btn theme-btn-2">Featured</a>
-                        <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
+                        <a href="" class="theme-btn primary-btn">Featured</a>
+                        <a href="" class="theme-btn grey-btn secondary-hover">For Sale</a>
                       </div><!-- /.top-position-icons -->
                       <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit
                         amet.</small>
@@ -1565,8 +1565,8 @@
                     <figure>
                       <img src="assets/images/main_hero_section_img.jpg" alt="">
                       <div class="top-position-icons">
-                        <a href="" class="theme-btn theme-btn-2">Featured</a>
-                        <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
+                                                <a href="" class="theme-btn primary-btn">Featured</a>
+                        <a href="" class="theme-btn grey-btn secondary-hover">For Sale</a>
                       </div><!-- /.top-position-icons -->
                       <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit
                         amet.</small>
@@ -1600,8 +1600,8 @@
                     <figure>
                       <img src="assets/images/sdfasdf.jpg" alt="">
                       <div class="top-position-icons">
-                        <a href="" class="theme-btn theme-btn-2">Featured</a>
-                        <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
+                                                <a href="" class="theme-btn primary-btn">Featured</a>
+                        <a href="" class="theme-btn grey-btn secondary-hover">For Sale</a>
                       </div><!-- /.top-position-icons -->
                       <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit
                         amet.</small>
@@ -1635,8 +1635,8 @@
                     <figure>
                       <img src="assets/images/main_hero_section_img.jpg" alt="">
                       <div class="top-position-icons">
-                        <a href="" class="theme-btn theme-btn-2">Featured</a>
-                        <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
+                                                <a href="" class="theme-btn primary-btn">Featured</a>
+                        <a href="" class="theme-btn grey-btn secondary-hover">For Sale</a>
                       </div><!-- /.top-position-icons -->
                       <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit
                         amet.</small>
@@ -1670,8 +1670,8 @@
                     <figure>
                       <img src="assets/images/sdfasdf.jpg" alt="">
                       <div class="top-position-icons">
-                        <a href="" class="theme-btn theme-btn-2">Featured</a>
-                        <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
+                                                <a href="" class="theme-btn primary-btn">Featured</a>
+                        <a href="" class="theme-btn grey-btn secondary-hover">For Sale</a>
                       </div><!-- /.top-position-icons -->
                       <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit
                         amet.</small>
@@ -1705,8 +1705,8 @@
                     <figure>
                       <img src="assets/images/main_hero_section_img.jpg" alt="">
                       <div class="top-position-icons">
-                        <a href="" class="theme-btn theme-btn-2">Featured</a>
-                        <a href="" class="theme-btn theme-btn-2 theme-btn-2-grey">For Sale</a>
+                                                <a href="" class="theme-btn primary-btn">Featured</a>
+                        <a href="" class="theme-btn grey-btn secondary-hover">For Sale</a>
                       </div><!-- /.top-position-icons -->
                       <small class="property-location"><i class="icon-location"></i>Lorem ipsum dolor sit
                         amet.</small>
@@ -1735,7 +1735,7 @@
               </div><!-- /.col-lg-6 -->
             </div><!-- /.row -->
             <div class="view-all-properties just-center">
-              <a href="" class="theme-btn_lg theme-btn-2 theme-btn-ico"><span>View All Properties</span><i
+              <a href="" class="theme-btn primary-btn theme-btn-ico primary-hover"><span>View All Properties</span><i
                   class="icon-link"></i></a>
             </div><!-- /.view-all-properties -->
           </div><!-- /.container -->
@@ -2207,8 +2207,8 @@
     </main><!-- /.main-content -->
     <footer class="footer">
       <div class="footer-wrapper">
-        <div class="container">
           <div class="footer-top">
+                    <div class="container">
             <div class="row">
               <div class="col-md-4">
                 <div class="col-inner">
@@ -2252,10 +2252,10 @@
                 </div><!-- /.col-inner -->
               </div><!-- /.col-lg-4 -->
             </div><!-- /.row -->
+                    </div><!-- /.container -->
           </div><!-- /.footer-top -->
           <div class="footer-center">
           </div><!-- /.footer-center -->
-        </div><!-- /.container -->
       </div><!-- /.footer-wrapper -->
     </footer><!-- /.footer -->
   </div><!-- /.site-wrapper -->
