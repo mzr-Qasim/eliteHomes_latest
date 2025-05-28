@@ -36,7 +36,7 @@
                 height: auto;
                 overflow-y: auto;
                 width: 100% !important;
-                box-shadow: none!important;
+                box-shadow: none !important;
 
 
             }
@@ -105,19 +105,32 @@
             padding: 5rem 1rem !important;
         }
     }
-
-
-    @media (max-width:767px) {
-        .md-hide {
-            display: none;
+    .footer-wrapper{
+        .col-inner{
+            padding: 1rem 0;
         }
+    }
+    .col-links{
+        justify-content: flex-start;
+    }
+    .footer-bottom-inner{
+        flex-direction: column;
+        gap: 1rem;
+    }
 
-        .right-links-lg {
-            display: block !important;
 
-            li {
-                margin: 2rem 0;
-            }
+}
+
+@media (max-width:767px) {
+    .md-hide {
+        display: none;
+    }
+
+    .right-links-lg {
+        display: block !important;
+
+        li {
+            margin: 2rem 0;
         }
     }
 }
