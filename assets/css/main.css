@@ -13237,7 +13237,7 @@ section.trusted_companies .swiper-slide:hover .trusted_company_logo {
     padding: 5rem 1rem !important;
   }
   .footer-wrapper .col-inner {
-    padding: 1rem 0;
+    padding: 0.5rem 0;
   }
   .col-links {
     justify-content: flex-start;
@@ -13256,5 +13256,13 @@ section.trusted_companies .swiper-slide:hover .trusted_company_logo {
   }
   .right-links-lg li {
     margin: 2rem 0;
+  }
+}
+@media (max-width: 575px) {
+  .footer-bottom-inner ul {
+    flex-direction: column;
+  }
+  .footer-bottom-inner ul li:not(:last-child) {
+    margin-bottom: 1rem;
   }
 }/*# sourceMappingURL=main.css.map */

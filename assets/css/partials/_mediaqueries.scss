@@ -107,7 +107,7 @@
     }
     .footer-wrapper{
         .col-inner{
-            padding: 1rem 0;
+            padding: .5rem 0;
         }
     }
     .col-links{
@@ -131,6 +131,20 @@
 
         li {
             margin: 2rem 0;
+        }
+    }
+}
+
+
+@media (max-width:575px) {
+    .footer-bottom-inner{
+        ul{
+            flex-direction: column;
+            li{
+                &:not(:last-child){
+                    margin-bottom: 1rem;
+                }
+            }
         }
     }
 }
