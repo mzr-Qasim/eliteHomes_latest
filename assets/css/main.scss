@@ -4,49 +4,47 @@
 
 
 
-.pre_loader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: $universal-color-2;
-    z-index: 9999;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: opacity 1s ease;
+// .pre_loader {
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+//     background-color: $universal-color-2;
+//     z-index: 9999;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     transition: opacity 1s ease;
 
-    .pre_loader_svg {
-        width: clamp(60px, 2vw, 100px);
-        height: clamp(60px, 2vw, 100px);
-        // width: 100px;
-        // height: 100px;
-        animation: pulse 1.5s infinite ease-in-out;
-    }
+//     .pre_loader_svg {
+//         width: clamp(60px, 4vw, 100px);
+//         height: clamp(60px, 4vw, 100px);
+//         animation: pulse 1.5s infinite ease-in-out;
+//     }
 
-}
+// }
 
 
 
-@keyframes pulse {
-    0% {
-        transform: rotate(0deg);
-        opacity: 1;
-    }
+// @keyframes pulse {
+//     0% {
+//         transform: rotate(0deg);
+//         opacity: 1;
+//     }
 
-    100% {
-        transform: rotate(360deg);
-        opacity: 0.7;
-    }
-}
+//     100% {
+//         transform: rotate(360deg);
+//         opacity: 0.7;
+//     }
+// }
 
-.site-wrapper {
-    opacity: 0;
-    transition: opacity 0.5s ease;
-    overflow: hidden;
-    height: 100vh;
-}
+// .site-wrapper {
+//     opacity: 0;
+//     transition: opacity 0.5s ease;
+//     overflow: hidden;
+//     height: 100vh;
+// }
 
 .main-navbar {
     background-color: $universal-color-2;
@@ -234,7 +232,8 @@
             span {
                 font-size: 35%;
                 font-weight: 300;
-                p{
+
+                p {
                     line-height: 2.5rem;
                 }
 
@@ -262,6 +261,8 @@
     padding-top: $section-space-md;
 
     .nav-pills {
+        gap: 2rem;
+
         .active {
             border-color: $theme-color-1;
             background-color: $theme-color-1;
@@ -377,8 +378,8 @@
     }
 
     .card-link {
-        width: 3rem;
-        height: 3rem;
+        width: 2.5rem;
+        height: 2.5rem;
         border-radius: 50%;
         border: 1px solid $border-color;
         display: flex;
@@ -474,7 +475,10 @@
         }
 
         figure {
+
+            
             img {
+
                 transition: all ease-in-out .5s;
                 object-fit: cover;
             }
@@ -653,6 +657,10 @@ section.our_teams {
             }
         }
 
+        .contact-links {
+            gap: .5rem;
+        }
+
         a.card-link {
             i {
                 color: #adadad;
@@ -669,6 +677,7 @@ section.our_teams {
                 margin-bottom: 2rem;
                 transform: translateY(0);
             }
+
 
             a.card-link {
                 background-color: $theme-color-1;
@@ -687,7 +696,8 @@ section.our_teams {
 
 section.trusted_companies {
     padding-bottom: $section-space-md;
-    .title{
+
+    .title {
         text-transform: capitalize;
     }
 
@@ -752,19 +762,22 @@ section.trusted_companies {
 
 .footer-center {
     color: $universal-color-2;
-    .footer_heading{
+
+    .footer_heading {
         font-weight: 500;
     }
-    .footer_links{
-        li{
-                    overflow: hidden;      
+
+    .footer_links {
+        li {
+            overflow: hidden;
         }
-        a{
+
+        a {
             position: relative;
             transition: all ease-in-out .3s;
 
 
-            &::after{
+            &::after {
                 content: '';
                 position: absolute;
                 bottom: 0;
@@ -775,14 +788,17 @@ section.trusted_companies {
                 transform: translateX(-100%);
                 transition: all ease-in-out .3s;
             }
-            &:hover{
+
+            &:hover {
                 color: $theme-color-1;
-                &::after{
+
+                &::after {
                     transform: translateX(0);
                 }
             }
         }
     }
+
     .footer-center-inner {
         position: relative;
 
@@ -863,6 +879,7 @@ section.trusted_companies {
         li {
             a {
                 transition: all ease-in-out .3s;
+
                 &:hover {
                     color: $theme-color-1;
                 }

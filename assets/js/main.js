@@ -1,20 +1,20 @@
   AOS.init();
 
 
-window.addEventListener("load", function () {
-  // Add delay before triggering "loaded"
-  setTimeout(() => {
-    document.body.classList.add("loaded");
+// window.addEventListener("load", function () {
+//   // Add delay before triggering "loaded"
+//   setTimeout(() => {
+//     document.body.classList.add("loaded");
 
-    // Then fade out and remove preloader
-    setTimeout(() => {
-      const preloader = document.getElementById("pre_loader");
-      if (preloader) {
-        preloader.remove();
-      }
-    }, 500); // Fade-out duration
-  }, 2000); // Delay after page is fully loaded (in ms)
-});
+//     // Then fade out and remove preloader
+//     setTimeout(() => {
+//       const preloader = document.getElementById("pre_loader");
+//       if (preloader) {
+//         preloader.remove();
+//       }
+//     }, 500); // Fade-out duration
+//   }, 2000); // Delay after page is fully loaded (in ms)
+// });
 
 
 var back_to_top = $('#back_to_top');
@@ -91,7 +91,7 @@ const swiperElement = document.querySelector("#trusted_companies_swiper");
 const trustedCompaniesSwiper = new Swiper('#trusted_companies_swiper', {
     slidesPerView: 3,
   spaceBetween: 10,
-      speed: 1500,
+      speed: 3000,
       parallax: true,
       loop: true,
         autoplay: {
