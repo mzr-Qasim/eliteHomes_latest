@@ -49,6 +49,7 @@ ul {
 
 a {
     text-decoration: none;
+    color: $universal-color-1;
 }
 
 button {
@@ -73,11 +74,11 @@ p {
     display: flex;
 }
 
-.align_center{
+.align_center {
     align-items: center;
 }
 
-.just_center{
+.just_center {
     justify-content: center;
 }
 
@@ -90,7 +91,7 @@ p {
 
 
 
-.w_fit{
+.w_fit {
     width: fit-content;
 }
 
@@ -259,6 +260,73 @@ p {
             }
         }
     }
+}
+
+.blog-card {
+        cursor: pointer;
+    figure {
+        width: 100%;
+        aspect-ratio: 1/.7;
+        position: relative;
+        border-radius: 20px;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: all ease-in-out .5s;
+        }
+
+        .top-position-icons {
+            position: absolute;
+            top: 0;
+            left: 0;
+            gap: 1rem;
+            padding: 1rem;
+            z-index: 2;
+
+            a {
+                font-size: .8rem;
+                font-weight: bolder;
+            }
+        }
+     
+
+    }
+
+    figcaption {
+        padding: 1.5rem 0;
+        color: $universal-color-1;
+        a{
+                    h4 {
+            font-size: clamp(1.2rem, 2vw, 1.4rem);
+            text-transform: capitalize;
+
+            &:hover{
+                color: $theme-color-1;
+            }
+
+        }
+        }
+
+    }
+
+    h6 {
+        color: #303030;
+    }
+
+    p {
+        line-height: 1.5rem;
+    }
+        &:hover {
+        figure {
+            img {
+                scale: 1.1;
+            }
+        }
+    }
+
 }
 
 a.card-link {
@@ -455,6 +523,6 @@ ul.property-map-rooms {
     }
 }
 
-.footer_light_text_color{
+.footer_light_text_color {
     color: #a3abb0;
 }

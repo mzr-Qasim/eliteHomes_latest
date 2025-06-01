@@ -1,20 +1,20 @@
   AOS.init();
 
 
-window.addEventListener("load", function () {
-  // Add delay before triggering "loaded"
-  setTimeout(() => {
-    document.body.classList.add("loaded");
+// window.addEventListener("load", function () {
+//   // Add delay before triggering "loaded"
+//   setTimeout(() => {
+//     document.body.classList.add("loaded");
 
-    // Then fade out and remove preloader
-    setTimeout(() => {
-      const preloader = document.getElementById("pre_loader");
-      if (preloader) {
-        preloader.remove();
-      }
-    }, 500); // Fade-out duration
-  }, 2000); // Delay after page is fully loaded (in ms)
-});
+//     // Then fade out and remove preloader
+//     setTimeout(() => {
+//       const preloader = document.getElementById("pre_loader");
+//       if (preloader) {
+//         preloader.remove();
+//       }
+//     }, 500); // Fade-out duration
+//   }, 2000); // Delay after page is fully loaded (in ms)
+// });
 
 
 
@@ -94,11 +94,11 @@ const swiperElement = document.querySelector("#trusted_companies_swiper");
 const trustedCompaniesSwiper = new Swiper('#trusted_companies_swiper', {
     slidesPerView: 3,
   spaceBetween: 10,
-      speed: 3000,
+      speed: 2000,
       parallax: true,
       loop: true,
         autoplay: {
-        delay: 2000,
+        delay: 1500,
         disableOnInteraction: false,
       },
        breakpoints: {
@@ -148,6 +148,23 @@ swiperElement.addEventListener('mouseleave', () => {
     1200: {
       slidesPerView: 4,
       spaceBetween: 10,
+    },
+  
+  },
+    });
+      var swiper = new Swiper(".mySwiper5", {
+    slidesPerView: 1,
+  spaceBetween: 20,
+    pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+       breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+    1200: {
+      slidesPerView: 3,
     },
   
   },

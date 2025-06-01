@@ -4,47 +4,47 @@
 
 
 
-.pre_loader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: $universal-color-2;
-    z-index: 9999;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: opacity 1s ease;
+// .pre_loader {
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+//     background-color: $universal-color-2;
+//     z-index: 9999;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     transition: opacity 1s ease;
 
-    .pre_loader_svg {
-        width: clamp(60px, 4vw, 100px);
-        height: clamp(60px, 4vw, 100px);
-        animation: pulse 1.5s infinite ease-in-out;
-    }
+//     .pre_loader_svg {
+//         width: clamp(60px, 4vw, 100px);
+//         height: clamp(60px, 4vw, 100px);
+//         animation: pulse 1.5s infinite ease-in-out;
+//     }
 
-}
+// }
 
 
 
-@keyframes pulse {
-    0% {
-        transform: rotate(0deg);
-        opacity: 1;
-    }
+// @keyframes pulse {
+//     0% {
+//         transform: rotate(0deg);
+//         opacity: 1;
+//     }
 
-    100% {
-        transform: rotate(360deg);
-        opacity: 0.7;
-    }
-}
+//     100% {
+//         transform: rotate(360deg);
+//         opacity: 0.7;
+//     }
+// }
 
-.site-wrapper {
-    opacity: 0;
-    transition: opacity 0.5s ease;
-    overflow: hidden;
-    height: 100vh;
-}
+// .site-wrapper {
+//     opacity: 0;
+//     transition: opacity 0.5s ease;
+//     overflow: hidden;
+//     height: 100vh;
+// }
 
 .main-navbar {
     background-color: $universal-color-2;
@@ -419,7 +419,7 @@
     padding-top: $section-space-sm;
 }
 
-.team_section_bullets {
+.swiper-custom-bullets {
     padding-top: 1rem !important;
 }
 
@@ -607,6 +607,7 @@ section.our_teams {
     padding-bottom: $section-space-sm;
 
     .team_card {
+        cursor: pointer;
         margin-bottom: 3rem;
 
         figure {
@@ -739,6 +740,15 @@ section.trusted_companies {
     }
 }
 
+// Our Blog
+
+section.our_blogs{
+    padding-bottom: $section-space-md;
+
+    .swiper-custom-bullets{
+            padding-top: 2rem !important;
+    }
+}
 
 //footer
 
@@ -913,83 +923,6 @@ section.trusted_companies {
 }
 
 
-// city-locations
-.map-hero {
-    position: relative;
-
-    img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        z-index: 1;
-    }
-
-    svg {
-        position: absolute;
-        top: 0;
-        right: 0;
-        z-index: 3;
-        height: 100%;
-
-        .location_btn {
-            cursor: pointer;
-
-            &:hover {
-                fill: red;
-            }
-        }
-
-
-
-    }
-
-    &::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: $universal-color-1;
-        opacity: .5;
-    }
-
-
-}
-
-.map_images {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-
-    .map_property_content {
-        background-color: $universal-color-2;
-    }
-
-    img {
-        width: 100%;
-        min-height: 100%;
-        border-radius: 10px;
-        object-fit: cover;
-    }
-}
-
-// .svg-el{
-//     .circle{
-//         position: relative;
-
-//     }
-
-//     &::after{
-//         content: '';
-//         position: absolute;
-//         width: 100%;
-//         height: 100%;
-//         background-color: white;
-//         top: 0;
-//         left: 0;
-//     }
-// }
 
 
 @import './partials/mediaqueries';

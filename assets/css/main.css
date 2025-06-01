@@ -12136,6 +12136,7 @@ ul {
 
 a {
   text-decoration: none;
+  color: #000000;
 }
 
 button {
@@ -12302,6 +12303,56 @@ p {
   color: grey;
 }
 .property-card:hover figure img {
+  scale: 1.1;
+}
+
+.blog-card {
+  cursor: pointer;
+}
+.blog-card figure {
+  width: 100%;
+  aspect-ratio: 1/0.7;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.blog-card figure img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all ease-in-out 0.5s;
+}
+.blog-card figure .top-position-icons {
+  position: absolute;
+  top: 0;
+  left: 0;
+  gap: 1rem;
+  padding: 1rem;
+  z-index: 2;
+}
+.blog-card figure .top-position-icons a {
+  font-size: 0.8rem;
+  font-weight: bolder;
+}
+.blog-card figcaption {
+  padding: 1.5rem 0;
+  color: #000000;
+}
+.blog-card figcaption a h4, .blog-card figcaption a .h4 {
+  font-size: clamp(1.2rem, 2vw, 1.4rem);
+  text-transform: capitalize;
+}
+.blog-card figcaption a h4:hover, .blog-card figcaption a .h4:hover {
+  color: #1563df;
+}
+.blog-card h6, .blog-card .h6 {
+  color: #303030;
+}
+.blog-card p {
+  line-height: 1.5rem;
+}
+.blog-card:hover figure img {
   scale: 1.1;
 }
 
@@ -12473,42 +12524,6 @@ ul.property-map-rooms li small i, ul.property-map-rooms li .small i {
 
 .footer_light_text_color {
   color: #a3abb0;
-}
-
-.pre_loader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ffffff;
-  z-index: 9999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: opacity 1s ease;
-}
-.pre_loader .pre_loader_svg {
-  width: clamp(60px, 4vw, 100px);
-  height: clamp(60px, 4vw, 100px);
-  animation: pulse 1.5s infinite ease-in-out;
-}
-
-@keyframes pulse {
-  0% {
-    transform: rotate(0deg);
-    opacity: 1;
-  }
-  100% {
-    transform: rotate(360deg);
-    opacity: 0.7;
-  }
-}
-.site-wrapper {
-  opacity: 0;
-  transition: opacity 0.5s ease;
-  overflow: hidden;
-  height: 100vh;
 }
 
 .main-navbar {
@@ -12781,7 +12796,7 @@ ul.property-map-rooms li small i, ul.property-map-rooms li .small i {
   padding-top: 5rem;
 }
 
-.team_section_bullets {
+.swiper-custom-bullets {
   padding-top: 1rem !important;
 }
 
@@ -12923,6 +12938,7 @@ section.our_teams {
   padding-bottom: 5rem;
 }
 section.our_teams .team_card {
+  cursor: pointer;
   margin-bottom: 3rem;
 }
 section.our_teams .team_card figure {
@@ -13020,6 +13036,13 @@ section.trusted_companies .swiper-slide .trusted_company_logo {
 }
 section.trusted_companies .swiper-slide:hover .trusted_company_logo {
   fill: #1563df;
+}
+
+section.our_blogs {
+  padding-bottom: 8rem;
+}
+section.our_blogs .swiper-custom-bullets {
+  padding-top: 2rem !important;
 }
 
 .footer-wrapper {
@@ -13148,56 +13171,6 @@ section.trusted_companies .swiper-slide:hover .trusted_company_logo {
 }
 .footer-bottom ul li:not(:last-child) {
   margin-right: 1rem;
-}
-
-.map-hero {
-  position: relative;
-}
-.map-hero img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  z-index: 1;
-}
-.map-hero svg {
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 3;
-  height: 100%;
-}
-.map-hero svg .location_btn {
-  cursor: pointer;
-}
-.map-hero svg .location_btn:hover {
-  fill: red;
-}
-.map-hero::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #000000;
-  opacity: 0.5;
-}
-
-.map_images {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-.map_images .map_property_content {
-  background-color: #ffffff;
-}
-.map_images img {
-  width: 100%;
-  min-height: 100%;
-  border-radius: 10px;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 @media (max-width: 1200px) {
