@@ -4,47 +4,47 @@
 
 
 
-// .pre_loader {
-//     position: fixed;
-//     top: 0;
-//     left: 0;
-//     right: 0;
-//     bottom: 0;
-//     background-color: $universal-color-2;
-//     z-index: 9999;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     transition: opacity 1s ease;
+.pre_loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $universal-color-2;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 1s ease;
 
-//     .pre_loader_svg {
-//         width: clamp(60px, 4vw, 100px);
-//         height: clamp(60px, 4vw, 100px);
-//         animation: pulse 1.5s infinite ease-in-out;
-//     }
+    .pre_loader_svg {
+        width: clamp(60px, 4vw, 100px);
+        height: clamp(60px, 4vw, 100px);
+        animation: pulse 1.5s infinite ease-in-out;
+    }
 
-// }
+}
 
 
 
-// @keyframes pulse {
-//     0% {
-//         transform: rotate(0deg);
-//         opacity: 1;
-//     }
+@keyframes pulse {
+    0% {
+        transform: rotate(0deg);
+        opacity: 1;
+    }
 
-//     100% {
-//         transform: rotate(360deg);
-//         opacity: 0.7;
-//     }
-// }
+    100% {
+        transform: rotate(360deg);
+        opacity: 0.7;
+    }
+}
 
-// .site-wrapper {
-//     opacity: 0;
-//     transition: opacity 0.5s ease;
-//     overflow: hidden;
-//     height: 100vh;
-// }
+.site-wrapper {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    overflow: hidden;
+    height: 100vh;
+}
 
 .main-navbar {
     background-color: $universal-color-2;
@@ -94,6 +94,15 @@
                 .dropdown {
                     overflow: visible !important;
 
+                   button{
+                    gap: .5rem;
+                    i{
+                        font-size: .8rem;
+                    }
+
+                   }
+                    
+
                     .dropdown-menu {
                         display: none;
                         padding: 2rem 1rem;
@@ -102,7 +111,19 @@
                         border: none;
                         border-radius: 20px;
                         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+                        li{
+                            a{
+                                &:hover{
+                                    color: $theme-color-1;
+                                    background-color: transparent;
+                                }
+                            }
+                            &:not(:last-child){
+                                padding-bottom: 1.5rem;
+                            }
+                        }
 
+                       
                     }
 
                     &:hover {
@@ -478,7 +499,6 @@
 
             
             img {
-
                 transition: all ease-in-out .5s;
                 object-fit: cover;
             }

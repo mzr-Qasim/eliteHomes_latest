@@ -2,8 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @font-face {
   font-family: "icomoon";
-  src: url("fonts/icomoon.eot?e6h58u");
-  src: url("fonts/icomoon.eot?e6h58u#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?e6h58u") format("truetype"), url("fonts/icomoon.woff?e6h58u") format("woff"), url("fonts/icomoon.svg?e6h58u#icomoon") format("svg");
+  src: url("fonts/icomoon.eot?eehz1u");
+  src: url("fonts/icomoon.eot?eehz1u#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?eehz1u") format("truetype"), url("fonts/icomoon.woff?eehz1u") format("woff"), url("fonts/icomoon.svg?eehz1u#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -46,84 +46,88 @@
   content: "\e905";
 }
 
-.icon-email:before {
+.icon-down_arrow:before {
   content: "\e906";
 }
 
-.icon-facebook_icon:before {
+.icon-email:before {
   content: "\e907";
 }
 
-.icon-ham_btn:before {
+.icon-facebook_icon:before {
   content: "\e908";
 }
 
-.icon-instagram:before {
+.icon-ham_btn:before {
   content: "\e909";
 }
 
-.icon-instagram_2:before {
+.icon-instagram:before {
   content: "\e90a";
 }
 
-.icon-link:before {
+.icon-instagram_2:before {
   content: "\e90b";
 }
 
-.icon-linkedin:before {
+.icon-link:before {
   content: "\e90c";
 }
 
-.icon-linkedin_icon:before {
+.icon-linkedin:before {
   content: "\e90d";
 }
 
-.icon-location:before {
+.icon-linkedin_icon:before {
   content: "\e90e";
 }
 
-.icon-login:before {
+.icon-location:before {
   content: "\e90f";
 }
 
-.icon-pinterest:before {
+.icon-login:before {
   content: "\e910";
 }
 
-.icon-proven-expertise:before {
+.icon-pinterest:before {
   content: "\e911";
 }
 
-.icon-search:before {
+.icon-proven-expertise:before {
   content: "\e912";
 }
 
-.icon-search_location:before {
+.icon-search:before {
   content: "\e913";
 }
 
-.icon-send_message:before {
+.icon-search_location:before {
   content: "\e914";
 }
 
-.icon-sqft:before {
+.icon-send_message:before {
   content: "\e915";
 }
 
-.icon-submit_property:before {
+.icon-sqft:before {
   content: "\e916";
 }
 
-.icon-transparent-partnerships:before {
+.icon-submit_property:before {
   content: "\e917";
 }
 
-.icon-twitter-x:before {
+.icon-transparent-partnerships:before {
   content: "\e918";
 }
 
-.icon-youtube:before {
+.icon-twitter-x:before {
   content: "\e919";
+}
+
+.icon-youtube:before {
+  content: "\e91a";
 }
 
 /*!
@@ -12471,6 +12475,42 @@ ul.property-map-rooms li small i, ul.property-map-rooms li .small i {
   color: #a3abb0;
 }
 
+.pre_loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ffffff;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 1s ease;
+}
+.pre_loader .pre_loader_svg {
+  width: clamp(60px, 4vw, 100px);
+  height: clamp(60px, 4vw, 100px);
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 0.7;
+  }
+}
+.site-wrapper {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  overflow: hidden;
+  height: 100vh;
+}
+
 .main-navbar {
   background-color: #ffffff;
   position: fixed;
@@ -12510,6 +12550,12 @@ ul.property-map-rooms li small i, ul.property-map-rooms li .small i {
 .nav-inner .nav-collapse ul .nav_links .dropdown {
   overflow: visible !important;
 }
+.nav-inner .nav-collapse ul .nav_links .dropdown button {
+  gap: 0.5rem;
+}
+.nav-inner .nav-collapse ul .nav_links .dropdown button i {
+  font-size: 0.8rem;
+}
 .nav-inner .nav-collapse ul .nav_links .dropdown .dropdown-menu {
   display: none;
   padding: 2rem 1rem;
@@ -12518,6 +12564,13 @@ ul.property-map-rooms li small i, ul.property-map-rooms li .small i {
   border: none;
   border-radius: 20px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.nav-inner .nav-collapse ul .nav_links .dropdown .dropdown-menu li a:hover {
+  color: #1563df;
+  background-color: transparent;
+}
+.nav-inner .nav-collapse ul .nav_links .dropdown .dropdown-menu li:not(:last-child) {
+  padding-bottom: 1.5rem;
 }
 .nav-inner .nav-collapse ul .nav_links .dropdown:hover .dropdown-menu {
   display: block;
@@ -13162,13 +13215,30 @@ section.trusted_companies .swiper-slide:hover .trusted_company_logo {
     overflow-y: auto;
     z-index: 100;
   }
+  .nav-collapse .nav-collapse-logo {
+    position: relative;
+  }
+  .nav-collapse .nav-collapse-logo::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 1rem;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #e2e2e2;
+    opacity: 0.3;
+  }
   .nav-collapse ul {
     flex-direction: column;
   }
   .nav-collapse ul .nav_links {
     padding-bottom: 2rem !important;
   }
-  .nav-collapse ul .nav_links::after {
+  .nav-collapse .nav_hover_element:hover {
+    color: #1563df !important;
+  }
+  .nav-collapse .nav_hover_element::after {
     content: none !important;
   }
   .dropdown:hover .dropdown-menu {

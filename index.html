@@ -11,8 +11,8 @@
 </head>
 
 <body id="body">
-  <!-- <div class="pre_loader" id="pre_loader">
-    <img class="pre_loader_svg" src="assets/images/pre_loader.svg" alt=""> -->
+  <div class="pre_loader" id="pre_loader">
+    <img class="pre_loader_svg" src="assets/images/pre_loader.svg" alt="">
   </div><!-- /.pre_loader -->
   <div class="site-wrapper">
     <header class="header">
@@ -22,7 +22,7 @@
             <a href="#"><img class="main_logo" src="assets/images/site_logo.svg" alt=""></a>
             <div class="nav-collapse" id="nav_collapse">
               <ul class="d-flex">
-                <li class="nav_links d-none element-show"><a href=""><img class="main_logo"
+                <li class="nav_links d-none element-show nav-collapse-logo"><a href=""><img class="main_logo"
                       src="assets/images/site_logo.svg" alt=""></a></li>
                 <li class="nav_links"><a href="#" class="btn nav_hover_element">Home</a></li>
                 <li class="nav_links">
@@ -31,9 +31,9 @@
                 <li class="nav_links">
                   <div class="dropdown">
                     <button data-mdb-button-init data-mdb-ripple-init data-mdb-dropdown-init
-                      class="btn nav_hover_element" type="button" id="dropdownMenuButton" data-mdb-toggle="dropdown"
+                      class="btn nav_hover_element d-flex align_center" type="button" id="dropdownMenuButton" data-mdb-toggle="dropdown"
                       aria-expanded="false">
-                      Pages
+                      Pages<span><i class="icon-down_arrow"></i></span>
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                       <li><a class="dropdown-item" href="#">About Us</a></li>
@@ -51,9 +51,9 @@
                 <li class="nav_links">
                   <div class="dropdown">
                     <button data-mdb-button-init data-mdb-ripple-init data-mdb-dropdown-init
-                      class="btn nav_hover_element" type="button" id="dropdownMenuButton" data-mdb-toggle="dropdown"
+                      class="btn nav_hover_element d-flex align_center" type="button" id="dropdownMenuButton" data-mdb-toggle="dropdown"
                       aria-expanded="false">
-                      Dashboard
+                      Dashboard<span><i class="icon-down_arrow"></i></span>
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                       <li><a class="dropdown-item" href="#">Dashboard</a></li>
@@ -68,7 +68,7 @@
                 </li>
               </ul>
               <ul class="right-links-lg right-links d-none">
-                <li><a href="" class="" >Sign in</a></li>
+                <li><a href="" class="btn nav_hover_element" >Sign in</a></li>
                 <li><a href="" class="theme-btn primary-btn theme-btn-ico primary-hover"><i class="icon-submit_property"></i><span>Submit
                       Property</span></a></li>
               </ul>
@@ -87,7 +87,7 @@
       </nav><!-- /.main-navbar -->
     </header><!-- /.header -->
     <main class="main-content">
-      <button class="back-to-top align-center" id="back_to_top"><i class="icon-back_to_top"></i></button>
+      <button class="back-to-top d_flex align_center just_center" id="back_to_top"><i class="icon-back_to_top"></i></button>
       <section class="main_hero_section">
         <div class="main_hero_section_wrapper d_flex just_center align_center">
           <img src="assets/images/main_hero_section_img.jpg" alt="main hero image">
