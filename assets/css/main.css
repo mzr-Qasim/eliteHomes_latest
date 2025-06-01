@@ -12164,17 +12164,6 @@ p {
   justify-content: space-between;
 }
 
-.align-center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.just-center {
-  display: flex;
-  justify-content: center;
-}
-
 .w_fit {
   width: -moz-fit-content;
   width: fit-content;
@@ -12589,10 +12578,7 @@ ul.property-map-rooms li small i, ul.property-map-rooms li .small i {
   min-height: 90vh;
   padding: 5rem 0;
   position: relative;
-  display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 .main_hero_section_wrapper img {
   position: absolute;
@@ -12614,8 +12600,11 @@ ul.property-map-rooms li small i, ul.property-map-rooms li .small i {
   font-size: clamp(3rem, 4vw, 6rem);
 }
 .main_hero_section_wrapper figcaption h1 span, .main_hero_section_wrapper figcaption .h1 span {
-  font-size: 30%;
+  font-size: 35%;
   font-weight: 300;
+}
+.main_hero_section_wrapper figcaption h1 span p, .main_hero_section_wrapper figcaption .h1 span p {
+  line-height: 2.5rem;
 }
 .main_hero_section_wrapper::after {
   position: absolute;
@@ -12625,7 +12614,7 @@ ul.property-map-rooms li small i, ul.property-map-rooms li .small i {
   width: 100%;
   height: 100%;
   background-color: #000000;
-  opacity: 0.3;
+  opacity: 0.5;
   z-index: 2;
 }
 
@@ -12642,9 +12631,6 @@ ul.property-map-rooms li small i, ul.property-map-rooms li .small i {
   background-color: #ffffff;
   border-radius: 60px;
   padding: 1rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 .tab-content_inner label {
   color: #000000;
@@ -12673,8 +12659,6 @@ ul.property-map-rooms li small i, ul.property-map-rooms li .small i {
 }
 
 .featured-properties-tabs {
-  display: flex;
-  justify-content: center;
   margin-bottom: 3rem;
 }
 .featured-properties-tabs .nav-pills {
@@ -12714,11 +12698,6 @@ ul.property-map-rooms li small i, ul.property-map-rooms li .small i {
   color: #ffffff;
 }
 
-.card-description {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 .card-description h4, .card-description .h4 {
   font-size: clamp(1rem, 1vw, 2rem);
   text-transform: capitalize;
@@ -12777,9 +12756,6 @@ ul.property-map-rooms li small i, ul.property-map-rooms li .small i {
   border: 1px solid #e2e2e2;
   border-radius: 25px;
   padding: 2rem 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   flex-direction: column;
   gap: 2rem;
   height: 100%;
@@ -12798,9 +12774,7 @@ ul.property-map-rooms li small i, ul.property-map-rooms li .small i {
   color: #ffffff !important;
 }
 .our_services .col-inner .card_body {
-  display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 2rem;
 }
 .our_services .col-inner figure img {
@@ -12856,7 +12830,6 @@ section.our_benefit {
 }
 
 .benefits {
-  display: flex;
   gap: 2rem;
   padding: 2rem;
   background-color: #ffffff;
@@ -12912,8 +12885,6 @@ section.our_teams .team_card figure img {
 section.our_teams .team_card figure .social_media_links {
   position: absolute;
   bottom: 0;
-  display: flex;
-  justify-content: space-between;
   z-index: 2;
   width: 80%;
   background-color: rgba(0, 0, 0, 0.2);
@@ -12971,6 +12942,9 @@ section.our_teams .team_card:hover a.card-link i {
 
 section.trusted_companies {
   padding-bottom: 8rem;
+}
+section.trusted_companies .title {
+  text-transform: capitalize;
 }
 section.trusted_companies .swiper-slide {
   display: flex;

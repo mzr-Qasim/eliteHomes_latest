@@ -1,4 +1,4 @@
-
+  AOS.init();
 
 
 // window.addEventListener("load", function () {
@@ -84,6 +84,9 @@ var swiper = new Swiper(".mySwiper", {
   
   },
 });
+
+
+
 const swiperElement = document.querySelector("#trusted_companies_swiper");
 const trustedCompaniesSwiper = new Swiper('#trusted_companies_swiper', {
     slidesPerView: 3,

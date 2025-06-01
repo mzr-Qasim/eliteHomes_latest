@@ -202,10 +202,7 @@
     min-height: 90vh;
     padding: 5rem 0;
     position: relative;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     // background: url('../images/main_hero_section_img.jpg');
     // background-attachment: fixed;
     // background-position: center;
@@ -233,8 +230,11 @@
             font-size: clamp(3rem, 4vw, 6rem);
 
             span {
-                font-size: 30%;
+                font-size: 35%;
                 font-weight: 300;
+                p{
+                    line-height: 2.5rem;
+                }
 
             }
 
@@ -250,7 +250,7 @@
         width: 100%;
         height: 100%;
         background-color: $universal-color-1;
-        opacity: .3;
+        opacity: .5;
         z-index: 2;
     }
 }
@@ -272,9 +272,6 @@
     background-color: $universal-color-2;
     border-radius: 60px;
     padding: 1rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 
     label {
         color: $universal-color-1;
@@ -313,13 +310,11 @@
 }
 
 .featured-properties-tabs {
-    display: flex;
-    justify-content: center;
     margin-bottom: 3rem;
-
 
     .nav-pills {
         gap: 1rem;
+
 
         .active {
             border-color: $theme-color-1;
@@ -372,15 +367,7 @@
 
 
 
-
-
-
 .card-description {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-
 
     h4 {
         font-size: clamp(1rem, 1vw, 2rem);
@@ -444,21 +431,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .our_services {
     padding-bottom: $section-space-md;
 
@@ -470,9 +442,6 @@
             border: 1px solid $border-color;
             border-radius: 25px;
             padding: 2rem 1rem;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
             flex-direction: column;
             gap: 2rem;
             height: 100%;
@@ -498,9 +467,7 @@
         }
 
         .card_body {
-            display: flex;
             flex-direction: column;
-            align-items: center;
             gap: 2rem;
         }
 
@@ -574,7 +541,6 @@ section.our_benefit {
 }
 
 .benefits {
-    display: flex;
     gap: 2rem;
     padding: 2rem;
     background-color: $universal-color-2;
@@ -637,8 +603,6 @@ section.our_teams {
             .social_media_links {
                 position: absolute;
                 bottom: 0;
-                display: flex;
-                justify-content: space-between;
                 z-index: 2;
                 width: 80%;
                 background-color: rgba(0, 0, 0, 0.2);
@@ -721,6 +685,9 @@ section.our_teams {
 
 section.trusted_companies {
     padding-bottom: $section-space-md;
+    .title{
+        text-transform: capitalize;
+    }
 
     .swiper-slide {
         display: flex;
